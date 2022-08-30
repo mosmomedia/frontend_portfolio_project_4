@@ -1,6 +1,7 @@
 module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
+		test: '100px',
 		screens: {
 			xs: '426px',
 			sm: '640px',
@@ -10,14 +11,24 @@ module.exports = {
 			'2xl': '1536px',
 		},
 
+		container: {
+			padding: {
+				DEFAULT: '1rem',
+				sm: '2rem',
+				lg: '4rem',
+				xl: '5rem',
+				'2xl': '6rem',
+			},
+		},
+
 		extend: {
 			colors: {
-				body: '#CFFFF6',
+				body: '#BEF9EE',
 				main_text: '#1A1919',
 			},
 
 			backgroundColor: {
-				primary: '#CFFFF6',
+				primary: '#BEF9EE',
 			},
 
 			textColor: {

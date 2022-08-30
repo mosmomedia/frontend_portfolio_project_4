@@ -3,11 +3,9 @@ import tw, { GlobalStyles as BaseStyles } from 'twin.macro';
 import { createGlobalStyle } from 'styled-components';
 
 const CustomStyles = createGlobalStyle`
-
-
-
 :root {
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Avenir, Noto Sans', sans-serif;
+	--nav-height : 180px
 }
 
 
@@ -30,7 +28,9 @@ h4{
 
 p{
 	/* ${tw`text-base`} */
-}`;
+}
+
+`;
 
 const GlobalStyles = () => (
 	<>
