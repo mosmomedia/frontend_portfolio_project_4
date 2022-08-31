@@ -11,12 +11,12 @@ export const MainStyles = styled.div`
 `;
 
 export const UpperSectionStyles = styled.div`
-	${tw`flex`}
+	${tw`lg:flex lg:justify-between`}
 `;
 
 export const LeftStyles = styled.div`
-	flex-basis: content;
-	${tw`flex flex-col justify-between space-y-28`}
+	/* flex-basis: content; */
+	${tw`flex flex-col justify-between space-y-28 pb-6`}
 `;
 
 export const TitleStyles = styled.div`
@@ -30,7 +30,7 @@ export const TitleStyles = styled.div`
 export const TextStyles = styled.div`
 	font-family: 'Noto Sans KR';
 
-	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8  font-medium tracking-wider leading-7 md:text-[15px] mb-4`}
+	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-7 md:text-[15px]  w-[99%]`}
 
 	::before {
 		content: '';
@@ -45,10 +45,24 @@ export const TextStyles = styled.div`
 `;
 
 export const RightStyles = styled.div`
-	${tw`flex-auto pl-32`}
+	${tw`hidden lg:block lg:flex-auto lg:pl-32`}
+`;
 
-	.landing_img {
-		${tw`bg-black  h-full`}
+export const ImageWrapper = styled.div`
+	${tw`relative h-full`}
+	img {
+		${tw` bottom-0 -right-8`}
+	}
+	.img_text {
+		${tw`absolute z-20`}
+	}
+
+	.img_pic {
+		${tw`absolute z-10`}
+	}
+
+	.img_bg {
+		${tw`absolute`}
 	}
 `;
 
