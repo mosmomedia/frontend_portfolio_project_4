@@ -4,7 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const CustomStyles = createGlobalStyle`
 :root {
-	font-family: 'Avenir, Noto Sans', sans-serif;
+	font-family: 'Avenir', 'Noto Sans', sans-serif;
 	--nav-height : 180px
 }
 
