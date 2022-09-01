@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
 
-export const ContainerStyles = styled.div`
+export const MainStyles = styled.div`
 	${tw`container m-auto`}
 `;

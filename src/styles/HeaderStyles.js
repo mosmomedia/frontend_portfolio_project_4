@@ -1,17 +1,26 @@
 import tw, { styled } from 'twin.macro';
 
-export const Styles = styled.header``;
-
 export const HeaderStyles = styled.header`
-	${tw`fixed inset-x-0 top-0  h-[var(--nav-height)] flex tracking-wider font-black`}
+	${tw`z-50 fixed inset-x-0 top-0  h-[var(--nav-height)] flex tracking-wider font-black duration-100`}
 
 	h2 {
 		${tw`font-black pt-6 text-lg`}
 	}
+
+	${({ showNav }) => (showNav ? tw`opacity-100` : tw`opacity-0`)}
+
+	${({ isScrollTopZero }) =>
+		isScrollTopZero
+			? tw`h-[var(--nav-height)]`
+			: tw`h-[unset] py-5 bg-primary bg-opacity-90 backdrop-blur-md`}
 `;
 
 export const LogoStyles = styled.img`
 	${tw`h-7`}
+`;
+
+export const NameStyles = styled.h2`
+	${({ isScrollTopZero }) => (isScrollTopZero ? tw`block` : tw`hidden`)}
 `;
 
 export const NavStyles = styled.nav`

@@ -10,20 +10,21 @@ const CustomStyles = createGlobalStyle`
 
 
 body {
-	${tw`bg-body text-main_text  text-sm md:text-base`}
+	${tw`bg-body text-main_text  text-sm md:text-base `}
+	word-break: keep-all
 }
 
 h1{
-	/* ${tw`text-3xl font-medium text-[#2f2f2f]`} */
+	${tw`text-5xl font-black text-[#2f2f2f]`}
 }
 
 h2{
-	/* ${tw`text-xl font-medium text-[#2f2f2f]`} */
+	${tw`text-[28px] font-black text-primary`}
 }
 
 h3,
 h4{
-	/* ${tw`text-lg font-medium`} */
+	${tw`text-[22px] font-medium text-primary`}
 }
 
 p{

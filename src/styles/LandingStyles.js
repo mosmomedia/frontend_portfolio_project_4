@@ -2,16 +2,17 @@ import tw, { styled } from 'twin.macro';
 
 export const Styles = styled.div``;
 
-export const WrapperStyles = styled.div`
-	${tw`lg:h-screen pt-[var(--nav-height)]`}
+export const WrapperStyles = styled.section`
+	${tw`lg:h-screen pt-[var(--nav-height) ]`}
+	${tw`flex flex-col justify-between  pb-10`}
 `;
 
 export const MainStyles = styled.div`
-	${tw`container m-auto h-full flex flex-col justify-between  pt-20 pb-10 `}
+	/* ${tw`h-full flex flex-col justify-between  pt-20 pb-10 `} */
 `;
 
 export const UpperSectionStyles = styled.div`
-	${tw`lg:flex lg:justify-between`}
+	${tw`lg:flex lg:justify-between pt-20`}
 `;
 
 export const LeftStyles = styled.div`
@@ -22,7 +23,7 @@ export const LeftStyles = styled.div`
 export const TitleStyles = styled.div`
 	${tw`font-black text-5xl tracking-wide space-y-4`}
 
-	h2:last-child {
+	h1:last-child {
 		${tw`text-[#606065]`}
 	}
 `;
