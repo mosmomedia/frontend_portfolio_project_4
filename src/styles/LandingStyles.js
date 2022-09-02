@@ -3,12 +3,8 @@ import tw, { styled } from 'twin.macro';
 export const Styles = styled.div``;
 
 export const WrapperStyles = styled.section`
-	${tw`lg:h-screen pt-[var(--nav-height) ]`}
+	${tw`lg:h-screen pt-[var(--nav-height)]`}
 	${tw`flex flex-col justify-between  pb-10`}
-`;
-
-export const MainStyles = styled.div`
-	/* ${tw`h-full flex flex-col justify-between  pt-20 pb-10 `} */
 `;
 
 export const UpperSectionStyles = styled.div`
@@ -18,6 +14,14 @@ export const UpperSectionStyles = styled.div`
 export const LeftStyles = styled.div`
 	/* flex-basis: content; */
 	${tw`flex flex-col justify-between space-y-28 pb-6`}
+
+	#test {
+		${tw`hidden`}
+		font-family: 'Circular Std', 'Avenir';
+		h1 {
+			${tw`font-black`}
+		}
+	}
 `;
 
 export const TitleStyles = styled.div`
@@ -29,8 +33,6 @@ export const TitleStyles = styled.div`
 `;
 
 export const TextStyles = styled.div`
-	font-family: 'Noto Sans KR';
-
 	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-7 md:text-[15px]  w-[99%]`}
 
 	::before {

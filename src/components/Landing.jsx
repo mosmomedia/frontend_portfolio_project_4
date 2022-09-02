@@ -27,6 +27,10 @@ function Landing() {
 						<h1>I’m an aspiring FE developer</h1>
 						<h1>with my background in design.</h1>
 					</TitleStyles>
+					<TitleStyles id="test">
+						<h1>I’m an aspiring FE developer</h1>
+						<h1>with my background in design.</h1>
+					</TitleStyles>
 					{/* main paragraph */}
 					<TextStyles>
 						<p>환영합니다. 예비 신입 프론트엔드 개발자, 동주입니다.</p>

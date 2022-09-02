@@ -5,7 +5,7 @@ module.exports = {
 			colors: {
 				body: '#BEF9EE',
 				main_text: '#1A1919',
-				alt1: '',
+				key_col1: '#BEF9EE',
 			},
 
 			backgroundColor: {

@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw` py-[var(--nav-height)] space-y-32`}
+	${tw`py-[var(--nav-height)] space-y-32`}
 `;
 export const HeaderStyles = styled.div`
 	${tw`flex justify-between items-end tracking-wider`}
@@ -24,8 +24,6 @@ export const SubStyles = styled.div`
 		${tw`pb-10`}
 	}
 	p {
-		font-family: 'Noto Sans KR';
-
 		${tw`text-[17px] tracking-wider leading-8 text-black font-medium`}
 	}
 
@@ -40,7 +38,6 @@ export const SubStyles = styled.div`
 
 export const ExpStyles = styled.div`
 	* {
-		font-family: 'Noto Sans KR';
 	}
 	${tw`grid grid-cols-2 gap-20 mt-10`}
 `;
@@ -54,7 +51,6 @@ export const SubExpStyles = styled.div`
 
 	.exp_header_title {
 		* {
-			font-family: 'Avenir';
 			${tw` text-black font-medium`}
 		}
 
