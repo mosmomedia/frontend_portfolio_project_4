@@ -41,7 +41,7 @@ export const SubStyles = styled.div`
 		${tw`pb-10`}
 	}
 	p {
-		${tw`text-[17px] tracking-wider leading-8 text-black font-medium`}
+		${tw`text-[17px] tracking-wider leading-8 text-primary`}
 	}
 
 	.bigger_title {
@@ -49,18 +49,19 @@ export const SubStyles = styled.div`
 	}
 
 	.skill_set {
-		${tw`font-black text-2xl text-gray-700 tracking-wide`}
+		${tw`font-bold text-2xl text-gray-700 tracking-wide`}
 	}
 `;
 
 export const ExpStyles = styled.div`
 	* {
 	}
-	${tw`grid grid-cols-2 gap-16 mt-10`}
+
+	${tw`grid grid-cols-2 gap-16 mt-5`}
 `;
 
 export const SubExpStyles = styled.div`
-	${tw`bg-white border border-[#2f2f2f] rounded-[3px] py-10 px-8 space-y-4 font-medium`}
+	${tw`bg-white border border-[#2f2f2f] rounded-[3px] py-10 px-8 space-y-4`}
 
 	.exp_header {
 		${tw`flex justify-between`}
@@ -78,7 +79,7 @@ export const SubExpStyles = styled.div`
 	}
 
 	p {
-		${tw`text-base py-6 tracking-wide`}
+		${tw`text-base py-6 tracking-wide font-medium`}
 	}
 
 	ul {
@@ -86,7 +87,7 @@ export const SubExpStyles = styled.div`
 	}
 
 	li {
-		${tw`list-disc`}
+		${tw`list-disc text-primary`}
 	}
 
 	svg {

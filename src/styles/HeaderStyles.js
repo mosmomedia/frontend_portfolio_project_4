@@ -1,10 +1,10 @@
 import tw, { styled } from 'twin.macro';
 
 export const HeaderStyles = styled.header`
-	${tw`z-50 fixed inset-x-0 top-0  h-[var(--nav-height)] flex tracking-wider font-black`}
+	${tw`z-50 fixed inset-x-0 top-0  h-[var(--nav-height)] flex tracking-wider font-bold`}
 
 	h2 {
-		${tw`font-black pt-6 text-lg`}
+		${tw`font-bold pt-6 text-xl`}
 	}
 
 	${({ showNav }) => (showNav ? tw`flex` : tw`hidden`)}
@@ -28,5 +28,5 @@ export const NavStyles = styled.nav`
 `;
 
 export const MenuStyles = styled.ul`
-	${tw`flex md:space-x-12  md:text-[17px] md:tracking-wider`}
+	${tw`flex md:space-x-12  md:text-lg md:tracking-wider`}
 `;

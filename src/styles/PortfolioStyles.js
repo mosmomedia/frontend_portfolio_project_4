@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 export const Styles = styled.section``;
 
 export const WrapperStyles = styled.section`
-	${tw`space-y-32 pb-40`}
+	${tw`space-y-32 py-40`}
 `;
 
 export const SectionStyles = styled.div`

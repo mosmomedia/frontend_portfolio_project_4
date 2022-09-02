@@ -14,18 +14,10 @@ export const UpperSectionStyles = styled.div`
 export const LeftStyles = styled.div`
 	/* flex-basis: content; */
 	${tw`flex flex-col justify-between space-y-28 pb-6`}
-
-	#test {
-		${tw`hidden`}
-		font-family: 'Circular Std', 'Avenir';
-		h1 {
-			${tw`font-black`}
-		}
-	}
 `;
 
 export const TitleStyles = styled.div`
-	${tw`font-black text-5xl tracking-wide space-y-4`}
+	${tw`font-bold text-5xl tracking-wide space-y-4`}
 
 	h1:last-child {
 		${tw`text-[#606065]`}
