@@ -3,8 +3,7 @@ import tw, { styled } from 'twin.macro';
 export const Styles = styled.section``;
 
 export const WrapperStyles = styled.section`
-	/* ${tw`py-[var(--nav-height)] space-y-32`} */
-	${tw`space-y-24 pb-40`}
+	${tw`space-y-32 pb-40`}
 `;
 
 export const SectionStyles = styled.div`
@@ -12,7 +11,7 @@ export const SectionStyles = styled.div`
 		${tw`tracking-wider`}
 	}
 
-	${tw`px-14 py-12 bg-seconday  rounded-2xl space-y-16`}
+	${tw`px-14 py-12 bg-seconday  rounded-2xl space-y-20`}
 `;
 
 export const HeaderStyles = styled.div`
@@ -76,9 +75,27 @@ export const RightStyles = styled.div`
 	}
 
 	#pf_links {
-		${tw`space-x-4 pt-8`}
+		${tw`space-x-4 pt-8 flex`}
 	}
+
 	.pf_link {
-		${tw`text-xs border border-key_col1  rounded-md border-opacity-40 bg-[#333333] px-4 py-1`}
+		${tw`flex items-center text-sm space-x-4`}
+		${tw`border border-key_col1  rounded-md border-opacity-40 bg-[#333333] px-4 py-2 pb-1.5`}
+
+		svg path {
+			fill: var(--key-color);
+		}
+	}
+
+	#pf_project_link svg {
+		${tw`text-xl mb-0.5`}
+	}
+
+	#pf_demo_link svg {
+		${tw`text-[16px] mb-0.5`}
+	}
+
+	#pf_github_link svg {
+		${tw`text-xl mb-0.5`}
 	}
 `;

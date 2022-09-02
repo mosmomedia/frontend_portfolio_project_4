@@ -7,6 +7,10 @@ import {
 	RightStyles,
 } from '../styles/PortfolioStyles';
 
+import { GrGithub } from 'react-icons/gr';
+import { GoLinkExternal } from 'react-icons/go';
+import { BsGlobe } from 'react-icons/bs';
+
 function Portfolio() {
 	return (
 		<WrapperStyles id="portfolio">
@@ -73,14 +77,35 @@ function Portfolio() {
 						</div>
 						{/* links */}
 						<div id="pf_links">
-							<a className="pf_link" href="/" target="_blank" rel="noreferrer">
-								View Project
+							<a
+								id="pf_project_link"
+								className="pf_link"
+								href="/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<GoLinkExternal />
+								<div>View Project</div>
 							</a>
-							<a className="pf_link" href="/" target="_blank" rel="noreferrer">
-								View Demo
+							<a
+								id="pf_demo_link"
+								className="pf_link"
+								href="/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<BsGlobe />
+								<span>View Demo</span>
 							</a>
-							<a className="pf_link" href="/" target="_blank" rel="noreferrer">
-								View Source
+							<a
+								id="pf_github_link"
+								className="pf_link"
+								href="/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<GrGithub />
+								<span>View Source</span>
 							</a>
 						</div>
 					</RightStyles>

@@ -7,6 +7,9 @@ import {
 	SectionStyles,
 } from '../styles/AboutStyles';
 
+import { GrDocumentUser, GrGithub } from 'react-icons/gr';
+import { GoLinkExternal } from 'react-icons/go';
+
 function About() {
 	return (
 		<WrapperStyles id="about">
@@ -14,10 +17,27 @@ function About() {
 			<HeaderStyles>
 				<h1>About Me.</h1>
 				{/* links */}
-				<ul>
-					<li>Résumé</li>
-					<li>Github</li>
-				</ul>
+				<div id="dj_links">
+					<a
+						id="dj_resume"
+						href="http://"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<GrDocumentUser />
+						<span>Résumé</span>
+					</a>
+
+					<a
+						id="dj_github"
+						href="http://"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<GrGithub />
+						<span>Github</span>
+					</a>
+				</div>
 			</HeaderStyles>
 
 			{/* section */}
@@ -76,7 +96,13 @@ function About() {
 									<h3>온라인 실시간 강의 반응형 웹</h3>
 									<span>2021.</span>
 								</div>
-								<a href="">Link</a>
+								<a
+									href="https://storytunes.co.kr"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<GoLinkExternal />
+								</a>
 							</div>
 							{/* info */}
 							<div className="exp_info">
@@ -115,7 +141,13 @@ function About() {
 									<h3>소규모 이커머스 반응형 웹</h3>
 									<span>2020.</span>
 								</div>
-								<a href="">Link</a>
+								<a
+									href="https://silvertrade.co.kr"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<GoLinkExternal />
+								</a>
 							</div>
 							{/* info */}
 							<div className="exp_info">

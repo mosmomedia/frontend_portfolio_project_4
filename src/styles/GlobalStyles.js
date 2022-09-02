@@ -68,9 +68,9 @@ const CustomStyles = createGlobalStyle`
 } 
 
 :root {
-	/* font-family: 'biotif','Proxima Nova', 'Nunito Sans','Circular Std',  'Noto Sans', sans-serif; */
 	font-family: 'NotoSansKr','biotif','Proxima Nova', 'Nunito Sans','Circular Std',  'Noto Sans', sans-serif;
-	--nav-height : 180px
+	--nav-height : 180px;
+	--key-color : #BEF9EE;
 }
 
 

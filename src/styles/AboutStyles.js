@@ -4,13 +4,30 @@ export const WrapperStyles = styled.section`
 	${tw`py-[var(--nav-height)] space-y-32`}
 `;
 export const HeaderStyles = styled.div`
-	${tw`flex justify-between items-end tracking-wider`}
+	${tw`flex justify-between items-center tracking-wider`}
 
-	ul {
-		${tw`flex space-x-6`}
+	#dj_links {
+		${tw`flex space-x-5`}
 
-		li {
-			${tw`bg-seconday text-white rounded-md px-5 py-1`}
+		a {
+			${tw`flex items-start bg-seconday text-white text-[14px] tracking-widest rounded-md px-4 pt-2 pb-1 space-x-3 font-light`}
+		}
+
+		#dj_resume svg {
+			${tw`text-lg`}
+			${tw`mt-[1px]`}
+		}
+
+		#dj_resume path {
+			stroke: var(--key-color);
+		}
+
+		#dj_github svg {
+			${tw`text-[21px]`}
+		}
+
+		#dj_github path {
+			fill: var(--key-color);
 		}
 	}
 `;
@@ -57,7 +74,7 @@ export const SubExpStyles = styled.div`
 		${tw`flex space-x-8`}
 	}
 	.exp_info {
-		${tw`flex space-x-4 text-gray-700 text-[15px]`}
+		${tw`flex space-x-4 text-gray-700`}
 	}
 
 	p {
@@ -70,5 +87,9 @@ export const SubExpStyles = styled.div`
 
 	li {
 		${tw`list-disc`}
+	}
+
+	svg {
+		${tw`text-xl `}
 	}
 `;
