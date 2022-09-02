@@ -16,7 +16,7 @@ function Portfolio() {
 				<HeaderStyles>
 					<div id="pf_title">
 						<h2>Storytunes</h2>
-						<div id="pf_role">UX &#47; UI Development 2022</div>
+						<div id="pf_role">UX &#47; UI &#43; Web Development 2022</div>
 					</div>
 					<ul id="pf_tech">
 						<li>React&#46; js</li>
@@ -30,8 +30,11 @@ function Portfolio() {
 				</HeaderStyles>
 				{/* main */}
 				<ContentStyles>
-					{/* left item */}
 					<LeftStyles>
+						<div></div>
+					</LeftStyles>
+					{/* left item */}
+					<RightStyles>
 						{/* desc */}
 						<div id="pf_desc">
 							<p>
@@ -80,11 +83,8 @@ function Portfolio() {
 								View Source
 							</a>
 						</div>
-					</LeftStyles>
-					{/* right item */}
-					<RightStyles>
-						<div></div>
 					</RightStyles>
+					{/* right item */}
 				</ContentStyles>
 			</SectionStyles>
 		</WrapperStyles>

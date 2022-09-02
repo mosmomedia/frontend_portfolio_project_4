@@ -39,11 +39,11 @@ export const SubStyles = styled.div`
 export const ExpStyles = styled.div`
 	* {
 	}
-	${tw`grid grid-cols-2 gap-20 mt-10`}
+	${tw`grid grid-cols-2 gap-16 mt-10`}
 `;
 
 export const SubExpStyles = styled.div`
-	${tw`bg-white border border-[#2f2f2f] rounded-[3px] py-10 px-8 space-y-2 font-medium`}
+	${tw`bg-white border border-[#2f2f2f] rounded-[3px] py-10 px-8 space-y-4 font-medium`}
 
 	.exp_header {
 		${tw`flex justify-between`}
@@ -65,7 +65,7 @@ export const SubExpStyles = styled.div`
 	}
 
 	ul {
-		${tw`pl-4 space-y-1`}
+		${tw`pl-4 space-y-2`}
 	}
 
 	li {
