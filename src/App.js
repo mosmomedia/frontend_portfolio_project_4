@@ -8,7 +8,9 @@ function App() {
 	return (
 		<Router>
 			<Header />
-			<Main />
+			<Routes>
+				<Route path="/*" element={<Main />} />
+			</Routes>
 			<Footer />
 		</Router>
 	);

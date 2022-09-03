@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import {
 	HeaderStyles,
@@ -66,9 +67,15 @@ function Header() {
 				{/* menu */}
 				<MenuStyles>
 					{/* about */}
-					<li>About</li>
-					<li>Portfolio</li>
-					<li>Contact</li>
+					<HashLink smooth to="/#about">
+						About
+					</HashLink>
+					<HashLink smooth to="/#portfolio">
+						Portfolio
+					</HashLink>
+					<HashLink smooth to="/#contact">
+						Contact
+					</HashLink>
 				</MenuStyles>
 			</NavStyles>
 		</HeaderStyles>

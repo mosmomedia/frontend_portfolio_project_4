@@ -7,12 +7,12 @@ function Footer() {
 		<MainStyles>
 			{/* line */}
 			<WrapperStyles>
-				<div id="line"></div>
+				<div id="footer_line"></div>
 				{/* copyright && link */}
-				<div id="links_copyright">
-					<div id="dj_links">
+				<div id="footer_links_copyright">
+					<div id="footer_dj_links">
 						<a
-							id="dj_resume"
+							id="footer_dj_resume"
 							href="http://"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -22,7 +22,7 @@ function Footer() {
 						</a>
 
 						<a
-							id="dj_github"
+							id="footer_dj_github"
 							href="http://"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -31,7 +31,7 @@ function Footer() {
 							<span>Github</span>
 						</a>
 					</div>
-					<div id="dj_copyright">&#169; 2022 Dongjoo Kim</div>
+					<div id="footer_dj_copyright">&#169; 2022 Dongjoo Kim</div>
 				</div>
 			</WrapperStyles>
 		</MainStyles>
