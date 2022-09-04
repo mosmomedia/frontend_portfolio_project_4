@@ -11,7 +11,9 @@ export const HeaderStyles = styled.div`
 		${tw`flex space-x-5`}
 
 		a {
-			${tw`flex items-start bg-seconday text-white text-[14px] tracking-widest rounded-md px-4 pt-2 pb-1 space-x-3 font-light`}
+			${tw`flex items-start bg-seconday text-white text-[14px] tracking-widest rounded-md px-4 pt-2 pb-1 space-x-3 font-light duration-300`}
+
+			${tw`hover:text-key_col1`}
 		}
 
 		#dj_resume svg {

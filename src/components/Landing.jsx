@@ -4,7 +4,7 @@ import 'styled-components/macro';
 import {
 	WrapperStyles,
 	UpperSectionStyles,
-	BottomSectionStyles,
+	BottomArrowStyles,
 	LeftStyles,
 	RightStyles,
 	TitleStyles,
@@ -54,14 +54,7 @@ function Landing() {
 					</ImageWrapper>
 				</RightStyles>
 			</UpperSectionStyles>
-			<BottomSectionStyles>
-				<span className="line">
-					<span className="arrow">
-						<span></span>
-						<span></span>
-					</span>
-				</span>
-			</BottomSectionStyles>
+			<BottomArrowStyles />
 		</WrapperStyles>
 	);
 }

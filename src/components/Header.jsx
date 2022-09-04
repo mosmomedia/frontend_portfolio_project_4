@@ -1,10 +1,8 @@
-import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 import {
 	HeaderStyles,
 	LogoStyles,
-	NameStyles,
 	NavStyles,
 	MenuStyles,
 } from '../styles/HeaderStyles';
@@ -12,8 +10,6 @@ import {
 import Logo from '../assets/icons/logo100.png';
 
 function Header({ showNav }) {
-	const [isScrollTopZero, setIsScrollTopZero] = useState(true);
-
 	return (
 		<HeaderStyles showNav={showNav}>
 			{/* nav */}
@@ -24,7 +20,6 @@ function Header({ showNav }) {
 						<title>Logo</title>
 						<LogoStyles src={Logo} alt="logo" />
 					</HashLink>
-					{/* <NameStyles isScrollTopZero={isScrollTopZero}>Dongjoo Kim</NameStyles> */}
 				</div>
 				{/* menu */}
 				<MenuStyles>

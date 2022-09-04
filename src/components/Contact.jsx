@@ -5,6 +5,8 @@ import {
 	MainStyles,
 } from '../styles/ContactStyles';
 
+import Footer from './Footer';
+
 function Contact() {
 	return (
 		// wapper
@@ -24,6 +26,7 @@ function Contact() {
 					<RiSendPlaneFill />
 				</div>
 			</MainStyles>
+			<Footer />
 		</WrapperStyles>
 	);
 }

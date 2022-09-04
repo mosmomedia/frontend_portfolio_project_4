@@ -3,6 +3,23 @@ import tw, { styled } from 'twin.macro';
 export const WrapperStyles = styled.section`
 	${tw`lg:h-screen pt-[var(--nav-height)]`}
 	${tw`flex flex-col justify-between  pb-10`}
+
+	#bottomS {
+		${tw`h-full w-full`}
+		.line {
+			${tw`relative h-36 w-[1px] bg-[#2f2f2f]`}
+
+			::before {
+				content: '';
+				${tw`absolute bottom-[1px] right-0 w-1 h-[1px] bg-[#2f2f2f] rotate-45`}
+			}
+
+			::after {
+				content: '';
+				${tw`absolute bottom-[1px] left-0 w-1 h-[1px] bg-[#2f2f2f] -rotate-45`}
+			}
+		}
+	}
 `;
 
 export const UpperSectionStyles = styled.div`
@@ -59,9 +76,8 @@ export const ImageWrapper = styled.div`
 	}
 `;
 
-export const BottomSectionStyles = styled.div`
+export const BottomArrowStyles = styled.div`
 	${tw`relative h-36 w-[1px] bg-[#2f2f2f]`}
-
 	::before {
 		content: '';
 		${tw`absolute bottom-[1px] right-0 w-1 h-[1px] bg-[#2f2f2f] rotate-45`}

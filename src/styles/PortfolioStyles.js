@@ -78,7 +78,7 @@ export const RightStyles = styled.div`
 
 	.pf_link {
 		${tw`flex items-center text-sm space-x-4`}
-		${tw`border border-key_col1  rounded-md border-opacity-40 bg-[#333333] px-4 py-2 pb-1.5`}
+		${tw`border border-key_col1  rounded-md border-opacity-40 bg-[#333333] px-4 py-2 pb-1.5 hover:bg-black duration-300`}
 
 		svg path {
 			fill: var(--key-color);

@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import { WrapperStyles } from '../styles/FooterStyles';
 import { GrDocumentUser, GrGithub } from 'react-icons/gr';
 
-function Footer({ showFooter }) {
+function Footer() {
+	const [showFooter, setShowFooter] = useState(false);
+	console.log(window.screenY);
+
 	return (
 		<WrapperStyles showFooter={showFooter}>
 			<div id="footer_container">

@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Header from './components/Header';
-import Main from './components/Main';
 import Landing from './components/Landing';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -17,7 +16,6 @@ function App() {
 	const [mainRef, setMainRef] = useState();
 
 	const [showNav, setShowNav] = useState(false);
-	const [showFooter, setShowFooter] = useState(false);
 
 	useEffect(() => {
 		const targetMainRef = targetMain.current;
@@ -41,8 +39,6 @@ function App() {
 			const portfolioOffsetTop = mainRef.childNodes[2].offsetTop;
 			const contactOffsetTop = mainRef.childNodes[3].offsetTop;
 
-			console.log();
-
 			// detecting scroll event
 			const handleScroll = ({ target: { scrollTop } }) => {
 				const floorScrollTop = Math.floor(scrollTop);
@@ -62,13 +58,6 @@ function App() {
 					// when scrolling down
 					else if (y < floorScrollTop) {
 						setShowNav(false);
-					}
-
-					// show footer when scrolling to bottom
-					if (mainRef.scrollHeight - (scrollTop + pageHeight) <= 100) {
-						setShowFooter(true);
-					} else {
-						setShowFooter(false);
 					}
 				} else {
 					if (y < floorScrollTop) {
@@ -96,7 +85,7 @@ function App() {
 				<Portfolio />
 				<Contact />
 			</MainStyles>
-			<Footer showFooter={showFooter} />
+			{/* <Footer /> */}
 		</Router>
 	);
 }

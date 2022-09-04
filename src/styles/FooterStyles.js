@@ -1,12 +1,8 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.footer`
-	${tw`fixed bottom-0 invisible`}
-	${tw`w-full`}
-	${({ showFooter }) => (showFooter ? tw`visible` : tw`invisible`)}
-
 	#footer_container {
-		${tw`container m-auto space-y-12 py-24 `}
+		${tw`space-y-12 py-24 `}
 	}
 
 	#footer_line {
@@ -26,6 +22,8 @@ export const WrapperStyles = styled.footer`
 
 		a {
 			${tw`flex items-start bg-seconday text-white text-[14px] tracking-widest rounded-md px-4 pt-2 pb-1 space-x-3 font-light`}
+
+			${tw`hover:text-key_col1`}
 		}
 
 		#footer_dj_resume svg {
