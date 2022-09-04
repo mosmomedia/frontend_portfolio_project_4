@@ -53,7 +53,7 @@ export const SubStyles = styled.div`
 
 export const ExpStyles = styled.div`
 	${tw`mt-5 `}
-	${tw`grid grid-rows-2 gap-10 xl:grid-cols-2 xl:gap-16`}
+	${tw`grid grid-rows-2 gap-10 xl:grid-rows-1  xl:grid-cols-2 xl:gap-16`}
 `;
 
 export const SubExpStyles = styled.div`

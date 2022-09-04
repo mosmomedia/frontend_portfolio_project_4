@@ -1,30 +1,33 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw`lg:h-screen pt-[var(--nav-height)]`}
-	${tw`flex flex-col justify-between  pb-10`}
+	${tw`pt-[var(--nav-height)] lg:pt-0 lg:h-screen`}
+	${tw`flex flex-col justify-between pb-10`}
 `;
 
-export const UpperSectionStyles = styled.div`
-	${tw`xs:pt-32 sm:pt-44 lg:pt-40 lg:flex lg:justify-between`}
-
+export const TopSectionStyles = styled.div`
+	${tw`h-[var(--nav-height)]`}
 	${tw`relative`}
-	
+
 	#displayName {
-		${tw`absolute  top-0 left-0 text-lg  xl:text-xl font-bold text-primary tracking-wide`}
+		${tw`pl-1 sm:pl-0 sm:block absolute top-4  sm:top-0 lg:top-[unset]  lg:-bottom-10 text-xl  sm:text-lg  xl:text-xl font-bold text-primary tracking-wide`}
 	}
+`;
+
+export const MiddleSectionStyles = styled.div`
+	${tw`pt-8 lg:flex lg:justify-between `}
 `;
 
 export const LeftStyles = styled.div`
 	${tw`flex flex-col justify-between space-y-28 pb-6`}
-	${tw`lg:w-64 lg:flex-auto`}
+	${tw`lg:w-40 xl:w-64  lg:flex-auto`}
 `;
 
 export const TitleStyles = styled.div`
 	${tw`font-bold tracking-wide space-y-6`}
 
 	h1 {
-		${tw`pl-2 md:pl-0 xs:text-3xl  sm:text-4xl   md:text-[44px] lg:text-4xl  xl:text-[42px]   2xl:text-5xl`}
+		${tw`pl-1 md:pl-0 xs:text-4xl  sm:text-4xl   md:text-[44px] lg:text-[34px]  xl:text-[42px]   2xl:text-5xl`}
 	}
 
 	h1:last-child {
@@ -33,7 +36,11 @@ export const TitleStyles = styled.div`
 `;
 
 export const TextStyles = styled.div`
-	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-7 text-sm  md:text-[15px] lg:text-base  w-[99%]`}
+	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-7 lg:w-[88%] 2xl:w-[93%]`}
+
+	p {
+		${tw`text-sm md:text-[15px] lg:text-sm  xl:text-base`}
+	}
 
 	::before {
 		content: '';
@@ -48,17 +55,18 @@ export const TextStyles = styled.div`
 `;
 
 export const RightStyles = styled.div`
-	${tw`hidden lg:block lg:flex-auto lg:pl-32`}
+	${tw`hidden lg:block lg:flex-auto lg:pt-20  2xl:pt-8  2xl:pl-36`}
 `;
 
 export const ImageWrapper = styled.div`
 	${tw`relative h-full`}
+
 	img {
-		${tw` bottom-0 -right-2`}
+		${tw`-right-2`}
 	}
 
 	.img_fire {
-		${tw`absolute z-30 w-14 -top-10 right-1/2 translate-x-1/2`}
+		${tw`absolute z-30 lg:w-20  2xl:w-16 -top-24 2xl:-top-20 right-1/2 translate-x-1/2`}
 	}
 
 	.img_text {

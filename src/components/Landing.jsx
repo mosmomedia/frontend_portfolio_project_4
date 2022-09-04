@@ -3,7 +3,8 @@ import 'styled-components/macro';
 
 import {
 	WrapperStyles,
-	UpperSectionStyles,
+	TopSectionStyles,
+	MiddleSectionStyles,
 	BottomArrowStyles,
 	LeftStyles,
 	RightStyles,
@@ -23,7 +24,11 @@ import djBg from '../assets/imgs/dj-bg.png';
 function Landing() {
 	return (
 		<WrapperStyles id="landing">
-			<UpperSectionStyles>
+			<TopSectionStyles>
+				<div id="displayName">Dongjoo Kim</div>
+			</TopSectionStyles>
+
+			<MiddleSectionStyles>
 				{/* left */}
 				<LeftStyles>
 					{/* main title */}
@@ -58,8 +63,7 @@ function Landing() {
 						<img className="img_bg" src={djBg} alt="" />
 					</ImageWrapper>
 				</RightStyles>
-				<div id="displayName">Dongjoo Kim</div>
-			</UpperSectionStyles>
+			</MiddleSectionStyles>
 			<BottomArrowStyles />
 		</WrapperStyles>
 	);
