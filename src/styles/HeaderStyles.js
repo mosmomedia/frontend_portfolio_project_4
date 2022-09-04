@@ -1,18 +1,19 @@
 import tw, { styled } from 'twin.macro';
 
 export const HeaderStyles = styled.header`
-	${tw`z-50 fixed inset-x-0 top-0  h-[var(--nav-height)] flex tracking-wider font-bold`}
+	/* ${tw`z-50 fixed inset-x-0 top-0 pt-10 pb-5 flex tracking-wider font-bold`} */
+	${tw`z-50 fixed inset-x-0 top-0  h-[var(--nav-height)] flex tracking-wider font-bold duration-500`}
+
+	${tw`bg-primary bg-opacity-90 backdrop-blur-[6px]`}
 
 	h2 {
 		${tw`font-bold pt-6 text-xl`}
 	}
 
-	${({ showNav }) => (showNav ? tw`flex` : tw`hidden`)}
+	${({ showNav }) => (showNav ? tw`opacity-100` : tw`opacity-0`)} /*  */
 
 	${({ isScrollTopZero }) =>
-		isScrollTopZero
-			? tw`h-[var(--nav-height)]`
-			: tw`h-[unset] py-5 bg-primary bg-opacity-90 backdrop-blur-[6px]`}
+		isScrollTopZero ? tw`h-[var(--nav-height)]` : tw`h-[100px] `}
 `;
 
 export const LogoStyles = styled.img`

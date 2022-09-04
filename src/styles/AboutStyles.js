@@ -1,8 +1,9 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw`py-[var(--nav-height)] space-y-32`}
+	${tw`pt-40 pb-72 space-y-32`}
 `;
+
 export const HeaderStyles = styled.div`
 	${tw`flex justify-between items-center tracking-wider`}
 

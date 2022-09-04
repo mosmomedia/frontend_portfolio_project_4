@@ -1,7 +1,13 @@
 import tw, { styled } from 'twin.macro';
 
-export const WrapperStyles = styled.div`
-	${tw`space-y-12 py-28`}
+export const WrapperStyles = styled.footer`
+	${tw`fixed bottom-0 invisible`}
+	${tw`w-full`}
+	${({ showFooter }) => (showFooter ? tw`visible` : tw`invisible`)}
+
+	#footer_container {
+		${tw`container m-auto space-y-12 py-24 `}
+	}
 
 	#footer_line {
 		${tw`h-[3px]  bg-main_text`}

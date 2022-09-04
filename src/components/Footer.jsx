@@ -1,12 +1,10 @@
-import { MainStyles } from '../styles';
 import { WrapperStyles } from '../styles/FooterStyles';
 import { GrDocumentUser, GrGithub } from 'react-icons/gr';
 
-function Footer() {
+function Footer({ showFooter }) {
 	return (
-		<MainStyles>
-			{/* line */}
-			<WrapperStyles>
+		<WrapperStyles showFooter={showFooter}>
+			<div id="footer_container">
 				<div id="footer_line"></div>
 				{/* copyright && link */}
 				<div id="footer_links_copyright">
@@ -33,8 +31,8 @@ function Footer() {
 					</div>
 					<div id="footer_dj_copyright">&#169; 2022 Dongjoo Kim</div>
 				</div>
-			</WrapperStyles>
-		</MainStyles>
+			</div>
+		</WrapperStyles>
 	);
 }
 

@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
-export const WrapperStyles = styled.div`
-	${tw`py-32 space-y-24`}
+export const WrapperStyles = styled.section`
+	${tw`pt-52 space-y-28 h-screen`}
 `;
 
 export const HeaderStyles = styled.div`

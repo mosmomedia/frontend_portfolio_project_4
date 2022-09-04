@@ -1,5 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 import {
@@ -12,57 +11,20 @@ import {
 
 import Logo from '../assets/icons/logo100.png';
 
-function Header() {
-	const [y, setY] = useState(window.scrollY);
-
-	const [showNav, setShowNav] = useState(false);
+function Header({ showNav }) {
 	const [isScrollTopZero, setIsScrollTopZero] = useState(true);
 
-	const handleNavigation = useCallback(
-		(e) => {
-			const { scrollY } = window;
-			if (scrollY === 0) {
-				setIsScrollTopZero(true);
-			} else {
-				setIsScrollTopZero(false);
-			}
-
-			if (y > scrollY) {
-				setShowNav(true);
-			} else if (y < scrollY) {
-				setShowNav(false);
-			}
-			setY(scrollY);
-		},
-		[y]
-	);
-
-	useEffect(() => {
-		console.log(window.scrollY);
-		if (window.scrollY === 0) {
-			setShowNav(true);
-		}
-	}, []);
-
-	useEffect(() => {
-		window.addEventListener('scroll', handleNavigation);
-
-		return () => {
-			window.removeEventListener('scroll', handleNavigation);
-		};
-	}, [handleNavigation]);
-
 	return (
-		<HeaderStyles showNav={showNav} isScrollTopZero={isScrollTopZero}>
+		<HeaderStyles showNav={showNav}>
 			{/* nav */}
 			<NavStyles>
 				{/* logo */}
 				<div>
-					<Link to="/">
+					<HashLink smooth to="#landing">
 						<title>Logo</title>
 						<LogoStyles src={Logo} alt="logo" />
-					</Link>
-					<NameStyles isScrollTopZero={isScrollTopZero}>Dongjoo Kim</NameStyles>
+					</HashLink>
+					{/* <NameStyles isScrollTopZero={isScrollTopZero}>Dongjoo Kim</NameStyles> */}
 				</div>
 				{/* menu */}
 				<MenuStyles>

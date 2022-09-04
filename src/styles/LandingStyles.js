@@ -1,14 +1,12 @@
 import tw, { styled } from 'twin.macro';
 
-export const Styles = styled.div``;
-
 export const WrapperStyles = styled.section`
 	${tw`lg:h-screen pt-[var(--nav-height)]`}
 	${tw`flex flex-col justify-between  pb-10`}
 `;
 
 export const UpperSectionStyles = styled.div`
-	${tw`lg:flex lg:justify-between pt-20`}
+	${tw`lg:flex lg:justify-between pt-40`}
 `;
 
 export const LeftStyles = styled.div`
