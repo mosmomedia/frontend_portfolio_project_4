@@ -2,45 +2,18 @@ import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.footer`
 	#footer_container {
-		${tw`space-y-12 py-24 `}
+		${tw`space-y-12 py-16 sm:py-24 `}
 	}
 
 	#footer_line {
-		${tw`h-[3px]  bg-main_text`}
+		${tw`h-0.5  sm:h-[3px]  bg-main_text`}
 	}
 
 	#footer_links_copyright {
-		${tw`flex justify-between items-start`}
+		${tw`flex flex-col space-y-6 sm:space-y-0 sm:flex-row  sm:justify-between sm:items-start`}
 	}
 
 	#footer_dj_copyright {
 		${tw`text-2xl   text-main_text`}
-	}
-
-	#footer_dj_links {
-		${tw`flex space-x-5`}
-
-		a {
-			${tw`flex items-start bg-seconday text-white text-[14px] tracking-widest rounded-md px-4 pt-2 pb-1 space-x-3 font-light`}
-
-			${tw`hover:text-key_col1`}
-		}
-
-		#footer_dj_resume svg {
-			${tw`text-lg`}
-			${tw`mt-[1px]`}
-		}
-
-		#footer_dj_resume path {
-			stroke: var(--key-color);
-		}
-
-		#footer_dj_github svg {
-			${tw`text-[21px]`}
-		}
-
-		#footer_dj_github path {
-			fill: var(--key-color);
-		}
 	}
 `;

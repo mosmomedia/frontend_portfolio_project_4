@@ -113,20 +113,21 @@ body {
 }
 
 h1{
-	${tw`text-5xl font-bold text-[#2f2f2f]`}
+	${tw`text-3xl sm:text-4xl font-bold text-[#2f2f2f] lg:text-5xl`}
+
 }
 
 h2{
-	${tw`text-[28px] font-bold text-primary`}
+	${tw`text-xl  sm:text-2xl font-bold text-primary lg:text-[28px]`}
 }
 
 h3,
 h4{
-	${tw`text-[22px] font-medium text-primary`}
+	${tw`text-[20px] sm:text-[22px] font-medium text-primary`}
 }
 
 p {
-	${tw`font-normal tracking-wide`}
+	${tw`text-sm  sm:text-[15px] lg:text-base tracking-wide font-normal`}
 }
 `;
 

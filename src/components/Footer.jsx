@@ -1,20 +1,17 @@
-import { useState } from 'react';
 import { WrapperStyles } from '../styles/FooterStyles';
+import { LinksStyles } from '../styles/AboutStyles';
 import { GrDocumentUser, GrGithub } from 'react-icons/gr';
 
 function Footer() {
-	const [showFooter, setShowFooter] = useState(false);
-	console.log(window.screenY);
-
 	return (
-		<WrapperStyles showFooter={showFooter}>
+		<WrapperStyles>
 			<div id="footer_container">
 				<div id="footer_line"></div>
 				{/* copyright && link */}
 				<div id="footer_links_copyright">
-					<div id="footer_dj_links">
+					<LinksStyles>
 						<a
-							id="footer_dj_resume"
+							id="dj_resume"
 							href="http://"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -24,7 +21,7 @@ function Footer() {
 						</a>
 
 						<a
-							id="footer_dj_github"
+							id="dj_github"
 							href="http://"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -32,7 +29,7 @@ function Footer() {
 							<GrGithub />
 							<span>Github</span>
 						</a>
-					</div>
+					</LinksStyles>
 					<div id="footer_dj_copyright">&#169; 2022 Dongjoo Kim</div>
 				</div>
 			</div>

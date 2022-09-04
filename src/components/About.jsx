@@ -5,6 +5,7 @@ import {
 	HeaderStyles,
 	SubStyles,
 	SectionStyles,
+	LinksStyles,
 } from '../styles/AboutStyles';
 
 import { GrDocumentUser, GrGithub } from 'react-icons/gr';
@@ -17,7 +18,7 @@ function About() {
 			<HeaderStyles>
 				<h1>About Me.</h1>
 				{/* links */}
-				<div id="dj_links">
+				<LinksStyles id="dj_links">
 					<a
 						id="dj_resume"
 						href="http://"
@@ -37,7 +38,7 @@ function About() {
 						<GrGithub />
 						<span>Github</span>
 					</a>
-				</div>
+				</LinksStyles>
 			</HeaderStyles>
 
 			{/* section */}

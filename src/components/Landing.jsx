@@ -12,6 +12,10 @@ import {
 	ImageWrapper,
 } from '../styles/LandingStyles';
 
+// import djFire from '../assets/gifs/fire-purple.gif';
+import djFire from '../assets/gifs/fire-red.gif';
+// import djFire from '../assets/gifs/smoke.gif';
+
 import djText from '../assets/imgs/dj-text.png';
 import djPic from '../assets/imgs/dj-pic.png';
 import djBg from '../assets/imgs/dj-bg.png';
@@ -48,11 +52,13 @@ function Landing() {
 				<RightStyles>
 					{/* img */}
 					<ImageWrapper>
+						<img className="img_fire" src={djFire} alt="" />
 						<img className="img_text" src={djText} alt="" />
 						<img className="img_pic" src={djPic} alt="" />
 						<img className="img_bg" src={djBg} alt="" />
 					</ImageWrapper>
 				</RightStyles>
+				<div id="displayName">Dongjoo Kim</div>
 			</UpperSectionStyles>
 			<BottomArrowStyles />
 		</WrapperStyles>

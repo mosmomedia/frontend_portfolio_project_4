@@ -10,11 +10,13 @@ export const MainStyles = styled.main`
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 
-	/* scroll-padding-top: 10px; */
-	scroll-behavior: smooth;
-	scroll-snap-type: y mandatory;
+	@media (min-width: 1024px) {
+		/* scroll-padding-top: 10px; */
+		scroll-behavior: smooth;
+		scroll-snap-type: y mandatory;
 
-	section {
-		scroll-snap-align: start;
+		section {
+			scroll-snap-align: start;
+		}
 	}
 `;

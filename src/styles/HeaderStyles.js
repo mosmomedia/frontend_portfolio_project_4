@@ -21,15 +21,15 @@ export const NavStyles = styled.nav`
 `;
 
 export const MenuStyles = styled.ul`
-	${tw`flex md:space-x-10  md:text-lg md:tracking-wider`}
+	${tw`flex text-base xs:space-x-4  sm:space-x-6 sm:text-lg md:space-x-10 md:tracking-wider`}
 
 	a {
 		${tw`text-[#000] px-2 py-1 hover:text-[#2e2e2e] duration-75`}
-		${tw`md:relative`}
+		${tw`xs:relative`}
 
 		:hover::before {
-			${tw`md:content md:absolute md:w-1 md:h-1 md:rounded-full md:top-0 md:left-3  
-			md:bg-black`}
+			${tw`xs:content xs:absolute xs:w-1 xs:h-1 xs:rounded-full xs:top-0 xs:left-3  
+			xs:bg-black`}
 		}
 	}
 `;
