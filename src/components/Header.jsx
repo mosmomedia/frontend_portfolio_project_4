@@ -56,13 +56,10 @@ function Header({ mainRef }) {
 						setIsTopZeroPostion(true);
 					}
 				} else {
-					console.log(floorScrollTop);
 					if (floorScrollTop === 0) {
 						setShowNav(true);
 						setIsTopZeroPostion(true);
 					} else {
-						if (y > floorScrollTop) {
-						}
 						setShowNav(false);
 					}
 				}

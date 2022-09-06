@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const MainStyles = styled.main`
-	${tw`container m-auto overflow-y-scroll h-screen `}
+	${tw`container m-auto lg:overflow-y-scroll lg:h-screen `}
 	/* Hide scrollbar for Chrome, Safari and Opera */
 		::-webkit-scrollbar {
 		display: none;

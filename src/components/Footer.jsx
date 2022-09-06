@@ -1,11 +1,37 @@
+import { useEffect, useRef } from 'react';
+
 import { WrapperStyles } from '../styles/FooterStyles';
 import { LinksStyles } from '../styles/AboutStyles';
 import { GrDocumentUser, GrGithub } from 'react-icons/gr';
 
-function Footer() {
+function Footer({ mainRef }) {
+	const target = useRef();
+
+	useEffect(() => {
+		if (mainRef) {
+			const contactOffsetTop = mainRef.childNodes[3].offsetTop;
+
+			// detecting scroll event
+			const handleScroll = ({ target: { scrollTop } }) => {
+				const floorScrollTop = Math.floor(scrollTop);
+				if (floorScrollTop >= contactOffsetTop) {
+					target.current.classList.add('showFooter');
+				} else {
+					target.current.classList.remove('showFooter');
+				}
+			};
+
+			mainRef.addEventListener('scroll', handleScroll);
+
+			return () => {
+				mainRef.removeEventListener('scroll', handleScroll);
+			};
+		}
+	}, [mainRef]);
+
 	return (
 		<WrapperStyles>
-			<div id="footer_container">
+			<div ref={target} id="footer_container">
 				<div id="footer_line"></div>
 				{/* copyright && link */}
 				<div id="footer_links_copyright">

@@ -26,7 +26,7 @@ function Contact() {
 					<RiSendPlaneFill />
 				</div>
 			</MainStyles>
-			<Footer />
+			{/* <Footer /> */}
 		</WrapperStyles>
 	);
 }
