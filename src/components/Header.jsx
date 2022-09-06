@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 import {
@@ -13,15 +13,9 @@ import Logo from '../assets/icons/logo100.png';
 
 function Header({ mainRef }) {
 	const [y, setY] = useState(0);
-	const [showNav, setShowNav] = useState(false);
-	const [isTopZeroPostion, setIsTopZeroPostion] = useState(false);
 
-	useEffect(() => {
-		if (mainRef) {
-			setShowNav(true);
-			setIsTopZeroPostion(true);
-		}
-	}, [mainRef]);
+	const targetNav = useRef();
+	const targetDisplayName = useRef();
 
 	useEffect(() => {
 		if (mainRef) {
@@ -35,32 +29,32 @@ function Header({ mainRef }) {
 			// detecting scroll event
 			const handleScroll = ({ target: { scrollTop } }) => {
 				const floorScrollTop = Math.floor(scrollTop);
-				// console.log(mainRef.scrollTop, floorScrollTop, y, pageHeight);
 				if (floorScrollTop >= pageHeight) {
-					setIsTopZeroPostion(false);
+					targetNav.current.classList.add('changeNav');
+					targetDisplayName.current.classList.add('hideName');
 
 					if (
 						aboutOffsetTop === floorScrollTop ||
 						portfolioOffsetTop === floorScrollTop ||
 						contactOffsetTop === floorScrollTop
 					) {
-						setShowNav(true);
+						targetNav.current.classList.remove('hideNav');
 					}
 					// when scrolling up
 					else if (y > floorScrollTop) {
-						setShowNav(true);
+						targetNav.current.classList.remove('hideNav');
 					}
 					// when scrolling down
 					else if (y < floorScrollTop) {
-						setShowNav(false);
-						setIsTopZeroPostion(true);
+						targetNav.current.classList.add('hideNav');
 					}
 				} else {
 					if (floorScrollTop === 0) {
-						setShowNav(true);
-						setIsTopZeroPostion(true);
+						targetNav.current.classList.remove('hideNav');
+						targetNav.current.classList.remove('changeNav');
+						targetDisplayName.current.classList.remove('hideName');
 					} else {
-						setShowNav(false);
+						targetNav.current.classList.add('hideNav');
 					}
 				}
 
@@ -76,16 +70,19 @@ function Header({ mainRef }) {
 	}, [mainRef, y]);
 
 	return (
-		<HeaderStyles showNav={showNav}>
-			<WrapperStyles isTopZeroPostion={isTopZeroPostion}>
+		<HeaderStyles ref={targetNav}>
+			<WrapperStyles>
 				{/* nav */}
 				<NavStyles>
 					{/* logo */}
-					<div>
+					<div id="logo_wrraper">
 						<HashLink smooth to="#landing">
 							<title>Logo</title>
 							<LogoStyles src={Logo} alt="logo" />
 						</HashLink>
+						<div ref={targetDisplayName} id="displayName">
+							Dongjoo Kim
+						</div>
 					</div>
 					{/* menu */}
 					<MenuStyles>

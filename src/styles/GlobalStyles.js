@@ -102,8 +102,8 @@ const CustomStyles = createGlobalStyle`
 
 :root {
 	font-family: 'NotoSansKr+Rubik', sans-serif;
-	--nav-height : 100px;
-	/* --nav-height : 180px; */
+	/* --nav-height : 100px; */
+	--nav-height : 150px;
 	--key-color : #BEF9EE;
 }
 

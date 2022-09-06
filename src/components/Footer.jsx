@@ -5,7 +5,7 @@ import { LinksStyles } from '../styles/AboutStyles';
 import { GrDocumentUser, GrGithub } from 'react-icons/gr';
 
 function Footer({ mainRef }) {
-	const target = useRef();
+	const targetFooter = useRef();
 
 	useEffect(() => {
 		if (mainRef) {
@@ -15,9 +15,9 @@ function Footer({ mainRef }) {
 			const handleScroll = ({ target: { scrollTop } }) => {
 				const floorScrollTop = Math.floor(scrollTop);
 				if (floorScrollTop >= contactOffsetTop) {
-					target.current.classList.add('showFooter');
+					targetFooter.current.classList.add('showFooter');
 				} else {
-					target.current.classList.remove('showFooter');
+					targetFooter.current.classList.remove('showFooter');
 				}
 			};
 
@@ -30,8 +30,8 @@ function Footer({ mainRef }) {
 	}, [mainRef]);
 
 	return (
-		<WrapperStyles>
-			<div ref={target} id="footer_container">
+		<WrapperStyles ref={targetFooter}>
+			<div id="footer_container">
 				<div id="footer_line"></div>
 				{/* copyright && link */}
 				<div id="footer_links_copyright">

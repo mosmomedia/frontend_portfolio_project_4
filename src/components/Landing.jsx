@@ -24,9 +24,7 @@ import djBg from '../assets/imgs/dj-bg.png';
 function Landing() {
 	return (
 		<WrapperStyles id="landing">
-			<TopSectionStyles>
-				<div id="displayName">Dongjoo Kim</div>
-			</TopSectionStyles>
+			<TopSectionStyles />
 
 			<MiddleSectionStyles>
 				{/* left */}

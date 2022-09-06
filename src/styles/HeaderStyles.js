@@ -1,21 +1,28 @@
 import tw, { styled } from 'twin.macro';
 
 export const HeaderStyles = styled.header`
-	${tw`z-50 fixed inset-x-0 top-0 h-[var(--nav-height)]`}
+	${tw`z-50 fixed inset-x-0 top-0 h-[100px]  xl:h-[var(--nav-height)] bg-primary duration-75 ease-in`}
 
-	${({ showNav }) => (showNav ? tw`opacity-100` : tw`opacity-0`)}
+	&.hideNav {
+		${tw`opacity-0`}
+	}
+
+	&.changeNav {
+		${tw`h-[unset] py-3 bg-opacity-90 backdrop-blur-[6px]`}
+	}
 `;
 
 export const WrapperStyles = styled.div`
-	${tw`w-full h-full flex`}
-	${tw`bg-primary`} 
+	${tw`relative w-full h-full flex`}
 
-		${({ isTopZeroPostion }) =>
-		isTopZeroPostion
-			? tw`lg:h-[150px]  bg-opacity-0 backdrop-blur-[unset]`
-			: tw`h-[unset] py-3 bg-opacity-95 backdrop-blur-[6px] `}
+	#displayName {
+		${tw`absolute opacity-0 sm:opacity-100 sm:-bottom-2  sm:text-lg  lg:-bottom-4  xl:-bottom-0
+		xl:text-xl font-bold text-primary tracking-wide`}
+	}
 
-	/*  */
+	#displayName.hideName {
+		${tw`hidden`}
+	}
 
 	h2 {
 		${tw`font-bold pt-6 text-xl`}

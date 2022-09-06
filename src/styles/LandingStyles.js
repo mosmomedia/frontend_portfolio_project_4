@@ -1,17 +1,13 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw`pt-[var(--nav-height)]  lg:pt-0 lg:h-screen`}
+	${tw`pt-[100px]  lg:pt-0 lg:h-screen`}
 	${tw`flex flex-col justify-between pb-10`}
 `;
 
 export const TopSectionStyles = styled.div`
-	${tw`h-[var(--nav-height)] lg:h-[110px]`}
+	${tw`h-[100px] lg:h-[var(--nav-height)]`}
 	${tw`relative`}
-
-	#displayName {
-		${tw`pl-1 sm:pl-0 sm:block absolute top-4  sm:top-0 lg:top-[unset]  lg:-bottom-10 text-xl  sm:text-lg  xl:text-xl font-bold text-primary tracking-wide`}
-	}
 `;
 
 export const MiddleSectionStyles = styled.div`

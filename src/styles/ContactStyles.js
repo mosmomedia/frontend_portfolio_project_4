@@ -8,7 +8,7 @@ export const HeaderStyles = styled.div`
 	${tw`space-y-6`}
 
 	h4 {
-		${tw`text-[#606065] text-lg sm:text-xl`}
+		${tw`text-gray-500 text-lg sm:text-[22px]`}
 	}
 `;
 

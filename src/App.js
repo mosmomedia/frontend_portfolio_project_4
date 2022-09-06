@@ -13,6 +13,7 @@ import { MainStyles } from './styles';
 function App() {
 	const targetMain = useRef();
 	const [mainRef, setMainRef] = useState();
+
 	useEffect(() => {
 		const targetMainRef = targetMain.current;
 		if (targetMainRef) {

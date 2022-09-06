@@ -1,14 +1,14 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.footer`
-	${tw`lg:fixed w-full lg:bottom-0 `}
+	${tw`lg:fixed w-full lg:bottom-0  lg:opacity-0 lg:duration-200`}
 
-	#footer_container {
-		${tw`space-y-12 py-16 sm:py-24 container m-auto lg:hidden`}
+	&.showFooter {
+		${tw`lg:opacity-100`}
 	}
 
-	#footer_container.showFooter {
-		${tw`lg:block`}
+	#footer_container {
+		${tw`space-y-12 py-16 sm:py-24 container m-auto `}
 	}
 
 	#footer_line {
