@@ -12,6 +12,7 @@ import RubikMedium from '../styles/fonts/rubik/rubik-v21-latin-500.woff';
 import RubikBold from '../styles/fonts/rubik/rubik-v21-latin-700.woff';
 
 const CustomStyles = createGlobalStyle`
+
 @font-face {
   font-family: 'NotoSansKr+Rubik';
 	src: url(${NotoSansLight}) format('opentype');
@@ -100,7 +101,7 @@ const CustomStyles = createGlobalStyle`
 
 
 :root {
-	font-family:'NotoSansKr+Rubik', sans-serif;
+	font-family: 'NotoSansKr+Rubik', sans-serif;
 	--nav-height : 100px;
 	/* --nav-height : 180px; */
 	--key-color : #BEF9EE;

@@ -1,12 +1,12 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw`pt-[var(--nav-height)] lg:pt-0 lg:h-screen`}
+	${tw`pt-[var(--nav-height)]  lg:pt-0 lg:h-screen`}
 	${tw`flex flex-col justify-between pb-10`}
 `;
 
 export const TopSectionStyles = styled.div`
-	${tw`h-[var(--nav-height)]`}
+	${tw`h-[var(--nav-height)] lg:h-[110px]`}
 	${tw`relative`}
 
 	#displayName {
@@ -24,7 +24,7 @@ export const LeftStyles = styled.div`
 `;
 
 export const TitleStyles = styled.div`
-	${tw`font-bold tracking-wide space-y-6`}
+	${tw` tracking-wide space-y-6`}
 
 	h1 {
 		${tw`pl-1 md:pl-0 xs:text-4xl  sm:text-4xl   md:text-[44px] lg:text-[34px]  xl:text-[42px]   2xl:text-5xl`}

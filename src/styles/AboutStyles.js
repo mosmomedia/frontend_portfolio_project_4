@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw`pt-32 sm:pt-36 pb-20 md:pt-40 lg:pb-72 space-y-32`}
+	${tw`pt-32 sm:pt-36 pb-20 md:pt-40 lg:pt-32 lg:pb-72 space-y-32`}
 `;
 
 export const HeaderStyles = styled.div`
