@@ -1,10 +1,10 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.footer`
-	${tw`lg:fixed w-full lg:bottom-0  lg:opacity-0 lg:duration-200`}
+	${tw`lg:fixed w-full lg:bottom-0  lg:hidden lg:duration-200`}
 
 	&.showFooter {
-		${tw`lg:opacity-100`}
+		${tw`lg:block`}
 	}
 
 	#footer_container {

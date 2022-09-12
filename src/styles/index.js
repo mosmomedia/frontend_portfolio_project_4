@@ -11,7 +11,6 @@ export const MainStyles = styled.main`
 	scrollbar-width: none; /* Firefox */
 
 	@media (min-width: 1024px) {
-		/* scroll-padding-top: 10px; */
 		scroll-behavior: smooth;
 		scroll-snap-type: y mandatory;
 
