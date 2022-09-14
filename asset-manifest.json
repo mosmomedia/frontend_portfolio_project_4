@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/frontend_portfolio_project_4/static/js/main.5ba33292.js",
+    "static/media/NotoSansKR-Medium.otf": "/frontend_portfolio_project_4/static/media/NotoSansKR-Medium.56207b5e52841342a21b.otf",
+    "static/media/NotoSansKR-Regular.otf": "/frontend_portfolio_project_4/static/media/NotoSansKR-Regular.e1aa54c04a18648e6468.otf",
+    "static/media/NotoSansKR-Light.otf": "/frontend_portfolio_project_4/static/media/NotoSansKR-Light.636ff9b51e826a733c3d.otf",
+    "static/media/fire-red.gif": "/frontend_portfolio_project_4/static/media/fire-red.cdb15711ee7fbca8134c.gif",
+    "static/media/dj-pic.png": "/frontend_portfolio_project_4/static/media/dj-pic.9740557043da01477221.png",
+    "static/media/rubik-v21-latin-500.woff": "/frontend_portfolio_project_4/static/media/rubik-v21-latin-500.c63cc48ffcb3dd89c67f.woff",
+    "static/media/rubik-v21-latin-700.woff": "/frontend_portfolio_project_4/static/media/rubik-v21-latin-700.3162d18d7d9590c276c7.woff",
+    "static/media/rubik-v21-latin-regular.woff": "/frontend_portfolio_project_4/static/media/rubik-v21-latin-regular.9901e43e1f0fad0eadaf.woff",
+    "static/media/rubik-v21-latin-300.woff": "/frontend_portfolio_project_4/static/media/rubik-v21-latin-300.419dc3b31cdca23e3c26.woff",
+    "static/media/dj-text.png": "/frontend_portfolio_project_4/static/media/dj-text.77967eae878497774d5a.png",
+    "static/media/dj-bg.png": "/frontend_portfolio_project_4/static/media/dj-bg.01f5b25871f5e761aec6.png",
+    "static/media/logo100.png": "/frontend_portfolio_project_4/static/media/logo100.3ee72ef11b351dc65475.png",
+    "index.html": "/frontend_portfolio_project_4/index.html",
+    "main.5ba33292.js.map": "/frontend_portfolio_project_4/static/js/main.5ba33292.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5ba33292.js"
+  ]
+}
