@@ -9,11 +9,12 @@ function Footer({ mainRef }) {
 
 	useEffect(() => {
 		if (mainRef) {
-			const contactOffsetTop = mainRef.childNodes[3].offsetTop;
-
 			// detecting scroll event
 			const handleScroll = ({ target: { scrollTop } }) => {
+				const contactOffsetTop = mainRef.childNodes[3].offsetTop;
+
 				const floorScrollTop = Math.floor(scrollTop);
+				console.log(floorScrollTop, contactOffsetTop);
 				if (floorScrollTop >= contactOffsetTop) {
 					targetFooter.current.classList.add('showFooter');
 				} else {

@@ -8,7 +8,7 @@ export const HeaderStyles = styled.header`
 	}
 
 	&.changeNav {
-		${tw`h-[unset] py-3 bg-opacity-90 backdrop-blur-[6px]`}
+		${tw`h-[unset] py-4 bg-opacity-90 backdrop-blur-[6px]`}
 	}
 `;
 
@@ -17,7 +17,7 @@ export const WrapperStyles = styled.div`
 
 	#displayName {
 		${tw`absolute opacity-0 sm:opacity-100 sm:-bottom-2  sm:text-lg  lg:-bottom-4  xl:-bottom-0
-		xl:text-xl font-bold text-primary tracking-wide`}
+		xl:text-xl font-medium text-primary tracking-wide`}
 	}
 
 	#displayName.hideName {
@@ -30,7 +30,7 @@ export const WrapperStyles = styled.div`
 `;
 
 export const NavStyles = styled.nav`
-	${tw`container m-auto flex justify-between items-start tracking-wider font-bold`}
+	${tw`container m-auto flex justify-between items-start tracking-wider font-medium`}
 `;
 
 export const LogoStyles = styled.img`

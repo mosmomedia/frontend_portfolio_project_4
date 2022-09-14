@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import {
 	WrapperStyles,
 	SectionStyles,
@@ -56,9 +58,9 @@ function Portfolio() {
 							</p>
 							<br />
 							<p>
-								jQuery + 그누보드(PHP + MySQL)로 만들어진 이 서비스를 프론트엔드
-								학습 및 포트폴리오 제작을 위해 MERN 스택으로 구현해서 클론
-								코딩했습니다. 개인 풀 사이클 프로젝트입니다.
+								jQuery + 그누보드&#40;PHP + MySQL&#41;로 만들어진 이 서비스를
+								프론트엔드 학습 및 포트폴리오 제작을 위해 MERN 스택으로 구현해서
+								클론 코딩했습니다. 개인 풀 사이클 프로젝트입니다.
 							</p>
 							<br />
 							<p>현재 몇몇 기능들은 구현 및 업데이트 중 입니다. </p>
@@ -67,46 +69,40 @@ function Portfolio() {
 						<div id="pf_feat">
 							<h4>Features</h4>
 							<ul>
-								<li>Single Page Application with React(.js)</li>
+								<li>Single Page Application with React&#40;.js&#41;</li>
 								<li>
-									Styling Components with styled-componets and Tailwind CSS
+									Styling Components with styled-components and Tailwind CSS
 								</li>
 								<li>RESTful API with Node.js, Express and MongoDB</li>
 								<li>Firebase Authentication</li>
+								<li>Heroku Development</li>
 							</ul>
 						</div>
 						{/* links */}
 						<div id="pf_links">
-							<a
+							<Link
+								to="/portfolioInDetail/test"
 								id="pf_project_link"
 								className="pf_link"
-								href="/"
-								target="_blank"
-								rel="noreferrer"
 							>
 								<GoLinkExternal />
 								<div>View Project</div>
-							</a>
+							</Link>
+
 							<a
+								href="https://storytunes.herokuapp.com/"
 								id="pf_demo_link"
 								className="pf_link"
-								href="/"
 								target="_blank"
-								rel="noreferrer"
+								rel="noopener noreferrer"
 							>
 								<BsGlobe />
 								<span>View Demo</span>
 							</a>
-							<a
-								id="pf_github_link"
-								className="pf_link"
-								href="/"
-								target="_blank"
-								rel="noreferrer"
-							>
+							<Link to="/" id="pf_github_link" className="pf_link">
 								<GrGithub />
 								<span>View Source</span>
-							</a>
+							</Link>
 						</div>
 					</RightStyles>
 					{/* right item */}

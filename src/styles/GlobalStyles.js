@@ -110,7 +110,7 @@ const CustomStyles = createGlobalStyle`
 
 body {
 	${tw`bg-body text-primary text-sm md:text-base tracking-wider`}
-	word-break: keep-all
+	word-break: keep-all;
 }
 
 h1{

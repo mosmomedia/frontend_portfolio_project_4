@@ -92,7 +92,7 @@ export const RightStyles = styled.div`
 	}
 
 	#pf_project_link svg {
-		${tw`text-xl mb-0.5`}
+		${tw`text-xl mb-0.5 animate-pulse`}
 	}
 
 	#pf_demo_link svg {
