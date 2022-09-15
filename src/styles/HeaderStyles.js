@@ -3,6 +3,8 @@ import tw, { styled } from 'twin.macro';
 export const HeaderStyles = styled.header`
 	${tw`z-50 fixed inset-x-0 top-0 h-[80px]  xs:h-[100px]  xl:h-[var(--nav-height)] bg-primary duration-100 ease-in bg-opacity-90 backdrop-blur-[6px] xs:bg-opacity-100 xs:backdrop-blur-[unset]`}
 
+	${tw`border border-b-blue-300 border-opacity-30`}
+
 	&.hideNav {
 		${tw`opacity-0`}
 	}
@@ -41,7 +43,7 @@ export const MenuStyles = styled.ul`
 	${tw`flex text-base  xs:space-x-4  sm:space-x-6 sm:text-lg md:space-x-10 md:tracking-wider`}
 
 	a {
-		${tw`text-[#000] px-4 xs:px-2 py-1 xs:hover:text-[#2e2e2e] duration-75`}
+		${tw`text-[#000] px-3 xs:px-2 py-1 xs:hover:text-[#2e2e2e] duration-75`}
 
 		${tw`xs:relative`}
 
