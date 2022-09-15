@@ -16,7 +16,7 @@ export const WrapperStyles = styled.div`
 	${tw`relative w-full h-full flex`}
 
 	#displayName {
-		${tw`absolute opacity-0 sm:opacity-100 sm:-bottom-2  sm:text-lg  lg:-bottom-4  xl:-bottom-0
+		${tw`absolute opacity-0 lg:opacity-100  lg:text-lg  lg:-bottom-4  xl:-bottom-0
 		xl:text-xl font-medium text-primary tracking-wide`}
 	}
 

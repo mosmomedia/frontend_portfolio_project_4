@@ -24,6 +24,8 @@ export const TitleStyles = styled.div`
 
 	h1 {
 		${tw`pl-1 md:pl-0 xs:text-4xl  sm:text-4xl   md:text-[44px] lg:text-[34px]  xl:text-[42px]   2xl:text-5xl`}
+
+		${tw`font-medium`}
 	}
 
 	h1:last-child {
