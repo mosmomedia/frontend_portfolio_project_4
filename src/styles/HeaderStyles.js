@@ -38,10 +38,11 @@ export const LogoStyles = styled.img`
 `;
 
 export const MenuStyles = styled.ul`
-	${tw`flex text-base xs:space-x-4  sm:space-x-6 sm:text-lg md:space-x-10 md:tracking-wider`}
+	${tw`flex text-base  xs:space-x-4  sm:space-x-6 sm:text-lg md:space-x-10 md:tracking-wider`}
 
 	a {
-		${tw`text-[#000] px-2 py-1 hover:text-[#2e2e2e] duration-75`}
+		${tw`text-[#000] px-4 xs:px-2 py-1 xs:hover:text-[#2e2e2e] duration-75`}
+
 		${tw`xs:relative`}
 
 		:hover::before {

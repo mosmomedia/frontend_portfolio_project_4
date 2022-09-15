@@ -20,7 +20,7 @@ body {
 }
 
 h1{
-	${tw`text-2xl xs:text-3xl md:text-4xl font-bold text-[#2f2f2f] lg:text-5xl`}
+	${tw`text-[25px] xs:text-3xl md:text-4xl font-bold text-[#2f2f2f] lg:text-5xl`}
 }
 
 h2{
@@ -30,7 +30,7 @@ h2{
 
 h3,
 h4{
-	${tw`text-lg  xs:text-[20px] sm:text-[22px] font-medium text-primary`}
+	${tw`text-[17px]  xs:text-[20px] sm:text-[22px] font-medium text-primary`}
 }
 
 p {

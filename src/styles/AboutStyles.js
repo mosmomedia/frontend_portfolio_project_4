@@ -1,11 +1,11 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw`pt-32 sm:pt-36 pb-20 md:pt-40 lg:pt-32 lg:pb-96 space-y-32`}
+	${tw`pt-32 sm:pt-36 pb-20 md:pt-40 lg:pt-32 lg:pb-96 space-y-16 xs:space-y-32`}
 `;
 
 export const HeaderStyles = styled.div`
-	${tw`space-y-4 xs:space-y-0  xs:flex xs:justify-between xs:items-center tracking-wider`}
+	${tw` xs:space-y-0  flex justify-between items-center tracking-wider`}
 `;
 export const LinksStyles = styled.div`
 	${tw`flex space-x-3 sm:space-x-5`}
@@ -31,7 +31,7 @@ export const LinksStyles = styled.div`
 `;
 
 export const SectionStyles = styled.div`
-	${tw`space-y-36`}
+	${tw`space-y-24 xs:space-y-36`}
 `;
 
 export const SubStyles = styled.div`
@@ -44,7 +44,7 @@ export const SubStyles = styled.div`
 	}
 
 	.bigger_title {
-		${tw`text-xl xs:text-3xl`}
+		${tw`text-2xl xs:text-3xl`}
 	}
 
 	.skill_set {
@@ -53,8 +53,7 @@ export const SubStyles = styled.div`
 `;
 
 export const ExpStyles = styled.div`
-	${tw`mt-5 `}
-	${tw`grid grid-rows-2 gap-10 xl:grid-rows-1  xl:grid-cols-2 xl:gap-16`}
+	${tw`mt-5 grid grid-rows-2 gap-10 xl:grid-rows-1  xl:grid-cols-2 xl:gap-16`}
 `;
 
 export const SubExpStyles = styled.div`

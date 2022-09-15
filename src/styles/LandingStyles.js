@@ -1,8 +1,8 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw`pt-10 xs:pt-[100px]  lg:pt-0 lg:h-screen`}
-	${tw`flex flex-col justify-between pb-10`}
+	${tw`pt-0 xs:pt-[100px]  lg:pt-0 lg:h-screen`}
+	${tw`flex flex-col justify-between xs:pb-10`}
 `;
 
 export const TopSectionStyles = styled.div`
