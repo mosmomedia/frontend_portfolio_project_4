@@ -31,7 +31,7 @@ function About() {
 
 					<a
 						id="dj_github"
-						href="http://"
+						href="https://github.com/mosmomedia"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -80,8 +80,8 @@ function About() {
 				<SubStyles>
 					<h2 className="bigger_title">Web Dev Skills</h2>
 					<div className="skill_set">
-						HTML5 / CSS3 / JavaScript&#40;ES6&#41; / React&#40;.js&#41; /
-						Node&#40;.js&#41;
+						HTML5 &#47; CSS3 &#47; JavaScript&#40;ES6&#41; &#47;
+						React&#40;.js&#41;
 					</div>
 				</SubStyles>
 

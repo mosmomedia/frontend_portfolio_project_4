@@ -14,7 +14,6 @@ function Footer({ mainRef }) {
 				const contactOffsetTop = mainRef.childNodes[3].offsetTop;
 
 				const floorScrollTop = Math.floor(scrollTop);
-				console.log(floorScrollTop, contactOffsetTop);
 				if (floorScrollTop >= contactOffsetTop) {
 					targetFooter.current.classList.add('showFooter');
 				} else {
@@ -49,7 +48,7 @@ function Footer({ mainRef }) {
 
 						<a
 							id="dj_github"
-							href="http://"
+							href="https://github.com/mosmomedia"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
