@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw`pt-[100px]  lg:pt-0 lg:h-screen`}
+	${tw`pt-10 xs:pt-[100px]  lg:pt-0 lg:h-screen`}
 	${tw`flex flex-col justify-between pb-10`}
 `;
 
@@ -23,7 +23,7 @@ export const TitleStyles = styled.div`
 	${tw` tracking-wide space-y-6`}
 
 	h1 {
-		${tw`pl-1 md:pl-0 xs:text-4xl  sm:text-4xl   md:text-[44px] lg:text-[34px]  xl:text-[42px]   2xl:text-5xl`}
+		${tw`pl-1 md:pl-0  xs:text-4xl  sm:text-4xl   md:text-[44px] lg:text-[34px]  xl:text-[42px]   2xl:text-5xl`}
 
 		${tw`font-medium`}
 	}
@@ -37,7 +37,7 @@ export const TextStyles = styled.div`
 	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-7 lg:w-[88%] 2xl:w-[93%]`}
 
 	p {
-		${tw`text-sm md:text-[15px] lg:text-sm  xl:text-base`}
+		${tw`py-1  xs:py-0 text-sm md:text-[15px] lg:text-sm  xl:text-base`}
 	}
 
 	::before {

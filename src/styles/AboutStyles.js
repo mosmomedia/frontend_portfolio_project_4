@@ -5,20 +5,20 @@ export const WrapperStyles = styled.section`
 `;
 
 export const HeaderStyles = styled.div`
-	${tw`xs:flex xs:justify-between xs:items-center tracking-wider`}
+	${tw`space-y-4 xs:space-y-0  xs:flex xs:justify-between xs:items-center tracking-wider`}
 `;
 export const LinksStyles = styled.div`
 	${tw`flex space-x-3 sm:space-x-5`}
 
 	a {
-		${tw`flex items-start bg-seconday text-white text-[12px] sm:text-[14px] tracking-widest rounded-md px-2 py-1  sm:px-4 sm:pt-2 sm:pb-1 space-x-3 font-light duration-300`}
+		${tw`flex items-center  xs:items-start bg-seconday text-white text-[10px] xs:text-[12px] sm:text-[14px] tracking-widest rounded-[0.2rem]  xs:rounded-md px-2 py-0.5 xs:py-1  sm:px-4 sm:pt-2 sm:pb-1 space-x-3 font-light duration-300`}
 
 		${tw`xs:hover:text-key_col1`}
 	}
 
 	#dj_resume svg {
-		${tw`text-base sm:text-lg`}
-		${tw`sm:mt-[1px]`}
+		${tw`text-[12px] xs:text-base sm:text-lg`}
+		${tw` sm:mt-[1px]`}
 	}
 
 	#dj_resume path {
@@ -26,7 +26,7 @@ export const LinksStyles = styled.div`
 	}
 
 	#dj_github svg {
-		${tw`text-lg  sm:text-[21px] text-key_col1`}
+		${tw`text-base xs:text-lg  sm:text-[21px] text-key_col1`}
 	}
 `;
 
@@ -40,15 +40,15 @@ export const SubStyles = styled.div`
 	}
 
 	p {
-		${tw`tracking-wide text-primary leading-7 md:leading-8 md:text-[16px] lg:text-lg`}
+		${tw`tracking-wide text-primary leading-7 md:leading-8 md:text-[16px] lg:text-lg pr-4 xs:pr-0`}
 	}
 
 	.bigger_title {
-		${tw`text-3xl`}
+		${tw`text-xl xs:text-3xl`}
 	}
 
 	.skill_set {
-		${tw`font-bold text-lg sm:text-2xl text-gray-700 tracking-wide`}
+		${tw`font-bold text-base  xs:text-lg sm:text-2xl text-gray-700 tracking-wide`}
 	}
 `;
 
@@ -70,7 +70,7 @@ export const SubExpStyles = styled.div`
 		}
 
 		h3 {
-			${tw`mb-1.5`}
+			${tw`mb-1.5 font-bold`}
 		}
 
 		${tw`sm:flex sm:space-x-8`}
@@ -94,6 +94,6 @@ export const SubExpStyles = styled.div`
 	}
 
 	svg {
-		${tw`text-xl `}
+		${tw`text-base xs:text-xl `}
 	}
 `;

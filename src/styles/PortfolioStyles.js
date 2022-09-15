@@ -9,7 +9,7 @@ export const SectionStyles = styled.div`
 		${tw`tracking-wider`}
 	}
 
-	${tw`px-6 sm:px-10 py-12 bg-seconday  rounded-2xl space-y-20 md:px-14`}
+	${tw`px-5  xs:px-6 sm:px-10 py-7  xs:py-12 bg-seconday  rounded-2xl space-y-20 md:px-14`}
 `;
 
 export const HeaderStyles = styled.div`
@@ -19,16 +19,16 @@ export const HeaderStyles = styled.div`
 		${tw`space-y-8 xl:space-y-0  xl:flex xl:justify-between`}
 
 		h2 {
-			${tw`text-[#fbfbfb] text-[38px] tracking-wider`}
+			${tw`text-[#fbfbfb] text-3xl xs:text-[38px] tracking-wider`}
 		}
 	}
 
 	#pf_role {
-		${tw`text-key_col1 text-lg`}
+		${tw`text-key_col1 text-base  xs:text-lg`}
 	}
 
 	#pf_tech {
-		${tw`text-[#ffffff] text-[17px] font-light`}
+		${tw`text-[#ffffff] text-sm  xs:text-[17px] font-light`}
 
 		${tw`flex flex-wrap  xl:space-x-8 `}
 
@@ -84,19 +84,26 @@ export const RightStyles = styled.div`
 
 	.pf_link {
 		${tw`flex items-center text-sm space-x-4 mr-4 mt-6 sm:mr-0 sm:mt-0`}
+
+		${tw`min-w-[55%] xs:min-w-[unset]`}
+
 		${tw`border border-key_col1  rounded-md border-opacity-40 bg-[#333333] px-4 py-2 pb-1.5 hover:bg-black duration-300`}
 
-	svg {
+		svg {
 			${tw`text-key_col1`}
 		}
 	}
 
 	#pf_project_link svg {
-		${tw`text-xl mb-0.5 animate-pulse`}
+		${tw`text-xl mb-0.5 animate-pulse pl-0.5 xs:pl-0`}
+	}
+
+	#pf_demo_link {
+		${tw`space-x-5 xs:space-x-4`}
 	}
 
 	#pf_demo_link svg {
-		${tw`text-[16px] mb-0.5`}
+		${tw`text-lg xs:text-[16px] mb-0.5 pl-0.5 xs:pl-0`}
 	}
 
 	#pf_github_link svg {

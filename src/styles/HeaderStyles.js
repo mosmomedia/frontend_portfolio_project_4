@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const HeaderStyles = styled.header`
-	${tw`z-50 fixed inset-x-0 top-0 h-[100px]  xl:h-[var(--nav-height)] bg-primary duration-100 ease-in`}
+	${tw`z-50 fixed inset-x-0 top-0 h-[80px]  xs:h-[100px]  xl:h-[var(--nav-height)] bg-primary duration-100 ease-in bg-opacity-90 backdrop-blur-[6px] xs:bg-opacity-100 xs:backdrop-blur-[unset]`}
 
 	&.hideNav {
 		${tw`opacity-0`}
@@ -16,7 +16,7 @@ export const WrapperStyles = styled.div`
 	${tw`relative w-full h-full flex`}
 
 	#displayName {
-		${tw`absolute opacity-0 lg:opacity-100  lg:text-lg  lg:-bottom-4  xl:-bottom-0
+		${tw`absolute hidden lg:block  lg:text-lg  lg:-bottom-4  xl:-bottom-0
 		xl:text-xl font-medium text-primary tracking-wide`}
 	}
 
@@ -34,7 +34,7 @@ export const NavStyles = styled.nav`
 `;
 
 export const LogoStyles = styled.img`
-	${tw`h-7`}
+	${tw`h-6 xs:h-7`}
 `;
 
 export const MenuStyles = styled.ul`

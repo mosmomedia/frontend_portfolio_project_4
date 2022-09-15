@@ -8,7 +8,7 @@ export const HeaderStyles = styled.div`
 	${tw`space-y-6`}
 
 	h4 {
-		${tw`text-gray-500 text-lg sm:text-[22px]`}
+		${tw`text-gray-500 text-base  xs:text-lg sm:text-[22px]`}
 	}
 `;
 
@@ -16,7 +16,7 @@ export const MainStyles = styled.div`
 	${tw`space-y-6`}
 
 	h4 {
-		${tw`text-xl sm:text-3xl text-[#333333] pl-0.5`}
+		${tw`text-lg  xs:text-xl sm:text-3xl text-[#333333] pl-0.5`}
 	}
 
 	#dj_email {

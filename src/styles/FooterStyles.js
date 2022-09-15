@@ -20,6 +20,6 @@ export const WrapperStyles = styled.footer`
 	}
 
 	#footer_dj_copyright {
-		${tw`text-2xl   text-main_text`}
+		${tw`text-xl  xs:text-2xl text-main_text pt-4 xs:pt-0`}
 	}
 `;
