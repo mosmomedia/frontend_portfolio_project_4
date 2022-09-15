@@ -32,6 +32,7 @@ function Portfolio() {
 						<li>Firebase</li>
 						<li>styled&#45;components</li>
 						<li>Tailwind CSS</li>
+						<li>Heroku</li>
 					</ul>
 				</HeaderStyles>
 				{/* main */}
@@ -75,7 +76,7 @@ function Portfolio() {
 								</li>
 								<li>RESTful API with Node.js, Express and MongoDB</li>
 								<li>Firebase Authentication</li>
-								<li>Heroku Development</li>
+								<li>Heroku Deployment</li>
 							</ul>
 						</div>
 						{/* links */}
