@@ -38,8 +38,9 @@ export const SubStyles = styled.div`
 	h2 {
 		${tw`pb-10`}
 	}
+
 	p {
-		${tw`tracking-wide text-primary leading-7 md:text-[16px] lg:text-[17px]  md:leading-8`}
+		${tw`tracking-wide text-primary leading-7 md:leading-8 md:text-[16px] lg:text-lg`}
 	}
 
 	.bigger_title {

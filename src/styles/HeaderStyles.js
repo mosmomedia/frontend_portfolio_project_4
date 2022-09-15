@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const HeaderStyles = styled.header`
-	${tw`z-50 fixed inset-x-0 top-0 h-[100px]  xl:h-[var(--nav-height)] bg-primary duration-75 ease-in`}
+	${tw`z-50 fixed inset-x-0 top-0 h-[100px]  xl:h-[var(--nav-height)] bg-primary duration-100 ease-in`}
 
 	&.hideNav {
 		${tw`opacity-0`}
