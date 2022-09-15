@@ -15,17 +15,17 @@ export const MiddleSectionStyles = styled.div`
 `;
 
 export const LeftStyles = styled.div`
-	${tw`flex flex-col justify-between space-y-28 pb-6`}
+	${tw`flex flex-col justify-between space-y-20 xs:space-y-28 pb-6`}
 	${tw`lg:w-40 xl:w-64  lg:flex-auto`}
 `;
 
 export const TitleStyles = styled.div`
-	${tw` tracking-wide space-y-6`}
+	${tw` tracking-wide space-y-2  xs:space-y-6 leading-8`}
 
 	h1 {
-		${tw`pl-1 md:pl-0  xs:text-4xl  sm:text-4xl   md:text-[44px] lg:text-[34px]  xl:text-[42px]   2xl:text-5xl`}
+		${tw`pl-1 md:pl-0 text-[24px]  xs:text-4xl  sm:text-4xl   md:text-[44px] lg:text-[34px]  xl:text-[42px]  2xl:text-5xl`}
 
-		${tw`font-medium`}
+		${tw`font-medium `}
 	}
 
 	h1:last-child {
