@@ -13,9 +13,7 @@ import {
 	ImageWrapper,
 } from '../styles/LandingStyles';
 
-// import djFire from '../assets/gifs/fire-purple.gif';
 import djFire from '../assets/gifs/fire-red.gif';
-// import djFire from '../assets/gifs/smoke.gif';
 
 import djText from '../assets/imgs/dj-text.png';
 import djPic from '../assets/imgs/dj-pic.png';
