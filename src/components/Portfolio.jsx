@@ -81,7 +81,7 @@ function Portfolio() {
 						{/* links */}
 						<div id="pf_links">
 							<Link
-								to="/portfolioInDetail/test"
+								to="/project/storytunes"
 								id="pf_project_link"
 								className="pf_link"
 							>
@@ -99,10 +99,17 @@ function Portfolio() {
 								<BsGlobe />
 								<span>View Demo</span>
 							</a>
-							<Link to="/" id="pf_github_link" className="pf_link">
+
+							<a
+								href="https://github.com/mosmomedia/frontend_portfolio_project_3"
+								id="pf_github_link"
+								className="pf_link"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<GrGithub />
 								<span>View Source</span>
-							</Link>
+							</a>
 						</div>
 					</RightStyles>
 					{/* right item */}

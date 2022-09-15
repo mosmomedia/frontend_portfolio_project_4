@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import 'twin.macro';
 import 'styled-components/macro';
 
@@ -13,6 +15,8 @@ import {
 	ImageWrapper,
 } from '../styles/LandingStyles';
 
+import Spinner from './shared/Spinner';
+
 import djFire from '../assets/gifs/fire-red.gif';
 
 import djText from '../assets/imgs/dj-text.png';
@@ -20,6 +24,24 @@ import djPic from '../assets/imgs/dj-pic.png';
 import djBg from '../assets/imgs/dj-bg.png';
 
 function Landing() {
+	const [loading, setLoading] = useState(true);
+
+	// dectect when all images are loaded
+	// closure
+	function after(count, callback) {
+		let noOfCalls = 0;
+		return function (...rest) {
+			noOfCalls = noOfCalls + 1;
+			if (count === noOfCalls) {
+				callback(...rest);
+			}
+		};
+	}
+
+	const logWhen = after(4, () => {
+		setLoading(false);
+	});
+
 	return (
 		<WrapperStyles id="landing">
 			<TopSectionStyles />
@@ -55,11 +77,12 @@ function Landing() {
 				{/* right */}
 				<RightStyles>
 					{/* img */}
+					{loading && <Spinner />}
 					<ImageWrapper>
-						<img className="img_fire" src={djFire} alt="" />
-						<img className="img_text" src={djText} alt="" />
-						<img className="img_pic" src={djPic} alt="" />
-						<img className="img_bg" src={djBg} alt="" />
+						<img className="img_fire" src={djFire} alt="" onLoad={logWhen} />
+						<img className="img_text" src={djText} alt="" onLoad={logWhen} />
+						<img className="img_pic" src={djPic} alt="" onLoad={logWhen} />
+						<img className="img_bg" src={djBg} alt="" onLoad={logWhen} />
 					</ImageWrapper>
 				</RightStyles>
 			</MiddleSectionStyles>
