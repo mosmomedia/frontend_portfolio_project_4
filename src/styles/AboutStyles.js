@@ -6,6 +6,9 @@ export const WrapperStyles = styled.section`
 
 export const HeaderStyles = styled.div`
 	${tw` xs:space-y-0  flex justify-between items-center tracking-wider`}
+	h1 {
+		${tw`text-[26px] xs:text-3xl md:text-4xl lg:text-5xl`}
+	}
 `;
 export const LinksStyles = styled.div`
 	${tw`flex space-x-3 sm:space-x-5`}
