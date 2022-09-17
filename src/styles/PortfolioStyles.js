@@ -4,7 +4,7 @@ export const WrapperStyles = styled.section`
 	${tw`pt-20 pb-20 md:pt-40  lg:pb-96 xl:pt-32 space-y-16`}
 
 	h1 {
-		${tw`text-3xl`}
+		${tw`text-3xl md:text-4xl lg:text-5xl`}
 	}
 `;
 
