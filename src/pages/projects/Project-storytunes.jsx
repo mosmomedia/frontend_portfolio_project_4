@@ -1,6 +1,10 @@
 import Header from '../../components/projects/Header';
 import MainImage from '../../assets/imgs/projects/storytunes/main.png';
 import SampleImg from '../../assets/imgs/projects/storytunes/sample/sample.png';
+import AuthImg_1 from '../../assets/imgs/projects/storytunes/auth/auth-1.png';
+import AuthImg_2 from '../../assets/imgs/projects/storytunes/auth/auth-2.png';
+import AuthImg_3 from '../../assets/imgs/projects/storytunes/auth/auth-3.png';
+import AuthImg_4 from '../../assets/imgs/projects/storytunes/auth/auth-4.png';
 
 import {
 	WrapperStyles,
@@ -51,16 +55,16 @@ function ProjectStorytunes() {
 					</TitleStyles>
 					<ImgListStyles>
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<img src={AuthImg_1} alt="" srcSet="" />
 						</li>
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<img src={AuthImg_2} alt="" srcSet="" />
 						</li>{' '}
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<img src={AuthImg_3} alt="" srcSet="" />
 						</li>{' '}
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<img src={AuthImg_4} alt="" srcSet="" />
 						</li>
 					</ImgListStyles>
 					<DescStyles>
