@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const HeaderStyles = styled.header`
-	${tw`z-50 fixed inset-x-0 top-0 h-[80px] `}
+	${tw`z-50 fixed inset-x-0 top-0 h-[70px] lg:h-[90px]`}
 	${tw`bg-seconday bg-opacity-90 backdrop-blur-[6px]`}
 `;
 
@@ -14,5 +14,5 @@ export const NavStyles = styled.nav`
 `;
 
 export const LogoStyles = styled.img`
-	${tw`h-6 xs:h-7`}
+	${tw`h-6 md:h-[26px]`}
 `;

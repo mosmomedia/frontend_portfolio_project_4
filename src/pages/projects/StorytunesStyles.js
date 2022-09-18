@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 export const styles = styled.div``;
 
 export const WrapperStyles = styled.div`
-	${tw`bg-seconday py-10 space-y-20`}
+	${tw`bg-seconday space-y-28 py-24`}
 `;
 
 export const TopSectionStyles = styled.section`
@@ -24,24 +24,26 @@ export const SectionStyles = styled.section`
 
 export const HeadTitleStyles = styled.div`
 	${tw` px-2
-flex flex-col space-y-12 lg:space-y-0  lg:justify-between lg:space-x-8
+flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 `}
 
 	#title_left {
-		${tw`pt-20 space-y-4 lg:w-2/5`}
+		${tw`lg:pt-20 xl:pt-36 space-y-4  lg:pl-2 
+		lg:w-1/4 
+		`}
 
 		h1 {
-			${tw`text-key_col1`}
+			${tw`text-key_col1 lg:font-medium lg:text-4xl xl:text-5xl 2xl:text-[3.25rem]`}
 		}
 
 		h2 {
-			${tw`text-white text-sm`}
+			${tw`text-white text-sm md:text-lg xl:text-lg 2xl:text-xl`}
 		}
 	}
 
 	#title_right {
-		${tw`lg:w-3/5 lg:max-w-[unset]`}
-		${tw`lg:relative lg:overflow-hidden`}
+		${tw` lg:max-w-[unset] lg:w-3/4 `}
+		/* ${tw`lg:relative lg:overflow-hidden`} */
 
 		img {
 			/* ${tw`absolute`} */
@@ -56,7 +58,7 @@ export const TitleStyles = styled.div`
 	}
 `;
 export const DescStyles = styled.div`
-	${tw`space-y-8`}
+	${tw`space-y-14 pt-10`}
 
 	div {
 		${tw`space-y-6`}
