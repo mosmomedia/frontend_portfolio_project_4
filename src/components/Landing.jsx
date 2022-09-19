@@ -1,9 +1,10 @@
 import { useState } from 'react';
 
-import 'twin.macro';
-import 'styled-components/macro';
+import FireSpinner from '../assets/gifs/fire-red.gif';
 
 import {
+	LoadingStyles,
+	SpinnerStyles,
 	WrapperStyles,
 	TopSectionStyles,
 	MiddleSectionStyles,
@@ -14,8 +15,6 @@ import {
 	TextStyles,
 	ImageWrapper,
 } from '../styles/LandingStyles';
-
-import Spinner from './shared/Spinner';
 
 import djFire from '../assets/gifs/fire-red.gif';
 
@@ -29,11 +28,13 @@ function Landing() {
 	// dectect when all images are loaded
 	// closure
 	function after(count, callback) {
-		let noOfCalls = 0;
+		let callCounts = 0;
 		return function (...rest) {
-			noOfCalls = noOfCalls + 1;
-			if (count === noOfCalls) {
-				callback(...rest);
+			callCounts = callCounts + 1;
+			if (count === callCounts) {
+				setTimeout(() => {
+					callback(...rest);
+				}, 1500);
 			}
 		};
 	}
@@ -44,9 +45,10 @@ function Landing() {
 
 	return (
 		<>
-			{loading && <Spinner />}
-
 			<WrapperStyles id="landing">
+				<LoadingStyles loadingState={loading}>
+					<SpinnerStyles src={FireSpinner} />
+				</LoadingStyles>
 				<TopSectionStyles />
 
 				<MiddleSectionStyles>
