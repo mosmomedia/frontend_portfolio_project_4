@@ -3,6 +3,7 @@ import {
 	WrapperStyles,
 	HeaderStyles,
 	MainStyles,
+	MailToStyles,
 } from '../styles/ContactStyles';
 
 function Contact() {
@@ -19,10 +20,14 @@ function Contact() {
 			{/* main */}
 			<MainStyles>
 				<h4>Say Hello&#33;</h4>
-				<div id="dj_email">
+				<MailToStyles
+					href="mailto:mosmomedia@gmail.com"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<div>hello&#64;dongjookim.com</div>
 					<RiSendPlaneFill />
-				</div>
+				</MailToStyles>
 			</MainStyles>
 		</WrapperStyles>
 	);

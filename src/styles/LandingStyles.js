@@ -34,10 +34,10 @@ export const TitleStyles = styled.div`
 `;
 
 export const TextStyles = styled.div`
-	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-7 lg:w-[88%] 2xl:w-[93%]`}
+	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-5 xs:leading-7 lg:w-[88%] 2xl:w-[93%]`}
 
 	p {
-		${tw`py-1  xs:py-0 text-sm md:text-[15px] lg:text-sm  xl:text-base`}
+		${tw`py-1  xs:py-1.5 text-sm md:text-[15px] lg:text-sm  xl:text-base`}
 	}
 
 	::before {

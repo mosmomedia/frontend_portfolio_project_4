@@ -18,16 +18,16 @@ export const MainStyles = styled.div`
 	h4 {
 		${tw`text-lg  xs:text-xl sm:text-3xl text-[#333333] pl-0.5`}
 	}
+`;
 
-	#dj_email {
-		${tw`inline-flex items-center space-x-8 bg-white font-bold text-xl sm:text-4xl px-6 py-4 shadow-md`}
+export const MailToStyles = styled.a`
+	${tw`inline-flex items-center space-x-8 bg-white font-bold text-xl sm:text-4xl px-6 py-4 shadow-md`}
 
-		${tw`xs:hover:bg-key_col1 xs:hover:text-purple-600 xs:hover:cursor-pointer xs:hover:shadow duration-300`}
+	${tw`xs:hover:bg-key_col1 xs:hover:text-purple-600 xs:hover:cursor-pointer xs:hover:shadow duration-300`}
 
-		${tw`border border-main_text rounded-2xl`}
+${tw`border border-main_text rounded-2xl`}
 
-		svg {
-			${tw`animate-pulse`}
-		}
+svg {
+		${tw`animate-pulse`}
 	}
 `;
