@@ -19,3 +19,13 @@ export const MainStyles = styled.main`
 		}
 	}
 `;
+
+export const LoadingStyles = styled.div`
+	${tw` fixed  inset-0  z-50 flex justify-center items-center bg-primary duration-300`}
+
+	${({ loadingState }) => !loadingState && tw`opacity-0 invisible`}
+`;
+
+export const SpinnerStyles = styled.img`
+	${tw`w-14 md:w-16 xl:w-[4.25rem] animate-bounce`}
+`;

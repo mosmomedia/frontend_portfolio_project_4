@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import FireSpinner from '../../assets/gifs/fire-red.gif';
+
 import Header from '../../components/projects/Header';
 import MainImage from '../../assets/imgs/projects/storytunes/main.png';
 import SampleImg from '../../assets/imgs/projects/storytunes/sample/sample.png';
@@ -16,10 +19,25 @@ import {
 	ImgListStyles,
 } from './StorytunesStyles';
 
+import { LoadingStyles, SpinnerStyles } from '../../styles';
+
 function ProjectStorytunes() {
+	const [loading, setLoading] = useState(true);
+
+	const handleLoad = () => {
+		setTimeout(() => {
+			setLoading(false);
+		}, 1000);
+	};
+
+	// if (loading) return <FireSpinner />;
+
 	return (
 		<>
 			<Header />
+			<LoadingStyles loadingState={loading}>
+				<SpinnerStyles src={FireSpinner} />
+			</LoadingStyles>
 			<WrapperStyles>
 				<SectionStyles>
 					<HeadTitleStyles>
@@ -31,7 +49,7 @@ function ProjectStorytunes() {
 
 						{/* right */}
 						<div id="title_right">
-							<img src={MainImage} alt="" />
+							<img src={MainImage} alt="" onLoad={handleLoad} />
 						</div>
 					</HeadTitleStyles>
 				</SectionStyles>

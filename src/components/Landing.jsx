@@ -1,10 +1,7 @@
 import { useState } from 'react';
-
 import FireSpinner from '../assets/gifs/fire-red.gif';
 
 import {
-	LoadingStyles,
-	SpinnerStyles,
 	WrapperStyles,
 	TopSectionStyles,
 	MiddleSectionStyles,
@@ -15,6 +12,8 @@ import {
 	TextStyles,
 	ImageWrapper,
 } from '../styles/LandingStyles';
+
+import { LoadingStyles, SpinnerStyles } from '../styles';
 
 import djFire from '../assets/gifs/fire-red.gif';
 
