@@ -8,11 +8,24 @@ import AuthImg_1 from '../../assets/imgs/projects/storytunes/auth/auth-1.png';
 import AuthImg_2 from '../../assets/imgs/projects/storytunes/auth/auth-2.png';
 import AuthImg_3 from '../../assets/imgs/projects/storytunes/auth/auth-3.png';
 import AuthImg_4 from '../../assets/imgs/projects/storytunes/auth/auth-4.png';
+import St_1 from '../../assets/imgs/projects/storytunes/student/st-1.png';
+import St_2 from '../../assets/imgs/projects/storytunes/student/st-2.png';
+import St_3 from '../../assets/imgs/projects/storytunes/student/st-3.png';
+import St_4 from '../../assets/imgs/projects/storytunes/student/st-4.png';
+import Work_1 from '../../assets/imgs/projects/storytunes/student/work-1.png';
+import Work_2 from '../../assets/imgs/projects/storytunes/student/work-2.png';
+import Work_3 from '../../assets/imgs/projects/storytunes/student/work-3.png';
+import Work_4 from '../../assets/imgs/projects/storytunes/student/work-4.png';
+import Admin_1 from '../../assets/imgs/projects/storytunes/admin/admin-1.png';
+import Admin_2 from '../../assets/imgs/projects/storytunes/admin/admin-2.png';
+import Admin_3 from '../../assets/imgs/projects/storytunes/admin/admin-3.png';
+import Admin_4 from '../../assets/imgs/projects/storytunes/admin/admin-4.png';
 
 import {
 	WrapperStyles,
 	TopSectionStyles,
 	SectionStyles,
+	SubSectionStyles,
 	HeadTitleStyles,
 	TitleStyles,
 	DescStyles,
@@ -106,20 +119,42 @@ function ProjectStorytunes() {
 					<TitleStyles>
 						<h2>Student Dashboard</h2>
 					</TitleStyles>
-					<ImgListStyles>
-						<li>
-							<img src={SampleImg} alt="" srcSet="" />
-						</li>
-						<li>
-							<img src={SampleImg} alt="" srcSet="" />
-						</li>{' '}
-						<li>
-							<img src={SampleImg} alt="" srcSet="" />
-						</li>{' '}
-						<li>
-							<img src={SampleImg} alt="" srcSet="" />
-						</li>
-					</ImgListStyles>
+					<SubSectionStyles>
+						<h3>강의 게시판</h3>
+						<ImgListStyles>
+							<li>
+								<img src={St_1} alt="" srcSet="" />
+							</li>
+							<li>
+								<img src={St_2} alt="" srcSet="" />
+							</li>{' '}
+							<li>
+								<img src={St_3} alt="" srcSet="" />
+							</li>{' '}
+							<li>
+								<img src={St_4} alt="" srcSet="" />
+							</li>
+						</ImgListStyles>
+					</SubSectionStyles>
+
+					<SubSectionStyles>
+						<h3>연재 게시판</h3>
+						<ImgListStyles>
+							<li>
+								<img src={Work_1} alt="" srcSet="" />
+							</li>
+							<li>
+								<img src={Work_2} alt="" srcSet="" />
+							</li>{' '}
+							<li>
+								<img src={Work_3} alt="" srcSet="" />
+							</li>{' '}
+							<li>
+								<img src={Work_4} alt="" srcSet="" />
+							</li>
+						</ImgListStyles>
+					</SubSectionStyles>
+
 					<DescStyles>
 						<div>
 							<h3>Approach</h3>
@@ -143,16 +178,16 @@ function ProjectStorytunes() {
 					</TitleStyles>
 					<ImgListStyles>
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<img src={Admin_1} alt="" srcSet="" />
 						</li>
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<img src={Admin_2} alt="" srcSet="" />
 						</li>{' '}
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<img src={Admin_3} alt="" srcSet="" />
 						</li>{' '}
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<img src={Admin_4} alt="" srcSet="" />
 						</li>
 					</ImgListStyles>
 					<DescStyles>

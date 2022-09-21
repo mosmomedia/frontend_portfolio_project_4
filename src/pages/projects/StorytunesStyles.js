@@ -52,6 +52,13 @@ flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 	}
 `;
 
+export const SubSectionStyles = styled.div`
+	${tw`space-y-6	`}
+	h3 {
+		${tw`text-white`}
+	}
+`;
+
 export const TitleStyles = styled.div`
 	h2 {
 		${tw`text-key_col1 text-2xl`}
