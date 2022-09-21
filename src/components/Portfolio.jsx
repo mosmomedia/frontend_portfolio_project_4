@@ -52,6 +52,7 @@ function Portfolio() {
 										href="https://storytunes.co.kr"
 										target="_blank"
 										rel="noopener noreferrer"
+										aria-label="link to storytunes page"
 									>
 										스토리튠즈
 									</a>
@@ -70,7 +71,7 @@ function Portfolio() {
 							</div>
 							{/* features */}
 							<div id="pf_feat">
-								<h4>Features</h4>
+								<h3>Features</h3>
 								<ul>
 									<li>Single Page Application with React&#40;.js&#41;</li>
 									<li>
@@ -87,6 +88,7 @@ function Portfolio() {
 									to="/project/storytunes"
 									id="pf_project_link"
 									className="pf_link"
+									aria-label="link to project page"
 								>
 									<GoLinkExternal />
 									<div>View Project</div>
@@ -98,6 +100,7 @@ function Portfolio() {
 									className="pf_link"
 									target="_blank"
 									rel="noopener noreferrer"
+									aria-label="link to demo page"
 								>
 									<BsGlobe />
 									<span>View Demo</span>
@@ -109,6 +112,7 @@ function Portfolio() {
 									className="pf_link"
 									target="_blank"
 									rel="noopener noreferrer"
+									aria-label="link to github page"
 								>
 									<GrGithub />
 									<span>View Source</span>
@@ -155,7 +159,7 @@ function Portfolio() {
 							</div>
 							{/* features */}
 							<div id="pf_feat">
-								<h4>Features</h4>
+								<h3>Features</h3>
 								<ul>
 									<li>Single Page Application with React&#40;.js&#41;</li>
 									<li>
@@ -168,8 +172,8 @@ function Portfolio() {
 							<div id="pf_links">
 								<Link
 									to="/project/storytunes"
-									id="pf_project_link"
-									className="pf_link"
+									className="pf_project_link pf_link"
+									aria-label="link to project page"
 								>
 									<GoLinkExternal />
 									<div>View Project</div>
@@ -177,10 +181,10 @@ function Portfolio() {
 
 								<a
 									href="https://storytunes.herokuapp.com/"
-									id="pf_demo_link"
-									className="pf_link"
+									className="pf_demo_link pf_link"
 									target="_blank"
 									rel="noopener noreferrer"
+									aria-label="link to demo page"
 								>
 									<BsGlobe />
 									<span>View Demo</span>
@@ -188,10 +192,10 @@ function Portfolio() {
 
 								<a
 									href="https://github.com/mosmomedia/frontend_portfolio_project_3"
-									id="pf_github_link"
-									className="pf_link"
+									className="pf_github_link pf_link"
 									target="_blank"
 									rel="noopener noreferrer"
+									aria-label="link to github page"
 								>
 									<GrGithub />
 									<span>View Source</span>

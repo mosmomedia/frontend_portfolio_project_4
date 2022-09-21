@@ -37,8 +37,8 @@ function Footer({ mainRef }) {
 				<div id="footer_links_copyright">
 					<LinksStyles>
 						<a
-							id="dj_resume"
-							href="http://"
+							className="djResume"
+							href="http://github.com/mosmomedia"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -47,7 +47,7 @@ function Footer({ mainRef }) {
 						</a>
 
 						<a
-							id="dj_github"
+							className="djGithub"
 							href="https://github.com/mosmomedia"
 							target="_blank"
 							rel="noopener noreferrer"

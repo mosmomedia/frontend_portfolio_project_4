@@ -9,7 +9,7 @@ const CustomStyles = createGlobalStyle`
 :root {
 	font-family: 'Noto Sans + Rubik', sans-serif;
 	/* --nav-height : 100px; */
-	--nav-height : 124px;
+	--nav-height : 116px;
 	--key-color : #BEF9EE;
 }
 
@@ -24,8 +24,7 @@ h1{
 }
 
 h2{
-	${tw`text-lg  xs:text-xl  sm:text-2xl font-bold text-primary lg:text-[28px]`}
-
+	${tw`text-lg  xs:text-xl  sm:text-2xl font-bold text-primary md:text-[25px] 2xl:text-[28px]`}
 }
 
 h3,

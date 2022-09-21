@@ -34,10 +34,10 @@ export const TitleStyles = styled.div`
 `;
 
 export const TextStyles = styled.div`
-	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-5 xs:leading-7 lg:w-[94%] xl:w-[90%] 2xl:w-[93%]`}
+	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium leading-5 xs:leading-7 lg:w-[94%] xl:w-[90%] 2xl:w-[93%]`}
 
 	p {
-		${tw`py-1  xs:py-1.5 lg:py-0.5 text-sm md:text-[15px] lg:text-[13px]  xl:text-[15px] 2xl:text-base`}
+		${tw`py-1 tracking-[0.075em] xs:py-1.5 lg:py-0.5 text-sm md:text-[15px] lg:text-[13px] xl:text-sm 2xl:text-base 2xl:font-medium 2xl:opacity-95`}
 	}
 
 	::before {
@@ -53,7 +53,7 @@ export const TextStyles = styled.div`
 `;
 
 export const RightStyles = styled.div`
-	${tw`hidden lg:block lg:flex-auto lg:pt-20 xl:pt-14 2xl:pt-8 lg:pl-10  xl:pl-16  2xl:pl-36`}
+	${tw`hidden lg:block lg:flex-auto lg:pt-20 xl:pt-10 2xl:pt-8 lg:pl-10  xl:pl-14  2xl:pl-32`}
 `;
 
 export const ImageWrapper = styled.div`
@@ -64,7 +64,7 @@ export const ImageWrapper = styled.div`
 	}
 
 	.img_fire {
-		${tw`absolute z-30 lg:w-20 xl:w-16 -top-24 xl:-top-20 right-1/2 translate-x-1/2`}
+		${tw`hidden absolute z-30 w-20 xl:w-16 -top-24 xl:-top-20 right-1/2 translate-x-1/2`}
 	}
 
 	.img_text {
@@ -81,7 +81,8 @@ export const ImageWrapper = styled.div`
 `;
 
 export const BottomArrowStyles = styled.div`
-	${tw`hidden lg:block  lg:relative h-36 w-[1px] bg-[#2f2f2f]`}
+	${tw`hidden lg:block  lg:relative lg:h-28 w-[1px] bg-[#2f2f2f]`}
+
 	::before {
 		content: '';
 		${tw`absolute bottom-[1px] right-0 w-1 h-[1px] bg-[#2f2f2f] rotate-45`}

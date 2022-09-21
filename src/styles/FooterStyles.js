@@ -16,10 +16,10 @@ export const WrapperStyles = styled.footer`
 	}
 
 	#footer_links_copyright {
-		${tw`flex flex-col space-y-6 sm:space-y-0 sm:flex-row  sm:justify-between sm:items-start`}
+		${tw`flex flex-col space-y-6 sm:space-y-0 sm:flex-row  sm:justify-between sm:items-center`}
 	}
 
 	#footer_dj_copyright {
-		${tw`text-xl  xs:text-2xl text-main_text pt-4 xs:pt-0`}
+		${tw`text-xl  sm:text-2xl lg:text-xl text-main_text pt-4 xs:pt-0`}
 	}
 `;

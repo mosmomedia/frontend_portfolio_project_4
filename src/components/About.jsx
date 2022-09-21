@@ -18,22 +18,24 @@ function About() {
 			<HeaderStyles>
 				<h1>About Me.</h1>
 				{/* links */}
-				<LinksStyles id="dj_links">
+				<LinksStyles id="djLinks">
 					<a
-						id="dj_resume"
-						href="http://"
+						className="djResume"
+						href="http://github.com/mosmomedia"
 						target="_blank"
 						rel="noopener noreferrer"
+						aria-label="link to resume page"
 					>
 						<GrDocumentUser />
 						<span>Résumé</span>
 					</a>
 
 					<a
-						id="dj_github"
+						className="djGithub"
 						href="https://github.com/mosmomedia"
 						target="_blank"
 						rel="noopener noreferrer"
+						aria-label="link to github page"
 					>
 						<GrGithub />
 						<span>Github</span>
@@ -101,6 +103,7 @@ function About() {
 									href="https://storytunes.co.kr"
 									target="_blank"
 									rel="noopener noreferrer"
+									aria-label="link to storytunes page"
 								>
 									<GoLinkExternal />
 								</a>
@@ -146,6 +149,7 @@ function About() {
 									href="https://silvertrade.co.kr"
 									target="_blank"
 									rel="noopener noreferrer"
+									aria-label="link to silvertrade page"
 								>
 									<GoLinkExternal />
 								</a>

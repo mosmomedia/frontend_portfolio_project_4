@@ -7,7 +7,7 @@ export const WrapperStyles = styled.section`
 export const HeaderStyles = styled.div`
 	${tw` xs:space-y-0  flex justify-between items-center tracking-wider`}
 	h1 {
-		${tw`text-[26px] xs:text-3xl md:text-4xl lg:text-5xl`}
+		${tw`text-[26px] xs:text-3xl md:text-4xl xl:text-[40px] 2xl:text-5xl`}
 	}
 `;
 export const LinksStyles = styled.div`
@@ -19,16 +19,16 @@ export const LinksStyles = styled.div`
 		${tw`xs:hover:text-key_col1`}
 	}
 
-	#dj_resume svg {
+	.djResume svg {
 		${tw`text-[12px] xs:text-base sm:text-lg`}
 		${tw` sm:mt-[1px]`}
 	}
 
-	#dj_resume path {
+	.djResume path {
 		stroke: var(--key-color);
 	}
 
-	#dj_github svg {
+	.djGithub svg {
 		${tw`text-base xs:text-lg  sm:text-[21px] text-key_col1`}
 	}
 `;
@@ -43,7 +43,7 @@ export const SubStyles = styled.div`
 	}
 
 	p {
-		${tw`tracking-wide text-primary leading-7 md:leading-8 md:text-[16px] lg:text-lg pr-4 xs:pr-0`}
+		${tw`tracking-wider text-primary  md:text-base 2xl:text-lg pr-4 xs:pr-0 leading-7 md:leading-7`}
 	}
 
 	.bigger_title {
@@ -84,7 +84,7 @@ export const SubExpStyles = styled.div`
 		${tw`hover:text-purple-700 duration-200`}
 	}
 	p {
-		${tw`sm:text-base py-6 tracking-wide font-medium`}
+		${tw`sm:text-base py-6 tracking-wider font-medium`}
 	}
 
 	ul {

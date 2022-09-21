@@ -1,6 +1,7 @@
 /* noto-sans-kr-300 - korean */
 @font-face {
 	font-family: 'Noto Sans KR';
+	font-display: swap;
 	font-style: normal;
 	font-weight: 300;
 	src: url('./fonts/noto-sans-kr/noto-sans-kr-v27-korean-300.eot'); /* IE9 Compat Modes */
@@ -19,6 +20,7 @@
 /* noto-sans-kr-regular - korean */
 @font-face {
 	font-family: 'Noto Sans KR';
+	font-display: swap;
 	font-style: normal;
 	font-weight: 400;
 	src: url('./fonts/noto-sans-kr/noto-sans-kr-v27-korean-regular.eot'); /* IE9 Compat Modes */
@@ -38,6 +40,7 @@
 /* noto-sans-kr-500 - korean */
 @font-face {
 	font-family: 'Noto Sans KR';
+	font-display: swap;
 	font-style: normal;
 	font-weight: 500;
 	src: url('./fonts/noto-sans-kr/noto-sans-kr-v27-korean-500.eot'); /* IE9 Compat Modes */
@@ -56,6 +59,7 @@
 /* rubik-300 - latin */
 @font-face {
 	font-family: 'Noto Sans + Rubik';
+	font-display: swap;
 	font-style: normal;
 	font-weight: 300;
 	src: url('./fonts/rubik/rubik-v21-latin-300.eot'); /* IE9 Compat Modes */
@@ -74,6 +78,7 @@
 /* rubik-regular - latin */
 @font-face {
 	font-family: 'Noto Sans + Rubik';
+	font-display: swap;
 	font-style: normal;
 	font-weight: 400;
 	unicode-range: U+0020-007E;
@@ -93,6 +98,7 @@
 /* rubik-500 - latin */
 @font-face {
 	font-family: 'Noto Sans + Rubik';
+	font-display: swap;
 	font-style: normal;
 	font-weight: 500;
 	unicode-range: U+0020-007E;
@@ -111,6 +117,7 @@
 /* rubik-700 - latin */
 @font-face {
 	font-family: 'Noto Sans + Rubik';
+	font-display: swap;
 	font-style: normal;
 	font-weight: 700;
 	unicode-range: U+0020-007E;

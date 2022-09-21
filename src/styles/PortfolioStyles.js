@@ -4,7 +4,7 @@ export const WrapperStyles = styled.section`
 	${tw`pt-20 pb-20 md:pt-40  lg:pb-96 xl:pt-32 space-y-16 `}
 
 	h1 {
-		${tw`text-3xl md:text-4xl lg:text-5xl`}
+		${tw`text-3xl md:text-4xl xl:text-[40px] 2xl:text-5xl`}
 	}
 `;
 
@@ -26,21 +26,21 @@ export const HeaderStyles = styled.div`
 	${tw`space-y-7`}
 
 	#pf_title {
-		${tw`space-y-8 xl:space-y-0  xl:flex xl:justify-between`}
+		${tw`space-y-2 xl:space-y-0  xl:flex xl:justify-between xl:items-center`}
 
 		h2 {
-			${tw`text-[#fbfbfb] text-2xl xs:text-[38px] tracking-wider`}
+			${tw`text-[#fbfbfb] text-2xl md:text-3xl 2xl:text-4xl tracking-wider`}
 		}
 	}
 
 	#pf_role {
-		${tw`text-key_col1 text-base  xs:text-lg`}
+		${tw`text-key_col1 text-base md:text-[17px] 2xl:text-lg `}
 	}
 
 	#pf_tech {
-		${tw`text-[#ffffff] text-sm  xs:text-[17px] font-light`}
+		${tw`text-[#ffffff] text-sm  xs:text-base 2xl:text-lg font-light`}
 
-		${tw`flex flex-wrap  xl:space-x-8 `}
+		${tw`flex flex-wrap xl:space-x-5  2xl:space-x-8 `}
 
 		li {
 			${tw`pr-4 py-1`}
@@ -68,14 +68,14 @@ export const RightStyles = styled.div`
 
 	#pf_desc {
 		p {
-			${tw`font-light leading-7`}
+			${tw`font-light leading-7 md:text-sm 2xl:text-base 2xl:leading-7 2xl:font-normal`}
 		}
 	}
 
 	#pf_feat {
 		${tw`space-y-4`}
 
-		h4 {
+		h3 {
 			${tw`text-white`}
 		}
 
@@ -84,7 +84,7 @@ export const RightStyles = styled.div`
 		}
 
 		li {
-			${tw`list-disc text-[15px]`}
+			${tw`list-disc text-[15px] md:text-sm 2xl:text-base font-light`}
 		}
 	}
 
@@ -104,19 +104,19 @@ export const RightStyles = styled.div`
 		}
 	}
 
-	#pf_project_link svg {
+	.pf_project_link svg {
 		${tw`text-xl mb-0.5 animate-pulse pl-0.5 xs:pl-0`}
 	}
 
-	#pf_demo_link {
+	.pf_demo_link {
 		${tw`space-x-5 xs:space-x-4`}
 	}
 
-	#pf_demo_link svg {
+	.pf_demo_link svg {
 		${tw`text-lg xs:text-[16px] mb-0.5 pl-0.5 xs:pl-0`}
 	}
 
-	#pf_github_link svg {
+	.pf_github_link svg {
 		${tw`text-xl mb-0.5`}
 	}
 `;

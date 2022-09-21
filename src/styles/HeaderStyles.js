@@ -22,22 +22,18 @@ export const WrapperStyles = styled.div`
 	#displayName.hideName {
 		${tw`hidden`}
 	}
-
-	h2 {
-		${tw`font-bold pt-6 text-xl`}
-	}
 `;
 
 export const NavStyles = styled.nav`
-	${tw`container m-auto flex justify-between items-start tracking-wider font-medium`}
+	${tw`container m-auto flex justify-between items-center tracking-wider font-medium`}
 `;
 
 export const LogoStyles = styled.img`
-	${tw`h-6`}
+	${tw`w-6 h-6 2xl:h-7 2xl:w-7`}
 `;
 
 export const MenuStyles = styled.ul`
-	${tw`flex text-base  xs:space-x-4  sm:space-x-6 sm:text-base md:space-x-10 md:tracking-wider`}
+	${tw`flex text-base  xs:space-x-4  sm:space-x-6 sm:text-base 2xl:text-lg md:space-x-10 2xl:space-x-11 md:tracking-wider`}
 
 	a {
 		${tw`text-[#000] px-3 xs:px-2 py-1 xs:hover:text-[#2e2e2e] duration-75`}

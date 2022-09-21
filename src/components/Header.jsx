@@ -87,15 +87,21 @@ function Header({ mainRef }) {
 					{/* menu */}
 					<MenuStyles>
 						{/* about */}
-						<HashLink smooth to="/#about">
-							About
-						</HashLink>
-						<HashLink smooth to="/#portfolio">
-							Portfolio
-						</HashLink>
-						<HashLink smooth to="/#contact">
-							Contact
-						</HashLink>
+						<li>
+							<HashLink smooth to="/#about">
+								About
+							</HashLink>
+						</li>
+						<li>
+							<HashLink smooth to="/#portfolio">
+								Portfolio
+							</HashLink>
+						</li>
+						<li>
+							<HashLink smooth to="/#contact">
+								Contact
+							</HashLink>
+						</li>
 					</MenuStyles>
 				</NavStyles>
 			</WrapperStyles>

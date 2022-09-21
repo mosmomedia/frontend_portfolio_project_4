@@ -18,11 +18,11 @@ import { LoadingStyles, SpinnerStyles } from '../styles';
 import djFire from '../assets/gifs/fire-red.gif';
 
 import djText from '../assets/imgs/dj-text.png';
-import djPic from '../assets/imgs/dj-pic.png';
-import djBg from '../assets/imgs/dj-bg.png';
+import djPic from '../assets/imgs/dj-pic.webp';
+import djBg from '../assets/imgs/dj-bg.webp';
 
 function Landing() {
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(false);
 
 	// dectect when all images are loaded
 	// closure

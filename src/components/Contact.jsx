@@ -13,13 +13,13 @@ function Contact() {
 			{/* header */}
 			<HeaderStyles>
 				<h1>Contact</h1>
-				<h4>
+				<p>
 					고객에게 가치있고 동료에게 영감을 주는 서비스를 함께 만들어 봅시다!
-				</h4>
+				</p>
 			</HeaderStyles>
 			{/* main */}
 			<MainStyles>
-				<h4>Say Hello&#33;</h4>
+				<p>Say Hello&#33;</p>
 				<MailToStyles
 					href="mailto:mosmomedia@gmail.com"
 					target="_blank"
