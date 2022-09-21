@@ -17,12 +17,12 @@ import { LoadingStyles, SpinnerStyles } from '../styles';
 
 import djFire from '../assets/gifs/fire-red.gif';
 
-import djText from '../assets/imgs/dj-text.png';
+import djText from '../assets/imgs/dj-text.webp';
 import djPic from '../assets/imgs/dj-pic.webp';
 import djBg from '../assets/imgs/dj-bg.webp';
 
 function Landing() {
-	const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(true);
 
 	// dectect when all images are loaded
 	// closure
@@ -37,7 +37,6 @@ function Landing() {
 			}
 		};
 	}
-
 	const logWhen = after(4, () => {
 		setLoading(false);
 	});
@@ -49,13 +48,12 @@ function Landing() {
 					<SpinnerStyles src={FireSpinner} />
 				</LoadingStyles>
 				<TopSectionStyles />
-
 				<MiddleSectionStyles>
 					{/* left */}
 					<LeftStyles>
 						{/* main title */}
 						<TitleStyles>
-							<h1>I’m an aspiring FE developer</h1>
+							<h1>I&#39;m an aspiring FE developer</h1>
 							<h1>with my background in design.</h1>
 						</TitleStyles>
 
