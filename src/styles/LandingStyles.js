@@ -6,7 +6,8 @@ export const WrapperStyles = styled.section`
 `;
 
 export const TopSectionStyles = styled.div`
-	${tw`h-[100px] lg:h-[var(--nav-height)]`}
+	${tw`h-[80px] lg:h-[var(--nav-height)]`}
+
 	${tw`relative`}
 `;
 
@@ -15,12 +16,12 @@ export const MiddleSectionStyles = styled.div`
 `;
 
 export const LeftStyles = styled.div`
-	${tw`flex flex-col justify-between space-y-20 xs:space-y-28 lg:space-y-20 pb-6`}
+	${tw`flex flex-col justify-between space-y-14 xs:space-y-28 lg:space-y-20 pb-6`}
 	${tw`lg:w-40 xl:w-64  lg:flex-auto`}
 `;
 
 export const TitleStyles = styled.div`
-	${tw` tracking-wide space-y-2  xs:space-y-6 lg:space-y-2 xl:space-y-5 leading-8`}
+	${tw` tracking-wide space-y-0  xs:space-y-6 lg:space-y-2 xl:space-y-5 leading-8`}
 
 	h1 {
 		${tw`pl-1 md:pl-0 text-[24px]  xs:text-4xl  sm:text-4xl  md:text-[44px] lg:text-[34px]  xl:text-[42px]  2xl:text-5xl`}
@@ -37,7 +38,7 @@ export const TextStyles = styled.div`
 	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium leading-5 xs:leading-7 lg:w-[94%] xl:w-[90%] 2xl:w-[93%]`}
 
 	p {
-		${tw`py-1 tracking-[0.075em] xs:py-1.5 lg:py-0.5 text-sm md:text-[15px] lg:text-[13px] xl:text-sm 2xl:text-base 2xl:font-medium 2xl:opacity-95`}
+		${tw`py-1 tracking-[0.075em] xs:py-1.5 lg:py-0.5 text-[13px] md:text-[15px] lg:text-[13px] xl:text-sm 2xl:text-base 2xl:font-medium 2xl:opacity-95`}
 	}
 
 	::before {

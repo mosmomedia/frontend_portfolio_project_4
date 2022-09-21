@@ -29,7 +29,8 @@ h2{
 
 h3,
 h4{
-	${tw`text-[17px]  xs:text-[20px] sm:text-[22px] font-medium text-primary`}
+	${tw`text-[17px]  xs:text-[20px] sm:text-[21px] font-medium text-primary`}
+
 }
 
 p {

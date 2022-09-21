@@ -68,7 +68,7 @@ export const RightStyles = styled.div`
 
 	#pf_desc {
 		p {
-			${tw`font-light leading-7 md:text-sm 2xl:text-base 2xl:leading-7 2xl:font-normal`}
+			${tw`font-light leading-7 md:text-sm xl:text-[15px]  2xl:text-base 2xl:leading-7 2xl:font-normal`}
 		}
 	}
 

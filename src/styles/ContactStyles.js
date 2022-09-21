@@ -12,7 +12,7 @@ export const HeaderStyles = styled.div`
 	${tw`space-y-6`}
 
 	p {
-		${tw`text-gray-700 text-base  xs:text-[17px] md:text-xl`}
+		${tw`text-gray-700 text-base  xs:text-[17px] md:text-[19px]`}
 	}
 `;
 

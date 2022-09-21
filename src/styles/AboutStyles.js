@@ -14,14 +14,16 @@ export const LinksStyles = styled.div`
 	${tw`flex space-x-3 sm:space-x-5`}
 
 	a {
-		${tw`flex items-center  xs:items-start bg-seconday text-white text-[10px] xs:text-[12px] sm:text-[14px] tracking-widest rounded-[0.2rem]  xs:rounded-md px-2 py-0.5 xs:py-1  sm:px-4 sm:pt-2 sm:pb-1 space-x-3 font-light duration-300`}
+		${tw`flex items-center  xs:items-start bg-seconday text-white text-[10px] xs:text-xs sm:text-[13px] tracking-widest rounded-[0.2rem]  xs:rounded-[3px] space-x-3 font-light duration-300`}
+
+		${tw`px-2.5 py-0.5 xs:py-1 sm:py-1.5 md:py-2 lg:py-1.5`}
 
 		${tw`xs:hover:text-key_col1`}
 	}
 
 	.djResume svg {
-		${tw`text-[12px] xs:text-base sm:text-lg`}
-		${tw` sm:mt-[1px]`}
+		${tw`text-xs xs:text-sm`}
+		${tw` xs:mt-[2px] sm:mt-0`}
 	}
 
 	.djResume path {
@@ -29,7 +31,7 @@ export const LinksStyles = styled.div`
 	}
 
 	.djGithub svg {
-		${tw`text-base xs:text-lg  sm:text-[21px] text-key_col1`}
+		${tw`text-base xs:text-lg sm:text-[16px] text-key_col1`}
 	}
 `;
 
@@ -57,10 +59,12 @@ export const SubStyles = styled.div`
 
 export const ExpStyles = styled.div`
 	${tw`mt-5 grid grid-rows-2 gap-10 xl:grid-rows-1  xl:grid-cols-2 xl:gap-16`}
+
+	${tw`items-center xl:items-stretch`}
 `;
 
 export const SubExpStyles = styled.div`
-	${tw`bg-white border border-[#2f2f2f] rounded-[3px] py-10 px-4 sm:px-8 space-y-4`}
+	${tw`bg-white border border-[#2f2f2f] rounded-[3px] py-8 px-4 sm:px-8 space-y-4`}
 
 	.exp_header {
 		${tw`flex justify-between`}
@@ -80,19 +84,21 @@ export const SubExpStyles = styled.div`
 	.exp_info {
 		${tw`flex space-x-4 text-gray-700`}
 	}
+
 	a {
 		${tw`hover:text-purple-700 duration-200`}
 	}
+
 	p {
-		${tw`sm:text-base py-6 tracking-wider font-medium`}
+		${tw`text-sm leading-6 sm:text-[15px] 2xl:text-base py-6 tracking-wider`}
 	}
 
 	ul {
-		${tw`pl-4 space-y-2`}
+		${tw`pl-4 space-y-3`}
 	}
 
 	li {
-		${tw`list-disc text-primary`}
+		${tw`list-disc text-primary text-[13px] xs:text-sm sm:text-[15px] 2xl:text-base`}
 	}
 
 	svg {
