@@ -9,7 +9,7 @@ const CustomStyles = createGlobalStyle`
 :root {
 	font-family: 'Noto Sans + Rubik', sans-serif;
 	/* --nav-height : 100px; */
-	--nav-height : 150px;
+	--nav-height : 124px;
 	--key-color : #BEF9EE;
 }
 

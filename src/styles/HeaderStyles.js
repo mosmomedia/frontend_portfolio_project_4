@@ -16,8 +16,7 @@ export const WrapperStyles = styled.div`
 	${tw`relative w-full h-full flex`}
 
 	#displayName {
-		${tw`absolute hidden lg:block  lg:text-lg  lg:-bottom-4  xl:-bottom-0
-		xl:text-xl font-medium text-primary tracking-wide`}
+		${tw`absolute hidden lg:block  lg:text-base  lg:-bottom-0	xl:text-lg font-medium text-primary tracking-wide`}
 	}
 
 	#displayName.hideName {
@@ -34,11 +33,11 @@ export const NavStyles = styled.nav`
 `;
 
 export const LogoStyles = styled.img`
-	${tw`h-6 xs:h-7`}
+	${tw`h-6`}
 `;
 
 export const MenuStyles = styled.ul`
-	${tw`flex text-base  xs:space-x-4  sm:space-x-6 sm:text-lg md:space-x-10 md:tracking-wider`}
+	${tw`flex text-base  xs:space-x-4  sm:space-x-6 sm:text-base md:space-x-10 md:tracking-wider`}
 
 	a {
 		${tw`text-[#000] px-3 xs:px-2 py-1 xs:hover:text-[#2e2e2e] duration-75`}

@@ -15,15 +15,15 @@ export const MiddleSectionStyles = styled.div`
 `;
 
 export const LeftStyles = styled.div`
-	${tw`flex flex-col justify-between space-y-20 xs:space-y-28 pb-6`}
+	${tw`flex flex-col justify-between space-y-20 xs:space-y-28 lg:space-y-20 pb-6`}
 	${tw`lg:w-40 xl:w-64  lg:flex-auto`}
 `;
 
 export const TitleStyles = styled.div`
-	${tw` tracking-wide space-y-2  xs:space-y-6 leading-8`}
+	${tw` tracking-wide space-y-2  xs:space-y-6 lg:space-y-2 xl:space-y-5 leading-8`}
 
 	h1 {
-		${tw`pl-1 md:pl-0 text-[24px]  xs:text-4xl  sm:text-4xl   md:text-[44px] lg:text-[34px]  xl:text-[42px]  2xl:text-5xl`}
+		${tw`pl-1 md:pl-0 text-[24px]  xs:text-4xl  sm:text-4xl  md:text-[44px] lg:text-[34px]  xl:text-[42px]  2xl:text-5xl`}
 
 		${tw`font-medium `}
 	}
@@ -34,10 +34,10 @@ export const TitleStyles = styled.div`
 `;
 
 export const TextStyles = styled.div`
-	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-5 xs:leading-7 lg:w-[88%] 2xl:w-[93%]`}
+	${tw`relative border border-[#2f2f2f] rounded-[3px] bg-white text-black px-8 py-8 font-medium tracking-wider leading-5 xs:leading-7 lg:w-[94%] xl:w-[90%] 2xl:w-[93%]`}
 
 	p {
-		${tw`py-1  xs:py-1.5 text-sm md:text-[15px] lg:text-sm  xl:text-base`}
+		${tw`py-1  xs:py-1.5 lg:py-0.5 text-sm md:text-[15px] lg:text-[13px]  xl:text-[15px] 2xl:text-base`}
 	}
 
 	::before {
@@ -53,7 +53,7 @@ export const TextStyles = styled.div`
 `;
 
 export const RightStyles = styled.div`
-	${tw`hidden lg:block lg:flex-auto lg:pt-20  2xl:pt-8  2xl:pl-36`}
+	${tw`hidden lg:block lg:flex-auto lg:pt-20 xl:pt-14 2xl:pt-8 lg:pl-10  xl:pl-16  2xl:pl-36`}
 `;
 
 export const ImageWrapper = styled.div`
@@ -64,7 +64,7 @@ export const ImageWrapper = styled.div`
 	}
 
 	.img_fire {
-		${tw`absolute z-30 lg:w-20  2xl:w-16 -top-24 2xl:-top-20 right-1/2 translate-x-1/2`}
+		${tw`absolute z-30 lg:w-20 xl:w-16 -top-24 xl:-top-20 right-1/2 translate-x-1/2`}
 	}
 
 	.img_text {
