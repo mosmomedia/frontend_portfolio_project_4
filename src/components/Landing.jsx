@@ -33,7 +33,7 @@ function Landing() {
 			if (count === callCounts) {
 				setTimeout(() => {
 					callback(...rest);
-				}, 1500);
+				}, 1400);
 			}
 		};
 	}

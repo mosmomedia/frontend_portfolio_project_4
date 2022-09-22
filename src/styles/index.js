@@ -21,7 +21,7 @@ export const MainStyles = styled.main`
 `;
 
 export const LoadingStyles = styled.div`
-	${tw` fixed  inset-0  z-50 flex justify-center items-center bg-primary duration-300`}
+	${tw` fixed  inset-0  z-50 flex justify-center items-center bg-primary duration-700`}
 
 	${({ loadingState }) => !loadingState && tw`opacity-0 invisible`}
 `;

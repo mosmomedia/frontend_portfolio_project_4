@@ -41,11 +41,11 @@ export const SectionStyles = styled.div`
 
 export const SubStyles = styled.div`
 	h2 {
-		${tw`pb-10`}
+		${tw`pb-10 2xl:pb-14`}
 	}
 
 	p {
-		${tw`tracking-wider text-primary  md:text-base 2xl:text-lg pr-4 xs:pr-0 leading-7 md:leading-7`}
+		${tw`tracking-wider text-primary  md:text-base 2xl:text-lg pr-4 xs:pr-0 leading-7 md:leading-7 2xl:leading-9`}
 	}
 
 	.bigger_title {
@@ -82,7 +82,7 @@ export const SubExpStyles = styled.div`
 		${tw`sm:flex sm:space-x-8`}
 	}
 	.exp_info {
-		${tw`flex space-x-4 text-gray-700`}
+		${tw`flex space-x-4 text-gray-700 2xl:text-[17px]`}
 	}
 
 	a {
@@ -90,7 +90,7 @@ export const SubExpStyles = styled.div`
 	}
 
 	p {
-		${tw`text-sm leading-6 sm:text-[15px] 2xl:text-base py-6 tracking-wider`}
+		${tw`text-sm leading-6 sm:text-[15px] 2xl:text-[17px] py-6 tracking-wider 2xl:font-medium`}
 	}
 
 	ul {
@@ -98,7 +98,7 @@ export const SubExpStyles = styled.div`
 	}
 
 	li {
-		${tw`list-disc text-primary text-[13px] xs:text-sm sm:text-[15px] 2xl:text-base`}
+		${tw`list-disc text-primary text-[13px] xs:text-sm sm:text-[15px] 2xl:text-[17px] 2xl:opacity-95`}
 	}
 
 	svg {
