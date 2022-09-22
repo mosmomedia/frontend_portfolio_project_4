@@ -20,7 +20,7 @@ body {
 }
 
 h1{
-	${tw`text-3xl md:text-4xl font-medium text-[#2f2f2f] text-primary lg:text-5xl`}
+	${tw`text-3xl md:text-4xl font-medium  text-primary lg:text-5xl`}
 }
 
 h2{

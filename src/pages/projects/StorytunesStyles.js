@@ -1,11 +1,15 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.div`
-	${tw`bg-seconday space-y-28 sm:space-y-40 py-24 lg:py-10`}
+	${tw`bg-seconday py-24 lg:py-20`}
+`;
+
+export const ContainerStyles = styled.div`
+	${tw`container mx-auto space-y-32 `}
 `;
 
 export const HeaderSectionStyles = styled.section`
-	${tw`container m-auto
+	${tw`
 flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 `}
 
@@ -28,19 +32,23 @@ flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 `;
 
 export const TopSectionStyles = styled.section`
-	${tw`container m-auto`}
+	${tw` space-y-10 xl:w-3/5 2xl:w-2/3 xl:m-auto xl:pt-20 xl:pb-40 `}
 
 	h2 {
-		${tw`text-[#FECFFF] text-2xl lg:text-3xl 2xl:text-4xl`}
+		${tw`text-[#FECFFF] text-2xl lg:text-3xl xl:text-[40px]`}
 	}
 
 	p {
-		${tw`text-white py-10 xs:text-base lg:text-lg`}
+		${tw`text-gray-100 tracking-wider text-sm leading-6 xs:text-base xs:leading-7 lg:text-[17px] lg:leading-8 2xl:text-[19px]`}
+	}
+
+	span {
+		${tw`text-red-300 font-medium lg:font-normal`}
 	}
 `;
 
 export const SectionStyles = styled.section`
-	${tw`container m-auto space-y-10`}
+	${tw`space-y-10 lg:py-10`}
 
 	&#videoSection {
 		${tw`hidden xs:block`}
@@ -62,7 +70,7 @@ export const TitleStyles = styled.div`
 `;
 
 export const DescStyles = styled.div`
-	${tw`space-y-14`}
+	${tw`space-y-14 w-[97%] m-auto`}
 
 	div {
 		${tw`space-y-6`}
