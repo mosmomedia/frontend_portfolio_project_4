@@ -1,35 +1,16 @@
 import tw, { styled } from 'twin.macro';
 
-export const styles = styled.div``;
-
 export const WrapperStyles = styled.div`
-	${tw`bg-seconday space-y-28 py-24`}
+	${tw`bg-seconday space-y-28 sm:space-y-40 py-24 lg:py-10`}
 `;
 
-export const TopSectionStyles = styled.section`
-	${tw`container m-auto`}
-
-	h2 {
-		${tw`text-[#FECFFF] text-2xl`}
-	}
-
-	p {
-		${tw`text-white py-10`}
-	}
-`;
-
-export const SectionStyles = styled.section`
-	${tw`container m-auto space-y-8`}
-`;
-
-export const HeadTitleStyles = styled.div`
-	${tw` px-2
+export const HeaderSectionStyles = styled.section`
+	${tw`container m-auto
 flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 `}
 
 	#title_left {
-		${tw`lg:pt-20 xl:pt-36 space-y-4  lg:pl-2 
-		lg:w-1/4 
+		${tw`lg:pt-28 xl:pt-40 space-y-2  lg:pl-2 lg:w-1/4 
 		`}
 
 		h1 {
@@ -42,41 +23,57 @@ flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 	}
 
 	#title_right {
-		${tw` lg:max-w-[unset] lg:w-3/4 `}
-		/* ${tw`lg:relative lg:overflow-hidden`} */
+		${tw`md:pl-20 lg:pl-0  lg:max-w-[unset] lg:w-3/4 `}
+	}
+`;
 
-		img {
-			/* ${tw`absolute`} */
-			/* ${tw`max-w-[unset] max-h-[1000px]`} */
-		}
+export const TopSectionStyles = styled.section`
+	${tw`container m-auto`}
+
+	h2 {
+		${tw`text-[#FECFFF] text-2xl lg:text-3xl 2xl:text-4xl`}
+	}
+
+	p {
+		${tw`text-white py-10 xs:text-base lg:text-lg`}
+	}
+`;
+
+export const SectionStyles = styled.section`
+	${tw`container m-auto space-y-10`}
+
+	&#videoSection {
+		${tw`hidden xs:block`}
 	}
 `;
 
 export const SubSectionStyles = styled.div`
-	${tw`space-y-6	`}
+	${tw`space-y-6 py-3`}
+
 	h3 {
-		${tw`text-white`}
+		${tw`text-base lg:text-lg 2xl:text-xl text-indigo-100 pl-4 xs:pl-0`}
 	}
 `;
 
 export const TitleStyles = styled.div`
 	h2 {
-		${tw`text-key_col1 text-2xl`}
+		${tw`text-key_col1 text-2xl lg:text-[28px]  xl:text-3xl`}
 	}
 `;
+
 export const DescStyles = styled.div`
-	${tw`space-y-14 pt-10`}
+	${tw`space-y-14`}
 
 	div {
 		${tw`space-y-6`}
 	}
 
 	h3 {
-		${tw`text-[#FFCFCF]`}
+		${tw`text-[#FFCFCF] text-lg xs:text-xl  lg:text-2xl`}
 	}
 
 	p {
-		${tw`text-white`}
+		${tw`text-white lg:text-[17px] 2xl:text-lg`}
 	}
 `;
 export const ImgListStyles = styled.ul`
@@ -88,13 +85,15 @@ export const ImgListStyles = styled.ul`
 `;
 
 export const VideoListStyles = styled.ul`
-	${tw`hidden lg:grid lg:grid-cols-2 lg:gap-10`}
+	${tw`xs:grid xs:grid-rows-2 xs:gap-10 md:grid-cols-2 md:grid-rows-1 sm:py-8`}
+
+	${tw`lg:border-[1px] lg:rounded lg:border-key_col1 lg:border-opacity-20 lg:bg-seconday`}	
 
 	li {
-		${tw`max-w-[350px] m-auto`}
+		${tw`max-w-[450px] m-auto`}
 	}
 
 	video {
-		${tw`w-full h-auto`}
+		${tw`w-full h-auto rounded-[2px]`}
 	}
 `;

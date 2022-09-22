@@ -27,9 +27,9 @@ import DebutList from '../../assets/imgs/projects/storytunes/video/debut_list.we
 import {
 	WrapperStyles,
 	TopSectionStyles,
+	HeaderSectionStyles,
 	SectionStyles,
 	SubSectionStyles,
-	HeadTitleStyles,
 	TitleStyles,
 	DescStyles,
 	ImgListStyles,
@@ -56,26 +56,24 @@ function ProjectStorytunes() {
 				<SpinnerStyles src={FireSpinner} />
 			</LoadingStyles>
 			<WrapperStyles>
-				<SectionStyles>
-					<HeadTitleStyles>
-						{/* left */}
-						<div id="title_left">
-							<h1>Storytunes</h1>
-							<h2>UX / UI, Development. 2022</h2>
-						</div>
+				<HeaderSectionStyles>
+					{/* left */}
+					<div id="title_left">
+						<h1>Storytunes</h1>
+						<h2>UX / UI, Development. 2022</h2>
+					</div>
 
-						{/* right */}
-						<div id="title_right">
-							<img
-								src={MainImage}
-								alt=""
-								width={1500}
-								height={1500}
-								onLoad={handleLoad}
-							/>
-						</div>
-					</HeadTitleStyles>
-				</SectionStyles>
+					{/* right */}
+					<div id="title_right">
+						<img
+							src={MainImage}
+							alt=""
+							width={1500}
+							height={1500}
+							onLoad={handleLoad}
+						/>
+					</div>
+				</HeaderSectionStyles>
 
 				<TopSectionStyles>
 					{/* header */}
@@ -312,7 +310,7 @@ function ProjectStorytunes() {
 					</DescStyles>
 				</SectionStyles>
 
-				<SectionStyles>
+				<SectionStyles id="videoSection">
 					{/* header */}
 					<TitleStyles>
 						<h2>Pages &amp; Components</h2>

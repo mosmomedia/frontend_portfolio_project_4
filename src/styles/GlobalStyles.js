@@ -34,7 +34,7 @@ h4{
 }
 
 p {
-	${tw`text-sm  sm:text-[15px] lg:text-base tracking-wide font-normal`}
+	${tw`text-sm sm:text-[15px] lg:text-base tracking-wide font-normal`}
 }
 `;
 

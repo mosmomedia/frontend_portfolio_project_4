@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const HeaderStyles = styled.header`
-	${tw`z-50 fixed inset-x-0 top-0 h-[70px] lg:h-[90px]`}
+	${tw`z-50 fixed inset-x-0 top-0 h-[70px] 2xl:h-[80px]`}
 	${tw`bg-seconday bg-opacity-90 backdrop-blur-[6px]`}
 `;
 
