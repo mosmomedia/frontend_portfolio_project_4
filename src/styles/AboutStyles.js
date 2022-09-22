@@ -53,7 +53,7 @@ export const SubStyles = styled.div`
 	}
 
 	.skill_set {
-		${tw`font-bold text-base  xs:text-lg sm:text-2xl text-gray-700 tracking-wide`}
+		${tw`font-medium text-base  xs:text-lg sm:text-2xl text-gray-700 tracking-wide`}
 	}
 `;
 
@@ -76,7 +76,7 @@ export const SubExpStyles = styled.div`
 		}
 
 		h3 {
-			${tw`mb-1.5 font-bold`}
+			${tw`mb-1.5 font-medium`}
 		}
 
 		${tw`sm:flex sm:space-x-8`}

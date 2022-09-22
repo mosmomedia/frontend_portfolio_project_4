@@ -25,7 +25,7 @@ function Contact() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<div>hello&#64;dongjookim.com</div>
+					<div>hello&#64;dongjookim.dev</div>
 					<RiSendPlaneFill />
 				</MailToStyles>
 			</MainStyles>

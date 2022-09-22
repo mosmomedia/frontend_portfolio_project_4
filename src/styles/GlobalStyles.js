@@ -20,11 +20,11 @@ body {
 }
 
 h1{
-	${tw`text-3xl md:text-4xl font-bold text-[#2f2f2f] lg:text-5xl`}
+	${tw`text-3xl md:text-4xl font-medium text-[#2f2f2f] text-primary lg:text-5xl`}
 }
 
 h2{
-	${tw`text-lg  xs:text-xl  sm:text-2xl font-bold text-primary md:text-[25px] 2xl:text-[28px]`}
+	${tw`text-lg  xs:text-xl  sm:text-2xl font-medium text-primary md:text-[25px] 2xl:text-[28px]`}
 }
 
 h3,

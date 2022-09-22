@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 export const WrapperStyles = styled.section`
-	${tw`pt-20 pb-20 md:pt-40  lg:pb-96 xl:pt-32 space-y-16 `}
+	${tw`pt-20 pb-20 md:pt-40  lg:pb-96 xl:pt-24  2xl:pt-32 space-y-16 `}
 
 	h1 {
 		${tw`text-3xl md:text-4xl xl:text-[40px] 2xl:text-5xl`}
@@ -10,7 +10,7 @@ export const WrapperStyles = styled.section`
 
 export const SectionWrapperStyles = styled.div`
 	${tw`
-	space-y-40
+	space-y-40 
 	`}
 `;
 
@@ -19,7 +19,7 @@ export const SectionStyles = styled.div`
 		${tw`tracking-wider`}
 	}
 
-	${tw`px-5  xs:px-6 sm:px-10 md:px-14 xl:px-10 py-7 xs:py-12 bg-seconday rounded-2xl space-y-20 xl:space-y-12`}
+	${tw`px-5  xs:px-6 sm:px-10 md:px-14 xl:px-10 py-7 xs:py-12 xl:py-10 bg-seconday rounded-2xl space-y-20 xl:space-y-12`}
 `;
 
 export const HeaderStyles = styled.div`
