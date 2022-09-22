@@ -27,5 +27,5 @@ export const LoadingStyles = styled.div`
 `;
 
 export const SpinnerStyles = styled.img`
-	${tw`w-14 h-auto  md:w-16 xl:w-[4.25rem] animate-bounce`}
+	${tw`h-14 w-auto  md:h-16 animate-bounce`}
 `;

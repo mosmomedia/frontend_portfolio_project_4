@@ -65,7 +65,7 @@ export const ImageWrapper = styled.div`
 	}
 
 	.img_fire {
-		${tw`absolute z-30 w-20 xl:w-16 -top-24 xl:-top-20 right-1/2 translate-x-1/2`}
+		${tw`absolute z-30 lg:h-[3.75rem] xl:h-16 -top-20 xl:-top-20 right-1/2 translate-x-1/2`}
 	}
 
 	.img_text {

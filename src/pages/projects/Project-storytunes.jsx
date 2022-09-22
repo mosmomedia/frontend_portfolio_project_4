@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import FireSpinner from '../../assets/gifs/fire-red.gif';
 
 import Header from '../../components/projects/Header';
@@ -16,7 +18,7 @@ import Work_2 from '../../assets/imgs/projects/storytunes/student/work-2.png';
 import Work_3 from '../../assets/imgs/projects/storytunes/student/work-3.png';
 import Work_4 from '../../assets/imgs/projects/storytunes/student/work-4.png';
 import Admin_1 from '../../assets/imgs/projects/storytunes/admin/admin-1.png';
-import Admin_2 from '../../assets/imgs/projects/storytunes/admin/admin-2.png';
+import Admin_2 from '../../assets/imgs/projects/storytunes/admin/admin-2.webp';
 import Admin_3 from '../../assets/imgs/projects/storytunes/admin/admin-3.png';
 import Admin_4 from '../../assets/imgs/projects/storytunes/admin/admin-4.png';
 import ClassReg from '../../assets/imgs/projects/storytunes/video/class_registration.webm';
@@ -64,7 +66,13 @@ function ProjectStorytunes() {
 
 						{/* right */}
 						<div id="title_right">
-							<img src={MainImage} alt="" onLoad={handleLoad} />
+							<img
+								src={MainImage}
+								alt=""
+								width={1500}
+								height={1500}
+								onLoad={handleLoad}
+							/>
 						</div>
 					</HeadTitleStyles>
 				</SectionStyles>
@@ -88,16 +96,40 @@ function ProjectStorytunes() {
 					</TitleStyles>
 					<ImgListStyles>
 						<li>
-							<img src={AuthImg_1} alt="" srcSet="" />
+							<LazyLoadImage
+								src={AuthImg_1}
+								width={400}
+								height={740}
+								alt=""
+								srcSet=""
+							/>
 						</li>
 						<li>
-							<img src={AuthImg_2} alt="" srcSet="" />
+							<LazyLoadImage
+								src={AuthImg_2}
+								width={400}
+								height={740}
+								alt=""
+								srcSet=""
+							/>
 						</li>{' '}
 						<li>
-							<img src={AuthImg_3} alt="" srcSet="" />
+							<LazyLoadImage
+								src={AuthImg_3}
+								width={400}
+								height={740}
+								alt=""
+								srcSet=""
+							/>
 						</li>{' '}
 						<li>
-							<img src={AuthImg_4} alt="" srcSet="" />
+							<LazyLoadImage
+								src={AuthImg_4}
+								width={400}
+								height={740}
+								alt=""
+								srcSet=""
+							/>
 						</li>
 					</ImgListStyles>
 					<DescStyles>
@@ -125,16 +157,40 @@ function ProjectStorytunes() {
 						<h3>강의 게시판</h3>
 						<ImgListStyles>
 							<li>
-								<img src={St_1} alt="" srcSet="" />
+								<LazyLoadImage
+									src={St_1}
+									width={400}
+									height={740}
+									alt=""
+									srcSet=""
+								/>
 							</li>
 							<li>
-								<img src={St_2} alt="" srcSet="" />
+								<LazyLoadImage
+									src={St_2}
+									width={400}
+									height={740}
+									alt=""
+									srcSet=""
+								/>
 							</li>{' '}
 							<li>
-								<img src={St_3} alt="" srcSet="" />
+								<LazyLoadImage
+									src={St_3}
+									width={400}
+									height={740}
+									alt=""
+									srcSet=""
+								/>
 							</li>{' '}
 							<li>
-								<img src={St_4} alt="" srcSet="" />
+								<LazyLoadImage
+									src={St_4}
+									width={400}
+									height={740}
+									alt=""
+									srcSet=""
+								/>
 							</li>
 						</ImgListStyles>
 					</SubSectionStyles>
@@ -143,16 +199,40 @@ function ProjectStorytunes() {
 						<h3>연재 게시판</h3>
 						<ImgListStyles>
 							<li>
-								<img src={Work_1} alt="" srcSet="" />
+								<LazyLoadImage
+									src={Work_1}
+									width={400}
+									height={740}
+									alt=""
+									srcSet=""
+								/>
 							</li>
 							<li>
-								<img src={Work_2} alt="" srcSet="" />
+								<LazyLoadImage
+									src={Work_2}
+									width={400}
+									height={740}
+									alt=""
+									srcSet=""
+								/>
 							</li>{' '}
 							<li>
-								<img src={Work_3} alt="" srcSet="" />
+								<LazyLoadImage
+									src={Work_3}
+									width={400}
+									height={740}
+									alt=""
+									srcSet=""
+								/>
 							</li>{' '}
 							<li>
-								<img src={Work_4} alt="" srcSet="" />
+								<LazyLoadImage
+									src={Work_4}
+									width={400}
+									height={740}
+									alt=""
+									srcSet=""
+								/>
 							</li>
 						</ImgListStyles>
 					</SubSectionStyles>
@@ -180,16 +260,40 @@ function ProjectStorytunes() {
 					</TitleStyles>
 					<ImgListStyles>
 						<li>
-							<img src={Admin_1} alt="" srcSet="" />
+							<LazyLoadImage
+								src={Admin_1}
+								width={400}
+								height={740}
+								alt=""
+								srcSet=""
+							/>
 						</li>
 						<li>
-							<img src={Admin_2} alt="" srcSet="" />
+							<LazyLoadImage
+								src={Admin_2}
+								width={400}
+								height={740}
+								alt=""
+								srcSet=""
+							/>
 						</li>{' '}
 						<li>
-							<img src={Admin_3} alt="" srcSet="" />
+							<LazyLoadImage
+								src={Admin_3}
+								width={400}
+								height={740}
+								alt=""
+								srcSet=""
+							/>
 						</li>{' '}
 						<li>
-							<img src={Admin_4} alt="" srcSet="" />
+							<LazyLoadImage
+								src={Admin_4}
+								width={400}
+								height={740}
+								alt=""
+								srcSet=""
+							/>
 						</li>
 					</ImgListStyles>
 					<DescStyles>
