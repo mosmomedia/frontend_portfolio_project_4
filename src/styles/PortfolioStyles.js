@@ -19,28 +19,28 @@ export const SectionStyles = styled.div`
 		${tw`tracking-wider`}
 	}
 
-	${tw`px-5  xs:px-6 sm:px-10 py-7  xs:py-12 bg-seconday  rounded-2xl space-y-20 md:px-14`}
+	${tw`px-5  xs:px-6 sm:px-10 md:px-14 xl:px-10 py-7 xs:py-12 bg-seconday rounded-2xl space-y-20 xl:space-y-12`}
 `;
 
 export const HeaderStyles = styled.div`
-	${tw`space-y-7`}
+	${tw`space-y-7 xl:space-y-5`}
 
 	#pf_title {
-		${tw`space-y-2 xl:space-y-0  xl:flex xl:justify-between xl:items-center`}
+		${tw`space-y-2 xl:space-y-0  xl:flex xl:justify-between xl:items-end`}
 
 		h2 {
-			${tw`text-[#fbfbfb] text-2xl md:text-3xl 2xl:text-4xl tracking-wider`}
+			${tw`text-[#fbfbfb] text-2xl md:text-3xl xl:text-[32px] 2xl:text-4xl tracking-wider`}
 		}
 	}
 
 	#pf_role {
-		${tw`text-key_col1 text-base md:text-[17px] 2xl:text-lg `}
+		${tw`text-key_col1 text-base md:text-[17px] xl:text-base 2xl:text-lg `}
 	}
 
 	#pf_tech {
-		${tw`text-[#ffffff] text-sm  xs:text-base 2xl:text-lg font-light`}
+		${tw`text-[#ffffff] text-sm  xs:text-base xl:text-[15px] 2xl:text-lg font-light`}
 
-		${tw`flex flex-wrap xl:space-x-5  2xl:space-x-8 `}
+		${tw`flex flex-wrap xl:space-x-4  2xl:space-x-8 `}
 
 		li {
 			${tw`pr-4 py-1`}
@@ -68,7 +68,7 @@ export const RightStyles = styled.div`
 
 	#pf_desc {
 		p {
-			${tw`font-light leading-7 md:text-sm xl:text-[15px]  2xl:text-base 2xl:leading-7 2xl:font-normal`}
+			${tw`md:text-sm md:leading-6  2xl:text-base 2xl:leading-7`}
 		}
 	}
 
@@ -89,7 +89,7 @@ export const RightStyles = styled.div`
 	}
 
 	#pf_links {
-		${tw`flex flex-wrap sm:space-x-4 pt-8 `}
+		${tw`flex flex-wrap sm:space-x-4 pt-8 xl:pt-0`}
 	}
 
 	.pf_link {
@@ -104,19 +104,19 @@ export const RightStyles = styled.div`
 		}
 	}
 
-	.pf_project_link svg {
+	#pf_project_link svg {
 		${tw`text-xl mb-0.5 animate-pulse pl-0.5 xs:pl-0`}
 	}
 
-	.pf_demo_link {
+	#pf_demo_link {
 		${tw`space-x-5 xs:space-x-4`}
 	}
 
-	.pf_demo_link svg {
+	#pf_demo_link svg {
 		${tw`text-lg xs:text-[16px] mb-0.5 pl-0.5 xs:pl-0`}
 	}
 
-	.pf_github_link svg {
+	#pf_github_link svg {
 		${tw`text-xl mb-0.5`}
 	}
 `;

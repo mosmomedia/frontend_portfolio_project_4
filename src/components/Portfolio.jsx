@@ -172,7 +172,8 @@ function Portfolio() {
 							<div id="pf_links">
 								<Link
 									to="/project/storytunes"
-									className="pf_project_link pf_link"
+									id="pf_project_link"
+									className="pf_link"
 									aria-label="link to project page"
 								>
 									<GoLinkExternal />
@@ -181,7 +182,8 @@ function Portfolio() {
 
 								<a
 									href="https://storytunes.herokuapp.com/"
-									className="pf_demo_link pf_link"
+									id="pf_demo_link"
+									className="pf_link"
 									target="_blank"
 									rel="noopener noreferrer"
 									aria-label="link to demo page"
@@ -192,7 +194,8 @@ function Portfolio() {
 
 								<a
 									href="https://github.com/mosmomedia/frontend_portfolio_project_3"
-									className="pf_github_link pf_link"
+									id="pf_github_link"
+									className="pf_link"
 									target="_blank"
 									rel="noopener noreferrer"
 									aria-label="link to github page"

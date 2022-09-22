@@ -3,7 +3,6 @@ import FireSpinner from '../../assets/gifs/fire-red.gif';
 
 import Header from '../../components/projects/Header';
 import MainImage from '../../assets/imgs/projects/storytunes/main.png';
-import SampleImg from '../../assets/imgs/projects/storytunes/sample/sample.png';
 import AuthImg_1 from '../../assets/imgs/projects/storytunes/auth/auth-1.png';
 import AuthImg_2 from '../../assets/imgs/projects/storytunes/auth/auth-2.png';
 import AuthImg_3 from '../../assets/imgs/projects/storytunes/auth/auth-3.png';
@@ -20,6 +19,8 @@ import Admin_1 from '../../assets/imgs/projects/storytunes/admin/admin-1.png';
 import Admin_2 from '../../assets/imgs/projects/storytunes/admin/admin-2.png';
 import Admin_3 from '../../assets/imgs/projects/storytunes/admin/admin-3.png';
 import Admin_4 from '../../assets/imgs/projects/storytunes/admin/admin-4.png';
+import ClassReg from '../../assets/imgs/projects/storytunes/video/class_registration.webm';
+import DebutList from '../../assets/imgs/projects/storytunes/video/debut_list.webm';
 
 import {
 	WrapperStyles,
@@ -30,6 +31,7 @@ import {
 	TitleStyles,
 	DescStyles,
 	ImgListStyles,
+	VideoListStyles,
 } from './StorytunesStyles';
 
 import { LoadingStyles, SpinnerStyles } from '../../styles';
@@ -211,20 +213,22 @@ function ProjectStorytunes() {
 					<TitleStyles>
 						<h2>Pages &amp; Components</h2>
 					</TitleStyles>
-					<ImgListStyles>
+					<VideoListStyles>
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<video autoPlay loop>
+								<source src={ClassReg} type="video/webm" />
+								{/* <source src="/media/cc0-videos/flower.mp4" type="video/mp4" /> */}
+								Sorry, your browser doesn't support embedded videos.
+							</video>
 						</li>
 						<li>
-							<img src={SampleImg} alt="" srcSet="" />
-						</li>{' '}
-						<li>
-							<img src={SampleImg} alt="" srcSet="" />
-						</li>{' '}
-						<li>
-							<img src={SampleImg} alt="" srcSet="" />
+							<video autoPlay loop>
+								<source src={DebutList} type="video/webm" />
+								{/* <source src="/media/cc0-videos/flower.mp4" type="video/mp4" /> */}
+								Sorry, your browser doesn't support embedded videos.
+							</video>
 						</li>
-					</ImgListStyles>
+					</VideoListStyles>
 					<DescStyles>
 						<div>
 							<h3>Approach</h3>

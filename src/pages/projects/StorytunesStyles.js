@@ -83,6 +83,18 @@ export const ImgListStyles = styled.ul`
 	${tw`grid grid-cols-2 gap-3 lg:grid-cols-4`}
 
 	li {
-		${tw`max-w-[350px]`}/* ${tw`bg-black w-80 h-96`} */
+		${tw`max-w-[350px]`}
+	}
+`;
+
+export const VideoListStyles = styled.ul`
+	${tw`hidden lg:grid lg:grid-cols-2 lg:gap-10`}
+
+	li {
+		${tw`max-w-[350px] m-auto`}
+	}
+
+	video {
+		${tw`w-full h-auto`}
 	}
 `;
