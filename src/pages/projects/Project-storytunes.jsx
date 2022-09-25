@@ -4,23 +4,64 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import FireSpinner from '../../assets/gifs/fire-red.gif';
 
 import Header from '../../components/projects/Header';
-import MainImage from '../../assets/imgs/projects/storytunes/main.png';
-import AuthImg_1 from '../../assets/imgs/projects/storytunes/auth/auth-1.png';
-import AuthImg_2 from '../../assets/imgs/projects/storytunes/auth/auth-2.png';
-import AuthImg_3 from '../../assets/imgs/projects/storytunes/auth/auth-3.png';
-import AuthImg_4 from '../../assets/imgs/projects/storytunes/auth/auth-4.png';
-import St_1 from '../../assets/imgs/projects/storytunes/student/st-1.png';
-import St_2 from '../../assets/imgs/projects/storytunes/student/st-2.png';
-import St_3 from '../../assets/imgs/projects/storytunes/student/st-3.png';
-import St_4 from '../../assets/imgs/projects/storytunes/student/st-4.png';
-import Work_1 from '../../assets/imgs/projects/storytunes/student/work-1.png';
-import Work_2 from '../../assets/imgs/projects/storytunes/student/work-2.png';
-import Work_3 from '../../assets/imgs/projects/storytunes/student/work-3.png';
-import Work_4 from '../../assets/imgs/projects/storytunes/student/work-4.png';
-import Admin_1 from '../../assets/imgs/projects/storytunes/admin/admin-1.png';
-import Admin_2 from '../../assets/imgs/projects/storytunes/admin/admin-2.webp';
-import Admin_3 from '../../assets/imgs/projects/storytunes/admin/admin-3.png';
-import Admin_4 from '../../assets/imgs/projects/storytunes/admin/admin-4.png';
+import MainImage425 from '../../assets/imgs/projects/storytunes/main/main_425.png';
+import MainImage1045 from '../../assets/imgs/projects/storytunes/main/main_1045.png';
+import MainImage1453 from '../../assets/imgs/projects/storytunes/main/main_1453.png';
+import MainImage1699 from '../../assets/imgs/projects/storytunes/main/main_1699.png';
+import MainImage2000 from '../../assets/imgs/projects/storytunes/main/main_2000.png';
+
+import AuthImg_1_190 from '../../assets/imgs/projects/storytunes/auth/auth1-190.png';
+import AuthImg_1_467 from '../../assets/imgs/projects/storytunes/auth/auth1-467.png';
+import AuthImg_1_563 from '../../assets/imgs/projects/storytunes/auth/auth1-563.png';
+import AuthImg_2_190 from '../../assets/imgs/projects/storytunes/auth/auth2-190.png';
+import AuthImg_2_459 from '../../assets/imgs/projects/storytunes/auth/auth2-459.png';
+import AuthImg_2_563 from '../../assets/imgs/projects/storytunes/auth/auth2-563.png';
+import AuthImg_3_190 from '../../assets/imgs/projects/storytunes/auth/auth3-190.png';
+import AuthImg_3_469 from '../../assets/imgs/projects/storytunes/auth/auth3-469.png';
+import AuthImg_3_563 from '../../assets/imgs/projects/storytunes/auth/auth3-563.png';
+import AuthImg_4_190 from '../../assets/imgs/projects/storytunes/auth/auth4-190.png';
+import AuthImg_4_414 from '../../assets/imgs/projects/storytunes/auth/auth4-414.png';
+import AuthImg_4_563 from '../../assets/imgs/projects/storytunes/auth/auth4-563.png';
+
+import St_1_190 from '../../assets/imgs/projects/storytunes/student/st1-190.png';
+import St_1_425 from '../../assets/imgs/projects/storytunes/student/st1-425.png';
+import St_1_563 from '../../assets/imgs/projects/storytunes/student/st1-563.png';
+import St_2_190 from '../../assets/imgs/projects/storytunes/student/st2-190.png';
+import St_2_382 from '../../assets/imgs/projects/storytunes/student/st2-382.png';
+import St_2_563 from '../../assets/imgs/projects/storytunes/student/st2-563.png';
+import St_3_190 from '../../assets/imgs/projects/storytunes/student/st3-190.png';
+import St_3_390 from '../../assets/imgs/projects/storytunes/student/st3-390.png';
+import St_3_563 from '../../assets/imgs/projects/storytunes/student/st3-563.png';
+import St_4_190 from '../../assets/imgs/projects/storytunes/student/st4-190.png';
+import St_4_428 from '../../assets/imgs/projects/storytunes/student/st4-428.png';
+import St_4_563 from '../../assets/imgs/projects/storytunes/student/st4-563.png';
+
+import Work_1_190 from '../../assets/imgs/projects/storytunes/student/work1-190.png';
+import Work_1_458 from '../../assets/imgs/projects/storytunes/student/work1-458.png';
+import Work_1_563 from '../../assets/imgs/projects/storytunes/student/work1-563.png';
+import Work_2_190 from '../../assets/imgs/projects/storytunes/student/work2-190.png';
+import Work_2_411 from '../../assets/imgs/projects/storytunes/student/work2-411.png';
+import Work_2_563 from '../../assets/imgs/projects/storytunes/student/work2-563.png';
+import Work_3_190 from '../../assets/imgs/projects/storytunes/student/work3-190.png';
+import Work_3_409 from '../../assets/imgs/projects/storytunes/student/work3-409.png';
+import Work_3_563 from '../../assets/imgs/projects/storytunes/student/work3-563.png';
+import Work_4_190 from '../../assets/imgs/projects/storytunes/student/work4-190.png';
+import Work_4_493 from '../../assets/imgs/projects/storytunes/student/work4-493.png';
+import Work_4_563 from '../../assets/imgs/projects/storytunes/student/work4-563.png';
+
+import Admin_1_190 from '../../assets/imgs/projects/storytunes/admin/admin1-190.png';
+import Admin_1_451 from '../../assets/imgs/projects/storytunes/admin/admin1-451.png';
+import Admin_1_563 from '../../assets/imgs/projects/storytunes/admin/admin1-563.png';
+import Admin_2_190 from '../../assets/imgs/projects/storytunes/admin/admin2-190.png';
+import Admin_2_451 from '../../assets/imgs/projects/storytunes/admin/admin2-451.png';
+import Admin_2_563 from '../../assets/imgs/projects/storytunes/admin/admin2-563.png';
+import Admin_3_190 from '../../assets/imgs/projects/storytunes/admin/admin3-190.png';
+import Admin_3_372 from '../../assets/imgs/projects/storytunes/admin/admin3-372.png';
+import Admin_3_563 from '../../assets/imgs/projects/storytunes/admin/admin3-563.png';
+import Admin_4_190 from '../../assets/imgs/projects/storytunes/admin/admin4-190.png';
+import Admin_4_428 from '../../assets/imgs/projects/storytunes/admin/admin4-428.png';
+import Admin_4_563 from '../../assets/imgs/projects/storytunes/admin/admin4-563.png';
+
 import ClassReg from '../../assets/imgs/projects/storytunes/video/class_registration.webm';
 import DebutList from '../../assets/imgs/projects/storytunes/video/debut_list.webm';
 
@@ -68,11 +109,11 @@ function ProjectStorytunes() {
 						{/* right */}
 						<div id="title_right">
 							<img
-								src={MainImage}
-								alt=""
-								width={1500}
-								height={1500}
+								sizes="(max-width: 2000px) 100vw, 2000px"
+								srcSet={`${MainImage425} 425w, ${MainImage1045} 1045w, ${MainImage1453} 1453w, ${MainImage1699} 1699w, ${MainImage2000} 2000w`}
+								src={MainImage1045}
 								onLoad={handleLoad}
+								alt=""
 							/>
 						</div>
 					</HeaderSectionStyles>
@@ -99,38 +140,34 @@ function ProjectStorytunes() {
 						<ImgListStyles>
 							<li>
 								<LazyLoadImage
-									src={AuthImg_1}
-									width={400}
-									height={740}
+									src={AuthImg_1_467}
 									alt=""
-									srcSet=""
+									sizes="(max-width: 563px) 100vw, 563px"
+									srcSet={`${AuthImg_1_190} 190w, ${AuthImg_1_467} 467w, ${AuthImg_1_563} 563w`}
 								/>
 							</li>
 							<li>
 								<LazyLoadImage
-									src={AuthImg_2}
-									width={400}
-									height={740}
+									src={AuthImg_2_459}
 									alt=""
-									srcSet=""
+									sizes="(max-width: 563px) 100vw, 563px"
+									srcSet={`${AuthImg_2_190} 190w, ${AuthImg_2_459} 459w, ${AuthImg_2_563} 563w`}
 								/>
 							</li>{' '}
 							<li>
 								<LazyLoadImage
-									src={AuthImg_3}
-									width={400}
-									height={740}
+									src={AuthImg_3_469}
 									alt=""
-									srcSet=""
+									sizes="(max-width: 563px) 100vw, 563px"
+									srcSet={`${AuthImg_3_190} 190w, ${AuthImg_3_469} 469w, ${AuthImg_3_563} 563w`}
 								/>
-							</li>{' '}
+							</li>
 							<li>
 								<LazyLoadImage
-									src={AuthImg_4}
-									width={400}
-									height={740}
+									src={AuthImg_4_414}
 									alt=""
-									srcSet=""
+									sizes="(max-width: 563px) 100vw, 563px"
+									srcSet={`${AuthImg_4_190} 190w, ${AuthImg_4_414} 414w, ${AuthImg_4_563} 563w`}
 								/>
 							</li>
 						</ImgListStyles>
@@ -160,38 +197,35 @@ function ProjectStorytunes() {
 							<ImgListStyles>
 								<li>
 									<LazyLoadImage
-										src={St_1}
-										width={400}
-										height={740}
+										src={St_1_425}
 										alt=""
-										srcSet=""
+										sizes="(max-width: 563px) 100vw, 563px"
+										srcSet={`${St_1_190} 190w, ${St_1_425} 425w, ${St_1_563} 563w`}
 									/>
 								</li>
 								<li>
 									<LazyLoadImage
-										src={St_2}
-										width={400}
-										height={740}
+										src={St_2_382}
 										alt=""
-										srcSet=""
+										sizes="(max-width: 563px) 100vw, 563px"
+										srcSet={`${St_2_190} 190w, ${St_2_382} 382w, ${St_2_563} 563w`}
 									/>
-								</li>{' '}
+								</li>
 								<li>
 									<LazyLoadImage
-										src={St_3}
-										width={400}
-										height={740}
+										src={St_3_390}
 										alt=""
-										srcSet=""
+										sizes="(max-width: 563px) 100vw, 563px"
+										srcSet={`${St_3_190} 190w, ${St_3_390} 390w, ${St_3_563} 563w`}
 									/>
-								</li>{' '}
+								</li>
+
 								<li>
 									<LazyLoadImage
-										src={St_4}
-										width={400}
-										height={740}
+										src={St_4_428}
 										alt=""
-										srcSet=""
+										sizes="(max-width: 563px) 100vw, 563px"
+										srcSet={`${St_4_190} 190w, ${St_4_428} 428w, ${St_4_563} 563w`}
 									/>
 								</li>
 							</ImgListStyles>
@@ -202,38 +236,37 @@ function ProjectStorytunes() {
 							<ImgListStyles>
 								<li>
 									<LazyLoadImage
-										src={Work_1}
-										width={400}
-										height={740}
+										src={Work_1_458}
 										alt=""
-										srcSet=""
+										sizes="(max-width: 563px) 100vw, 563px"
+										srcSet={`${Work_1_190} 190w, ${Work_1_458} 458w, ${Work_1_563} 563w`}
 									/>
 								</li>
+
 								<li>
 									<LazyLoadImage
-										src={Work_2}
-										width={400}
-										height={740}
+										src={Work_2_411}
 										alt=""
-										srcSet=""
+										sizes="(max-width: 563px) 100vw, 563px"
+										srcSet={`${Work_2_190} 190w, ${Work_2_411} 411w, ${Work_2_563} 563w`}
 									/>
-								</li>{' '}
+								</li>
+
 								<li>
 									<LazyLoadImage
-										src={Work_3}
-										width={400}
-										height={740}
+										src={Work_3_409}
 										alt=""
-										srcSet=""
+										sizes="(max-width: 563px) 100vw, 563px"
+										srcSet={`${Work_3_190} 190w, ${Work_3_409} 409w, ${Work_3_563} 563w`}
 									/>
-								</li>{' '}
+								</li>
+
 								<li>
 									<LazyLoadImage
-										src={Work_4}
-										width={400}
-										height={740}
+										src={Work_4_493}
 										alt=""
-										srcSet=""
+										sizes="(max-width: 563px) 100vw, 563px"
+										srcSet={`${Work_4_190} 190w, ${Work_4_493} 493w, ${Work_4_563} 563w`}
 									/>
 								</li>
 							</ImgListStyles>
@@ -263,41 +296,40 @@ function ProjectStorytunes() {
 						<ImgListStyles>
 							<li>
 								<LazyLoadImage
-									src={Admin_1}
-									width={400}
-									height={740}
+									src={Admin_1_451}
 									alt=""
-									srcSet=""
+									sizes="(max-width: 563px) 100vw, 563px"
+									srcSet={`${Admin_1_190} 190w, ${Admin_1_451} 451w, ${Admin_1_563} 563w`}
+								/>
+							</li>
+
+							<li>
+								<LazyLoadImage
+									src={Admin_2_451}
+									alt=""
+									sizes="(max-width: 563px) 100vw, 563px"
+									srcSet={`${Admin_2_190} 190w, ${Admin_2_451} 451w, ${Admin_2_563} 563w`}
 								/>
 							</li>
 							<li>
 								<LazyLoadImage
-									src={Admin_2}
-									width={400}
-									height={740}
+									src={Admin_3_372}
 									alt=""
-									srcSet=""
+									sizes="(max-width: 563px) 100vw, 563px"
+									srcSet={`${Admin_3_190} 190w, ${Admin_3_372} 372w, ${Admin_3_563} 563w`}
 								/>
-							</li>{' '}
+							</li>
+
 							<li>
 								<LazyLoadImage
-									src={Admin_3}
-									width={400}
-									height={740}
+									src={Admin_4_428}
 									alt=""
-									srcSet=""
-								/>
-							</li>{' '}
-							<li>
-								<LazyLoadImage
-									src={Admin_4}
-									width={400}
-									height={740}
-									alt=""
-									srcSet=""
+									sizes="(max-width: 563px) 100vw, 563px"
+									srcSet={`${Admin_4_190} 190w, ${Admin_4_428} 428w, ${Admin_4_563} 563w`}
 								/>
 							</li>
 						</ImgListStyles>
+
 						<DescStyles>
 							<div>
 								<h3>Approach</h3>

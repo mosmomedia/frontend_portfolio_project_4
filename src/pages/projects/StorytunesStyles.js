@@ -28,6 +28,9 @@ flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 
 	#title_right {
 		${tw`md:pl-20 lg:pl-0  lg:max-w-[unset] lg:w-3/4 `}
+		img {
+			/* ${tw`w-[500px] sm:w-[576px] xl:w-[1000px] `} */
+		}
 	}
 `;
 

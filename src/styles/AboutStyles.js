@@ -14,7 +14,7 @@ export const LinksStyles = styled.div`
 	${tw`flex space-x-3 sm:space-x-5`}
 
 	a {
-		${tw`flex items-center  xs:items-start bg-seconday text-white text-[10px] xs:text-xs sm:text-[13px] tracking-widest rounded-[0.2rem]  xs:rounded-[3px] space-x-3 font-light duration-300`}
+		${tw`flex items-center  xs:items-start bg-seconday text-white text-[10px] xs:text-sm tracking-widest rounded-[0.2rem]  xs:rounded-[3px] space-x-3 font-light duration-300`}
 
 		${tw`px-2.5 py-0.5 xs:py-1 sm:py-1.5 md:py-2 lg:py-1.5`}
 
