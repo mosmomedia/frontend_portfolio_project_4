@@ -59,9 +59,8 @@ export const RightStyles = styled.div`
 
 export const ImageWrapper = styled.div`
 	${tw`relative h-full`}
-
 	img {
-		${tw`-right-2`}
+		${tw`-right-1`}
 	}
 
 	.img_fire {

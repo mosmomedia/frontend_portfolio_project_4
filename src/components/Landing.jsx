@@ -17,9 +17,12 @@ import { LoadingStyles, SpinnerStyles } from '../styles';
 
 import djFire from '../assets/gifs/fire-red.gif';
 
-import djText from '../assets/imgs/dj-text.webp';
-import djPic from '../assets/imgs/dj-pic.webp';
-import djBg from '../assets/imgs/dj-bg.webp';
+import djText from '../assets/imgs/projects/storytunes/hero/dj-text.webp';
+import djBg from '../assets/imgs/projects/storytunes/hero/dj-bg.webp';
+import djPic380 from '../assets/imgs/projects/storytunes/hero/dj-pic_380.png';
+import djPic694 from '../assets/imgs/projects/storytunes/hero/dj-pic_694.png';
+import djPic899 from '../assets/imgs/projects/storytunes/hero/dj-pic_899.png';
+import djPic1000 from '../assets/imgs/projects/storytunes/hero/dj-pic_1000.png';
 
 function Landing() {
 	const [loading, setLoading] = useState(true);
@@ -82,7 +85,17 @@ function Landing() {
 						<ImageWrapper>
 							<img className="img_fire" src={djFire} alt="" onLoad={logWhen} />
 							<img className="img_text" src={djText} alt="" onLoad={logWhen} />
-							<img className="img_pic" src={djPic} alt="" onLoad={logWhen} />
+							<img
+								className="img_pic"
+								sizes="(max-width: 1000px) 100vw, 1000px"
+								srcSet={`${djPic380} 380w,
+									${djPic694} 694w,
+									${djPic899} 899w,
+									${djPic1000} 1000w`}
+								src={djPic1000}
+								alt=""
+								onLoad={logWhen}
+							/>
 							<img className="img_bg" src={djBg} alt="" onLoad={logWhen} />
 						</ImageWrapper>
 					</RightStyles>
