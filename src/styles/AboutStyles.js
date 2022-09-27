@@ -23,7 +23,7 @@ export const LinksStyles = styled.div`
 
 	.djResume svg {
 		${tw`text-xs xs:text-sm`}
-		${tw` xs:mt-[2px] sm:mt-0`}
+		${tw`xs:mt-[2px] `}
 	}
 
 	.djResume path {
@@ -31,7 +31,7 @@ export const LinksStyles = styled.div`
 	}
 
 	.djGithub svg {
-		${tw`text-base xs:text-lg sm:text-[16px] text-key_col1`}
+		${tw`text-base xs:text-lg sm:text-[17px] sm:mt-[1px] text-key_col1`}
 	}
 `;
 
