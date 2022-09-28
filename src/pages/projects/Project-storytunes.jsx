@@ -121,7 +121,6 @@ function ProjectStorytunes() {
 					<TopSectionStyles>
 						{/* header */}
 						<h2>Overview</h2>
-						{/* <p> */}
 						<div>
 							<h3>
 								<span>이 프로젝트를 선택한 이유</span>
@@ -158,11 +157,12 @@ function ProjectStorytunes() {
 								</li>
 								<li>
 									2. React를 사용해 싱글 페이지 어플리케이션을 제작했습니다.
-									Context API로 상태 관리를 했습니다.
+									Context API로 전역 상태 관리를 했습니다. 스타일링은 styled
+									components + tailwindCSS을 사용했습니다.
 								</li>
 								<li>
 									3. Express로 RESTful API를 만들고 MonoDB 데이터베이스를
-									사용했습니다.
+									사용했습니다. Heroku로 풀스택 배포를 했습니다.
 								</li>
 							</ol>
 						</div>
@@ -198,13 +198,10 @@ function ProjectStorytunes() {
 									제작을 경험했습니다.
 								</li>
 								<li>
-									2. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
-									때문입니다.{' '}
+									2. Firebase, twin macro&#40;styled components +
+									tailwindCSS&#41;,
 								</li>
-								<li>
-									3. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
-									때문입니다.{' '}
-								</li>
+								<li>3. 웹 퍼포먼스</li>
 							</ol>
 						</div>
 						<div>
@@ -213,41 +210,19 @@ function ProjectStorytunes() {
 							</h3>
 							<ol>
 								<li>
-									1. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
-									때문입니다.{' '}
+									1. Next.js의 SSR 전략을 사용하겠습니다. &#40;SEO &#38; Image
+									optimazation&#41;
 								</li>
 								<li>
-									2. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
-									때문입니다.{' '}
+									2. 더 효율적인 상태 관리를 위해 Redux와 같은 전문 상태 관리
+									라이브러리를 사용하겠습니다.
 								</li>
 								<li>
-									3. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
-									때문입니다.{' '}
+									3. 타입스크립트 사용 및 학습을 위한 점진적 전환을 계획
+									중입니다.
 								</li>
 							</ol>
 						</div>
-
-						<div>
-							<h3>
-								<span>작업 중에 막혔던 몇몇 시점이 있었는데</span>
-							</h3>
-							<ol>
-								<li>
-									1. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
-									때문입니다.{' '}
-								</li>
-								<li>
-									1. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
-									때문입니다.{' '}
-								</li>
-								<li>
-									1. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
-									때문입니다.{' '}
-								</li>
-							</ol>
-						</div>
-
-						{/* </p> */}
 					</TopSectionStyles>
 
 					<SectionStyles>

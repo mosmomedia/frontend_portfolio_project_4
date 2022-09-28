@@ -32,7 +32,7 @@ flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 `;
 
 export const TopSectionStyles = styled.section`
-	${tw` space-y-10 xl:w-3/5 2xl:w-2/3 xl:m-auto xl:pt-20 xl:pb-40 `}
+	${tw` space-y-10 xl:w-2/3 2xl:w-2/3 xl:m-auto xl:pt-20 xl:pb-0 `}
 
 	h2 {
 		${tw`text-[#FECFFF] text-2xl lg:text-3xl xl:text-[40px]`}
