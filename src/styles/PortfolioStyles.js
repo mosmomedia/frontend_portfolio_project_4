@@ -48,19 +48,22 @@ export const HeaderStyles = styled.div`
 	}
 `;
 export const ContentStyles = styled.div`
-	${tw`xl:flex xl:flex-row-reverse`}
+	${tw`xl:grid xl:grid-cols-2 xl:gap-0`}
+	${tw`space-y-16 xl:space-y-0`}
 `;
 
 export const LeftStyles = styled.div`
-	${tw`bg-[#171616] rounded-md p-4 xl:flex-auto xl:w-32`}
+	${tw`order-1`}
+`;
 
-	div {
-		${tw`h-full bg-white`}
-	}
+export const ThumbnailStyles = styled.img`
+	${tw`md:w-[600px] xl:w-[480px] 2xl:w-[600px]  mx-auto `}
 `;
 
 export const RightStyles = styled.div`
-	${tw`space-y-8 text-[#e8e8e8]  xl:flex-auto xl:w-52`}
+	${tw`space-y-8 text-[#e8e8e8] `}
+
+	${tw`xl:flex xl:flex-col xl:justify-around`}
 
 	#link_st {
 		${tw`text-key_col1 font-medium`}

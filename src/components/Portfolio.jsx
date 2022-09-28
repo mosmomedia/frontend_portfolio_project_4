@@ -8,7 +8,11 @@ import {
 	ContentStyles,
 	LeftStyles,
 	RightStyles,
+	ThumbnailStyles,
 } from '../styles/PortfolioStyles';
+
+import MainImage1045 from '../assets/imgs/projects/storytunes/main/main_1045.png';
+import MainImage1453 from '../assets/imgs/projects/storytunes/main/main_1453.png';
 
 import { GrGithub } from 'react-icons/gr';
 import { GoLinkExternal } from 'react-icons/go';
@@ -40,7 +44,13 @@ function Portfolio() {
 					{/* main */}
 					<ContentStyles>
 						<LeftStyles>
-							<div></div>
+							<ThumbnailStyles
+								sizes="(max-width: 1279px) 100vw, 1453px"
+								srcSet={`${MainImage1045} 1045w, ${MainImage1453} 
+								1453w`}
+								src={MainImage1045}
+								alt=""
+							/>
 						</LeftStyles>
 						{/* left item */}
 						<RightStyles>
@@ -181,19 +191,7 @@ function Portfolio() {
 								</Link>
 
 								<a
-									href="https://storytunes.herokuapp.com/"
-									id="pf_demo_link"
-									className="pf_link"
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label="link to demo page"
-								>
-									<BsGlobe />
-									<span>View Demo</span>
-								</a>
-
-								<a
-									href="https://github.com/mosmomedia/frontend_portfolio_project_3"
+									href="https://github.com/mosmomedia/frontend_portfolio_project_4"
 									id="pf_github_link"
 									className="pf_link"
 									target="_blank"

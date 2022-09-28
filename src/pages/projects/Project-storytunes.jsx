@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import FireSpinner from '../../assets/gifs/fire-red.gif';
-
 import Header from '../../components/projects/Header';
+
 import MainImage425 from '../../assets/imgs/projects/storytunes/main/main_425.png';
 import MainImage1045 from '../../assets/imgs/projects/storytunes/main/main_1045.png';
 import MainImage1453 from '../../assets/imgs/projects/storytunes/main/main_1453.png';
@@ -121,15 +121,133 @@ function ProjectStorytunes() {
 					<TopSectionStyles>
 						{/* header */}
 						<h2>Overview</h2>
-						<p>
-							<span>이 프로젝트를 선택한 이유</span>는 디자인, 개발 그리고
-							배포까지 풀 사이클이 가능 했기 때문입니다.{' '}
-							<span>이 프로젝트에서 경험한 어려움</span>은 이 것입니다.{' '}
-							<span>이 프로젝트를 통해 배운 것들</span>은 이 것입니다.{' '}
-							<span>만약 다시 만든다면</span> 이것을 다르게 할 것입니다.{' '}
-							<span>작업 중에 막혔던 몇몇 시점이 있었는데</span> 이것을 통해
-							해결했습니다.
-						</p>
+						{/* <p> */}
+						<div>
+							<h3>
+								<span>이 프로젝트를 선택한 이유</span>
+							</h3>
+							<ol>
+								<li>
+									1. 현재 서비스 중인 웹 애플리케이션 개발 프로젝트에서 공동
+									기획, 디자인 및 퍼블리싱을 담당했습니다 &#40;2021&#41;.
+								</li>
+								<li>
+									2. 개발 이외의 프로덕트 제작에 직&#183;간접적으로 참여했기에
+									이를 바탕으로 디자인, 개발 그리고 배포의 풀사이클 개발 구현과
+									경험 목적에 적합한 프로젝트라고 판단했습니다.
+								</li>
+								<li>
+									3. 다수의 페이지 및 컴포넌트 &#40;웹 인증, 강의 개설 및 신청,
+									글 연재 게시판, 유저 및 관리자 대쉬보드 등&#41;를 포함한
+									프론트엔드 학습 중심의 개발과 배포를 목적으로 이 프로젝트를
+									선택했습니다.{' '}
+								</li>
+							</ol>
+						</div>
+						<div>
+							<h3>
+								<span>이 프로젝트에서 사용한 기술 스택</span>
+							</h3>
+							<ol>
+								<li>
+									온라인 강의에서 습득한 기술들을 바탕으로 프로젝트를
+									진행했습니다.
+								</li>
+								<li>
+									1. 회원 관련 웹 인증은 Firebase Authentication을 사용했습니다.
+								</li>
+								<li>
+									2. React를 사용해 싱글 페이지 어플리케이션을 제작했습니다.
+									Context API로 상태 관리를 했습니다.
+								</li>
+								<li>
+									3. Express로 RESTful API를 만들고 MonoDB 데이터베이스를
+									사용했습니다.
+								</li>
+							</ol>
+						</div>
+						<div>
+							<h3>
+								<span>이 프로젝트에서 경험한 어려움</span>
+							</h3>
+							<ol>
+								<li>
+									1. 방대한 페이지(25+)와 컴포넌트(40+) 그리고 반응형 웹
+									스타일링에 예상보다 많은 시간을 소비했고 라이브러리 사용 시
+									에러 핸들링에서 어려움을 겪었습니다.
+								</li>
+								<li>
+									2. 복잡한 라우팅 핸들링에서 어려움을 겪었습니다. 특히 서버
+									사이드에서 RESTful API 사용 시 올바른 End Points 설정 및
+									다양한 요청들의 처리에 어려움을 경험했습니다.{' '}
+								</li>
+								<li>
+									3. 풀스택 배포에 어려움을 겪었고 배포 후 웹 테스트(Google
+									Lighthouse)에서 웹 퍼포먼스, 웹 접근성에 대해 부족한 점수를
+									받았고 향상 시키는 데 어려움을 경험 했습니다.
+								</li>
+							</ol>
+						</div>
+						<div>
+							<h3>
+								<span>이 프로젝트를 통해 배운 것들</span>
+							</h3>
+							<ol>
+								<li>
+									1. 디자인, 개발 그리고 배포까지 풀 사이클 웹 애플리케이션
+									제작을 경험했습니다.
+								</li>
+								<li>
+									2. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
+									때문입니다.{' '}
+								</li>
+								<li>
+									3. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
+									때문입니다.{' '}
+								</li>
+							</ol>
+						</div>
+						<div>
+							<h3>
+								<span>만약 다시 만든다면</span>
+							</h3>
+							<ol>
+								<li>
+									1. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
+									때문입니다.{' '}
+								</li>
+								<li>
+									2. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
+									때문입니다.{' '}
+								</li>
+								<li>
+									3. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
+									때문입니다.{' '}
+								</li>
+							</ol>
+						</div>
+
+						<div>
+							<h3>
+								<span>작업 중에 막혔던 몇몇 시점이 있었는데</span>
+							</h3>
+							<ol>
+								<li>
+									1. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
+									때문입니다.{' '}
+								</li>
+								<li>
+									1. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
+									때문입니다.{' '}
+								</li>
+								<li>
+									1. 디자인, 개발 그리고 배포까지 풀 사이클이 가능 했기
+									때문입니다.{' '}
+								</li>
+							</ol>
+						</div>
+
+						{/* </p> */}
 					</TopSectionStyles>
 
 					<SectionStyles>

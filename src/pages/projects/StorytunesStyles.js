@@ -28,9 +28,6 @@ flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 
 	#title_right {
 		${tw`md:pl-20 lg:pl-0  lg:max-w-[unset] lg:w-3/4 `}
-		img {
-			/* ${tw`w-[500px] sm:w-[576px] xl:w-[1000px] `} */
-		}
 	}
 `;
 
@@ -41,8 +38,12 @@ export const TopSectionStyles = styled.section`
 		${tw`text-[#FECFFF] text-2xl lg:text-3xl xl:text-[40px]`}
 	}
 
-	p {
+	div {
 		${tw`text-gray-100 tracking-wider text-sm leading-6 xs:text-base xs:leading-7 lg:text-[17px] lg:leading-8 2xl:text-[19px]`}
+	}
+
+	ol {
+		${tw`pl-4 space-y-4 py-5`}
 	}
 
 	span {
