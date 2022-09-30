@@ -149,8 +149,8 @@ function ProjectStorytunes() {
 							</h3>
 							<ol>
 								<li>
-									온라인 강의에서 습득한 기술들을 바탕으로 프로젝트를
-									진행했습니다.
+									프론트엔드 개발 입문 가이드와 온라인 강의에서 공통으로
+									추천하는 기술들을 사용했습니다.
 								</li>
 								<li>
 									1. 회원 관련 웹 인증은 Firebase Authentication을 사용했습니다.
@@ -198,10 +198,16 @@ function ProjectStorytunes() {
 									제작을 경험했습니다.
 								</li>
 								<li>
-									2. Firebase, twin macro&#40;styled components +
-									tailwindCSS&#41;,
+									2. 새로운 기술들을 학습했습니다.
+									<p>
+										Firebase, twin macro&#40;styled components +
+										tailwindCSS&#41;,
+									</p>
 								</li>
-								<li>3. 웹 퍼포먼스</li>
+								<li>
+									3. 웹 접근성, 웹 성능과 같은 웹 개발에서 고려 해야 할 환경에
+									대해 다각도로 접근하여 해결하려는 태도를 배웠습니다.{' '}
+								</li>
 							</ol>
 						</div>
 						<div>
