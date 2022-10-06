@@ -32,10 +32,18 @@ flex flex-col lg:flex-row space-y-12 lg:space-y-0  lg:justify-between
 `;
 
 export const TopSectionStyles = styled.section`
-	${tw` space-y-10 xl:w-2/3 2xl:w-2/3 xl:m-auto xl:pt-20 xl:pb-0 `}
+	${tw`space-y-10 lg:space-y-12 xl:w-2/3 2xl:w-2/3 xl:m-auto xl:pt-20 xl:pb-0 `}
 
 	h2 {
-		${tw`text-[#FECFFF] text-2xl lg:text-3xl xl:text-[40px]`}
+		${tw`text-[#FECFFF] text-2xl xs:text-[28px] lg:text-3xl xl:text-[40px] lg:pb-5`}
+	}
+
+	h3 {
+		${tw`text-base xs:text-lg lg:text-xl 2xl:text-2xl`}
+	}
+
+	span {
+		${tw`text-red-300 font-medium lg:font-normal`}
 	}
 
 	div {
@@ -43,11 +51,7 @@ export const TopSectionStyles = styled.section`
 	}
 
 	ol {
-		${tw`pl-4 space-y-4 py-5`}
-	}
-
-	span {
-		${tw`text-red-300 font-medium lg:font-normal`}
+		${tw`pl-1 xs:pl-4 space-y-4 2xl:space-y-6 py-5 2xl:py-10`}
 	}
 `;
 
@@ -69,12 +73,12 @@ export const SubSectionStyles = styled.div`
 
 export const TitleStyles = styled.div`
 	h2 {
-		${tw`text-key_col1 text-2xl lg:text-[28px]  xl:text-3xl`}
+		${tw`text-key_col1 text-2xl xs:text-[26px] lg:text-[28px]  xl:text-3xl`}
 	}
 `;
 
 export const DescStyles = styled.div`
-	${tw`space-y-14 w-[97%] m-auto`}
+	${tw`space-y-14 w-[97%] m-auto xl:w-2/3 2xl:w-2/3 xl:pt-20`}
 
 	div {
 		${tw`space-y-6`}
@@ -85,7 +89,7 @@ export const DescStyles = styled.div`
 	}
 
 	p {
-		${tw`text-white lg:text-[17px] 2xl:text-lg`}
+		${tw`text-white tracking-wider leading-6  lg:text-[17px] 2xl:text-[19px] xl:leading-8`}
 	}
 `;
 export const ImgListStyles = styled.ul`

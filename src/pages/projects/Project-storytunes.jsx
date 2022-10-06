@@ -53,7 +53,7 @@ import Admin_1_190 from '../../assets/imgs/projects/storytunes/admin/admin1-190.
 import Admin_1_451 from '../../assets/imgs/projects/storytunes/admin/admin1-451.png';
 import Admin_1_563 from '../../assets/imgs/projects/storytunes/admin/admin1-563.png';
 import Admin_2_190 from '../../assets/imgs/projects/storytunes/admin/admin2-190.png';
-import Admin_2_451 from '../../assets/imgs/projects/storytunes/admin/admin2-451.png';
+import Admin_2_478 from '../../assets/imgs/projects/storytunes/admin/admin2-478.png';
 import Admin_2_563 from '../../assets/imgs/projects/storytunes/admin/admin2-563.png';
 import Admin_3_190 from '../../assets/imgs/projects/storytunes/admin/admin3-190.png';
 import Admin_3_372 from '../../assets/imgs/projects/storytunes/admin/admin3-372.png';
@@ -173,18 +173,18 @@ function ProjectStorytunes() {
 							<ol>
 								<li>
 									1. 방대한 페이지(25+)와 컴포넌트(40+) 그리고 반응형 웹
-									스타일링에 예상보다 많은 시간을 소비했고 라이브러리 사용 시
-									에러 핸들링에서 어려움을 겪었습니다.
+									스타일링에 예상보다 많은 시간을 사용했고 라이브러리를
+									사용하면서 에러 핸들링에서 어려움을 겪었습니다.
 								</li>
 								<li>
-									2. 복잡한 라우팅 핸들링에서 어려움을 겪었습니다. 특히 서버
-									사이드에서 RESTful API 사용 시 올바른 End Points 설정 및
+									2. 복잡한 백엔드 라우팅 핸들링에서 어려움을 겪었습니다. 특히
+									서버 사이드에서 RESTful API 사용 시 올바른 End Points 설정 및
 									다양한 요청들의 처리에 어려움을 경험했습니다.{' '}
 								</li>
 								<li>
 									3. 풀스택 배포에 어려움을 겪었고 배포 후 웹 테스트(Google
 									Lighthouse)에서 웹 퍼포먼스, 웹 접근성에 대해 부족한 점수를
-									받았고 향상 시키는 데 어려움을 경험 했습니다.
+									받았고 향상 시키는 데 어려움을 겪었습니다.
 								</li>
 							</ol>
 						</div>
@@ -198,11 +198,8 @@ function ProjectStorytunes() {
 									제작을 경험했습니다.
 								</li>
 								<li>
-									2. 새로운 기술들을 학습했습니다.
-									<p>
-										Firebase, twin macro&#40;styled components +
-										tailwindCSS&#41;,
-									</p>
+									2. 새로운 기술들을 학습했습니다: Firebase, twin
+									macro&#40;styled components + tailwindCSS&#41;
 								</li>
 								<li>
 									3. 웹 접근성, 웹 성능과 같은 웹 개발에서 고려 해야 할 환경에
@@ -225,7 +222,7 @@ function ProjectStorytunes() {
 								</li>
 								<li>
 									3. 타입스크립트 사용 및 학습을 위한 점진적 전환을 계획
-									중입니다.
+									중입니다. Git을 더 적극적이고 명확하게 사용하겠습니다.
 								</li>
 							</ol>
 						</div>
@@ -273,15 +270,29 @@ function ProjectStorytunes() {
 						<DescStyles>
 							<div>
 								<h3>Approach</h3>
-								<p>Paragraph</p>
+								<p>
+									손쉬운 사용자 관리와 제휴 ID 공급업체 사용자 인증을 간편하게
+									구현하고 사용자 정보를 안전하게 저장하기 위해{' '}
+									<span>Firebase 인증 SDK</span>를 사용했습니다.
+								</p>
 							</div>
 							<div>
 								<h3>Challenges</h3>
-								<p>Paragraph</p>
+								<p>
+									스트링으로 구성 된 Firebase 사용자 ID가 MongoDB의 OjectId에
+									유효하지 않아 Firebase 사용자 정보와 MongoDB의 데이터 베이스를
+									연동하면서 어려움을 겪었습니다. 그래서 Firebase 사용자 생성 시
+									함수를 통해 임의의 OjbectId 만들어 Firebase Store에 저장해서
+									사용했습니다.
+								</p>
 							</div>
 							<div>
 								<h3>Learning</h3>
-								<p>Paragraph</p>
+								<p>
+									클라이언트와 서버 사이드에서 Firebase 인증을 다루는 법을
+									배웠고 MongoDB와의 연동해서 데이터를 요청하고 사용하는 방식을
+									학습 했습니다.{' '}
+								</p>
 							</div>
 						</DescStyles>
 					</SectionStyles>
@@ -374,15 +385,28 @@ function ProjectStorytunes() {
 						<DescStyles>
 							<div>
 								<h3>Approach</h3>
-								<p>Paragraph</p>
+								<p>
+									수강생 대쉬보드입니다. 출석 체크 및 과제 제출 현황을 포함한
+									강의실, 연재 게시판 그리고 사용자 정보 변경 페이지로 구성
+									됩니다. 프론트엔드에서는 수업 관련 context API와 연재 관련
+									context API를 사용해서 상태 관리를 했습니다. 사용자 정보
+									변경은 Firebase 인증 SDK를 사용했습니다. 실시간 강의실, 채팅
+									기능 그리고 과제 제출 피드백 기능은 현재 개발 중입니다.
+								</p>
 							</div>
 							<div>
 								<h3>Challenges</h3>
-								<p>Paragraph</p>
+								<p>
+									데이터 베이스&#40;사용자 인증, 강의 상품, 학생 정보, 강사 정보
+									등&#41;을 한번에 요청해서 정보를 표시하고 변경 사항을 업데이트
+									하는 데 예상보다 시간이 더 오래 걸렸습니다. 비동기 요청과
+									Context API의 상태 관리와 백엔드 데이터베이스의 필드 수정으로
+									시간을 줄였습니다.
+								</p>
 							</div>
 							<div>
 								<h3>Learning</h3>
-								<p>Paragraph</p>
+								<p>MongoDB - Documents 참조</p>
 							</div>
 						</DescStyles>
 					</SectionStyles>
@@ -404,10 +428,10 @@ function ProjectStorytunes() {
 
 							<li>
 								<LazyLoadImage
-									src={Admin_2_451}
+									src={Admin_2_478}
 									alt=""
 									sizes="(max-width: 563px) 100vw, 563px"
-									srcSet={`${Admin_2_190} 190w, ${Admin_2_451} 451w, ${Admin_2_563} 563w`}
+									srcSet={`${Admin_2_190} 190w, ${Admin_2_478} 478w, ${Admin_2_563} 563w`}
 								/>
 							</li>
 							<li>
@@ -432,15 +456,25 @@ function ProjectStorytunes() {
 						<DescStyles>
 							<div>
 								<h3>Approach</h3>
-								<p>Paragraph</p>
+								<p>
+									관리자 및 강사 대쉬보드 입니다. 강의 개설, 강의 진행 그리고
+									학생 관리&#40;개발 중&#41; 페이지로 구성 됩니다.
+									React-select와 Date-picker 리엑트 제어 컴포넌트 라이브러리를
+									사용해 강의 생성 Form을 제작했습니다.
+								</p>
 							</div>
 							<div>
 								<h3>Challenges</h3>
-								<p>Paragraph</p>
+								<p>
+									2개 이상의 컴포넌트 라이브러리를 사용해 다중 입력으로 Form
+									제어 컴포넌트를 만들 때 어려움을 겪었습니다. 특히 Date 상태
+									값을 전달하고 수정하는 과정에서 타입 오류와 같은 시행착오를
+									겪었습니다.
+								</p>
 							</div>
 							<div>
 								<h3>Learning</h3>
-								<p>Paragraph</p>
+								<p>제어 컴포넌트 라이브러리 사용법</p>
 							</div>
 						</DescStyles>
 					</SectionStyles>
@@ -448,7 +482,7 @@ function ProjectStorytunes() {
 					<SectionStyles id="videoSection">
 						{/* header */}
 						<TitleStyles>
-							<h2>Pages &amp; Components</h2>
+							<h2>Key Pages &amp; Components</h2>
 						</TitleStyles>
 						<VideoListStyles>
 							<li>
@@ -466,20 +500,6 @@ function ProjectStorytunes() {
 								</video>
 							</li>
 						</VideoListStyles>
-						<DescStyles>
-							<div>
-								<h3>Approach</h3>
-								<p>Paragraph</p>
-							</div>
-							<div>
-								<h3>Challenges</h3>
-								<p>Paragraph</p>
-							</div>
-							<div>
-								<h3>Learning</h3>
-								<p>Paragraph</p>
-							</div>
-						</DescStyles>
 					</SectionStyles>
 				</ContainerStyles>
 			</WrapperStyles>
