@@ -89,8 +89,6 @@ function ProjectStorytunes() {
 		}, 1000);
 	};
 
-	// if (loading) return <FireSpinner />;
-
 	return (
 		<>
 			<Header />

@@ -11,8 +11,10 @@ import {
 	ThumbnailStyles,
 } from '../styles/PortfolioStyles';
 
-import MainImage1045 from '../assets/imgs/projects/storytunes/main/main_1045.png';
-import MainImage1453 from '../assets/imgs/projects/storytunes/main/main_1453.png';
+import StorytunesMainImage1045 from '../assets/imgs/projects/storytunes/main/main_1045.png';
+import StorytunesMainImage1453 from '../assets/imgs/projects/storytunes/main/main_1453.png';
+
+import HomepageImg from '../assets/imgs/projects/homepage/pf_2.png';
 
 import { GrGithub } from 'react-icons/gr';
 import { GoLinkExternal } from 'react-icons/go';
@@ -28,7 +30,7 @@ function Portfolio() {
 					<HeaderStyles>
 						<div id="pf_title">
 							<h2>Storytunes</h2>
-							<div id="pf_role">UX &#47; UI &#43; Web Development 2022</div>
+							<div id="pf_role">UX &#47; UI &#43; Development 2022</div>
 						</div>
 						<ul id="pf_tech">
 							<li>React&#46; js</li>
@@ -46,9 +48,9 @@ function Portfolio() {
 						<LeftStyles>
 							<ThumbnailStyles
 								sizes="(max-width: 1279px) 100vw, 1453px"
-								srcSet={`${MainImage1045} 1045w, ${MainImage1453} 
+								srcSet={`${StorytunesMainImage1045} 1045w, ${StorytunesMainImage1453} 
 								1453w`}
-								src={MainImage1045}
+								src={StorytunesMainImage1045}
 								alt=""
 							/>
 						</LeftStyles>
@@ -138,7 +140,7 @@ function Portfolio() {
 					<HeaderStyles>
 						<div id="pf_title">
 							<h2>Personal Website</h2>
-							<div id="pf_role">UX &#47; UI &#43; Web Development 2022</div>
+							<div id="pf_role">Design &#43; Development 2022</div>
 						</div>
 						<ul id="pf_tech">
 							<li>React&#46; js</li>
@@ -150,21 +152,35 @@ function Portfolio() {
 					{/* main */}
 					<ContentStyles>
 						<LeftStyles>
-							<div></div>
+							<ThumbnailStyles
+								sizes="(max-width: 1279px) 100vw, 1453px"
+								srcSet={`${StorytunesMainImage1045} 1045w, ${HomepageImg} 
+								1453w`}
+								src={StorytunesMainImage1045}
+								alt=""
+							/>
 						</LeftStyles>
 						{/* left item */}
 						<RightStyles>
 							{/* desc */}
 							<div id="pf_desc">
+								<p>프론트엔드 포트폴리오 목적으로 만든 개인 웹 사이트입니다.</p>
+								<br />
 								<p>
-									First version of my personal website. Designed and developed
-									with a conscious effort to avoid using any superfluous
-									frameworks like Bootstrap.
+									CSS 스크롤 스냅 모듈로 전체 화면 스크롤 웹사이트 만들어 단일
+									페이지의 About, Portfolio, Contact의 구역을 명확하게 나눠
+									사용자 경험을 향상 시켰습니다.
 								</p>
 								<br />
 								<p>
-									I probably didn't need to use React at all, but hey, at least
-									I learned a few things!
+									빠른 제작을 위해 최근에 자주 사용했던 React와
+									Styled-components + Tailwind CSS를 사용했습니다. 다시 만든다면
+									HTML, CSS, Vanila JS로 만들겠습니다.
+								</p>
+								<br />
+								<p>
+									이 프로젝트를 통해 Lazy loading, 반응형 이미지, 웹 폰트
+									최적화와 같은 웹 성능 향상의 여러 방법들을 학습 했습니다.
 								</p>
 							</div>
 							{/* features */}
@@ -180,16 +196,6 @@ function Portfolio() {
 							</div>
 							{/* links */}
 							<div id="pf_links">
-								<Link
-									to="/project/storytunes"
-									id="pf_project_link"
-									className="pf_link"
-									aria-label="link to project page"
-								>
-									<GoLinkExternal />
-									<div>View Project</div>
-								</Link>
-
 								<a
 									href="https://github.com/mosmomedia/frontend_portfolio_project_4"
 									id="pf_github_link"
