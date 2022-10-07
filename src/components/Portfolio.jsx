@@ -14,7 +14,8 @@ import {
 import StorytunesMainImage1045 from '../assets/imgs/projects/storytunes/main/main_1045.png';
 import StorytunesMainImage1453 from '../assets/imgs/projects/storytunes/main/main_1453.png';
 
-import HomepageImg from '../assets/imgs/projects/homepage/pf_2.png';
+import HomepageImg1045 from '../assets/imgs/projects/homepage/main/pf2_main_1045.png';
+import HomepageImg1453 from '../assets/imgs/projects/homepage/main/pf2_main_1453.png';
 
 import { GrGithub } from 'react-icons/gr';
 import { GoLinkExternal } from 'react-icons/go';
@@ -154,9 +155,9 @@ function Portfolio() {
 						<LeftStyles>
 							<ThumbnailStyles
 								sizes="(max-width: 1279px) 100vw, 1453px"
-								srcSet={`${StorytunesMainImage1045} 1045w, ${HomepageImg} 
+								srcSet={`${HomepageImg1045} 1045w, ${HomepageImg1453} 
 								1453w`}
-								src={StorytunesMainImage1045}
+								src={HomepageImg1045}
 								alt=""
 							/>
 						</LeftStyles>
