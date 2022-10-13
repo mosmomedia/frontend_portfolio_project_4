@@ -11,6 +11,8 @@ import {
 import { GrDocumentUser, GrGithub } from 'react-icons/gr';
 import { GoLinkExternal } from 'react-icons/go';
 
+import CVPDF from '../assets/pdf/dongjoo_cv.pdf';
+
 function About() {
 	return (
 		<WrapperStyles id="about">
@@ -21,7 +23,7 @@ function About() {
 				<LinksStyles id="djLinks">
 					<a
 						className="djResume"
-						href="http://github.com/mosmomedia"
+						href={CVPDF}
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="link to resume page"
@@ -117,7 +119,7 @@ function About() {
 								스토리튠즈는 한국 최초의 웹 소설 전문 아카데미입니다. 비대면
 								온라인 교육 플랫폼의 필요성과 카카오페이지와 공동으로 기획한
 								프로젝트를 위해 실시간 온라인 수업이 중심인 웹 애플리케이션을
-								제작 했습니다.
+								제작했습니다.
 							</p>
 							<ul>
 								<li>
@@ -129,7 +131,7 @@ function About() {
 								<li>
 									{' '}
 									몇 가지 API 통신을 통한 기능 (강의 관련 목록 필터링, 회원 정보
-									수정 및 표시) 및 쿠키 사용 레이어 팝업 등을 구현을 했습니다.
+									수정 및 표시) 및 쿠키 사용 레이어 팝업 등을 구현했습니다.
 								</li>
 								<li>
 									이 프로젝트 경험이 프론트엔드 기술 성장과 타 개발자와의 협업
