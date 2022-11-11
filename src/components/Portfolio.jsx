@@ -17,6 +17,9 @@ import StorytunesMainImage1453 from '../assets/imgs/projects/storytunes/main/mai
 import HomepageImg1045 from '../assets/imgs/projects/homepage/main/pf2_main_1045.png';
 import HomepageImg1453 from '../assets/imgs/projects/homepage/main/pf2_main_1453.png';
 
+import Pf3Img1045 from '../assets/imgs/projects/vanilla-spa/pf3_main_1045.png';
+import Pf3Img1453 from '../assets/imgs/projects/vanilla-spa/pf3_main_1453.png';
+
 import { GrGithub } from 'react-icons/gr';
 import { GoLinkExternal } from 'react-icons/go';
 import { BsGlobe } from 'react-icons/bs';
@@ -158,9 +161,9 @@ function Portfolio() {
 						<LeftStyles>
 							<ThumbnailStyles
 								sizes="(max-width: 1279px) 100vw, 1453px"
-								srcSet={`${HomepageImg1045} 1045w, ${HomepageImg1453} 
+								srcSet={`${Pf3Img1045} 1045w, ${Pf3Img1453} 
 								1453w`}
-								src={HomepageImg1045}
+								src={Pf3Img1045}
 								alt=""
 							/>
 						</LeftStyles>
