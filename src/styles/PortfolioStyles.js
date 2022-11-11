@@ -75,6 +75,10 @@ export const RightStyles = styled.div`
 		}
 	}
 
+	#zoom_link {
+		${tw`text-key_col1 underline`}
+	}
+
 	#pf_feat {
 		${tw`space-y-4`}
 
