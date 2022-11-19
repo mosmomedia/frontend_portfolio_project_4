@@ -59,12 +59,17 @@ export const RightStyles = styled.div`
 
 export const ImageWrapper = styled.div`
 	${tw`relative h-full`}
+
 	img {
 		${tw`-right-1`}
 	}
 
 	.img_fire {
 		${tw`absolute z-30 lg:h-[3.75rem] xl:h-16 -top-20 xl:-top-20 right-1/2 translate-x-1/2`}
+
+		@media screen and (max-height: 800px) and (min-width: 1024px) {
+			${tw`hidden`}
+		}
 	}
 
 	.img_text {

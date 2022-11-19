@@ -3,6 +3,11 @@ import tw, { styled } from 'twin.macro';
 export const WrapperStyles = styled.section`
 	${tw`pt-20 space-y-16 sm:space-y-28 lg:h-screen lg:pt-52`}
 
+	@media screen and (max-height: 800px)
+	and (min-width: 1024px) {
+		${tw`pt-14`}
+	}
+
 	h1 {
 		${tw`text-3xl md:text-4xl xl:text-[40px] 2xl:text-5xl`}
 	}
