@@ -4,6 +4,8 @@ import { WrapperStyles } from '../styles/FooterStyles';
 import { LinksStyles } from '../styles/AboutStyles';
 import { GrDocumentUser, GrGithub } from 'react-icons/gr';
 
+import CVPDF from '../assets/pdf/dongjoo_cv.pdf';
+
 function Footer({ mainRef }) {
 	const targetFooter = useRef();
 
@@ -38,9 +40,10 @@ function Footer({ mainRef }) {
 					<LinksStyles>
 						<a
 							className="djResume"
-							href="http://github.com/mosmomedia"
+							href={CVPDF}
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="link to resume page"
 						>
 							<GrDocumentUser />
 							<span>Résumé</span>
